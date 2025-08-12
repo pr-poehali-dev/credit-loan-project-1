@@ -48,9 +48,23 @@ const Mortgage = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Взять ипотеку в 2025 году: полное руководство по выбору и оформлению
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
               Ипотечное кредитование остается основным способом приобретения недвижимости для большинства россиян. В 2025 году условия ипотеки претерпели изменения, появились новые программы поддержки, а процентные ставки стабилизировались на более привлекательном уровне. Разберем подробно, как взять ипотеку выгодно и какие возможности доступны заемщикам.
             </p>
+            
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-12">
+              <img 
+                src="/img/175c8c2b-bd6e-4c26-9f35-4f675cab74a0.jpg" 
+                alt="Красивый современный дом - ипотека 2025" 
+                className="w-full h-64 md:h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="text-sm md:text-base font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">
+                  💡 Воплотите мечту о собственном доме с выгодной ипотекой
+                </p>
+              </div>
+            </div>
           </header>
 
           <div className="prose prose-lg max-w-none">
