@@ -486,80 +486,203 @@ const Index = () => {
             </div>
           </div>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Региональные банки
-          </h3>
-          <p className="text-gray-700 mb-6">
-            Местные банки часто предлагают более гибкие условия и индивидуальный подход к клиентам. Они могут быть хорошим вариантом для тех, кто ищет персональное обслуживание.
-          </p>
+          <div className="bg-gradient-to-br from-purple-50 to-indigo-50 border border-purple-200 rounded-2xl p-8 mt-12">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center">
+                <Icon name="MapPin" className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Региональные банки
+              </h3>
+            </div>
+            <p className="text-gray-700">
+              Местные банки часто предлагают более гибкие условия и индивидуальный подход к клиентам. Они могут быть хорошим вариантом для тех, кто ищет персональное обслуживание.
+            </p>
+          </div>
 
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Условия получения кредита
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Понимание требований банков поможет увеличить шансы на одобрение заявки и получить более выгодные условия кредитования.
-          </p>
+          <div className="mt-16 mb-8">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">
+                <Icon name="FileText" className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">
+                  Условия получения кредита
+                </h2>
+                <p className="text-gray-600 mt-1">
+                  Понимание требований банков поможет увеличить шансы на одобрение заявки
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Основные требования к заёмщику
-          </h3>
-          <ul className="text-gray-700 mb-6 space-y-2">
-            <li>• Возраст от 21 до 65-70 лет</li>
-            <li>• Стабильный доход</li>
-            <li>• Стаж работы на последнем месте не менее 3-6 месяцев</li>
-            <li>• Российское гражданство</li>
-            <li>• Положительная кредитная история</li>
-          </ul>
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                <Icon name="User" className="w-5 h-5 text-emerald-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Основные требования к заёмщику
+              </h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl">
+                <Icon name="Calendar" className="w-5 h-5 text-blue-500" />
+                <span className="text-gray-700">Возраст от 21 до 65-70 лет</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl">
+                <Icon name="TrendingUp" className="w-5 h-5 text-green-500" />
+                <span className="text-gray-700">Стабильный доход</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl">
+                <Icon name="Briefcase" className="w-5 h-5 text-orange-500" />
+                <span className="text-gray-700">Стаж работы не менее 3-6 месяцев</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl">
+                <Icon name="Flag" className="w-5 h-5 text-red-500" />
+                <span className="text-gray-700">Российское гражданство</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-xl md:col-span-2">
+                <Icon name="Star" className="w-5 h-5 text-yellow-500" />
+                <span className="text-gray-700">Положительная кредитная история</span>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Необходимые документы
-          </h3>
-          <p className="text-gray-700 mb-4">
-            Для того чтобы взять кредит без лишних проволочек, важно заранее подготовить полный пакет документов:
-          </p>
-          <ul className="text-gray-700 mb-6 space-y-2">
-            <li>• Паспорт гражданина РФ</li>
-            <li>• Справка о доходах (2-НДФЛ или по форме банка)</li>
-            <li>• Трудовая книжка или трудовой договор</li>
-            <li>• Дополнительные документы по требованию банка</li>
-          </ul>
+          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-8 mt-8">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                <Icon name="FileStack" className="w-5 h-5 text-amber-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Необходимые документы
+              </h3>
+            </div>
+            <p className="text-gray-700 mb-6">
+              Для того чтобы взять кредит без лишних проволочек, важно заранее подготовить полный пакет документов:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-center space-x-3 p-4 bg-white/60 rounded-lg border border-amber-100">
+                <Icon name="CreditCard" className="w-5 h-5 text-blue-500" />
+                <span className="text-gray-700">Паспорт гражданина РФ</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-white/60 rounded-lg border border-amber-100">
+                <Icon name="Receipt" className="w-5 h-5 text-green-500" />
+                <span className="text-gray-700">Справка о доходах</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-white/60 rounded-lg border border-amber-100">
+                <Icon name="Building2" className="w-5 h-5 text-purple-500" />
+                <span className="text-gray-700">Трудовая книжка</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-white/60 rounded-lg border border-amber-100">
+                <Icon name="Plus" className="w-5 h-5 text-gray-500" />
+                <span className="text-gray-700">Дополнительные документы</span>
+              </div>
+            </div>
+          </div>
 
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Онлайн кредитование: быстро и удобно
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Цифровизация банковских услуг позволила значительно упростить процесс получения займов. Сегодня можно взять кредит онлайн на карту за считанные минуты.
-          </p>
+          <div className="mt-16 mb-8">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center">
+                <Icon name="Smartphone" className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">
+                  Онлайн кредитование: быстро и удобно
+                </h2>
+                <p className="text-gray-600 mt-1">
+                  Цифровизация банковских услуг позволила значительно упростить процесс получения займов
+                </p>
+              </div>
+            </div>
+            <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl p-8">
+              <p className="text-gray-700 text-lg">
+                Сегодня можно взять кредит онлайн на карту за считанные минуты.
+              </p>
+            </div>
+          </div>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Преимущества онлайн кредитования
-          </h3>
-          <ul className="text-gray-700 mb-6 space-y-2">
-            <li>• Быстрое рассмотрение заявки</li>
-            <li>• Минимум документов</li>
-            <li>• Зачисление средств на карту</li>
-            <li>• Возможность оформления в любое время</li>
-          </ul>
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm mt-8">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                <Icon name="CheckCircle" className="w-5 h-5 text-emerald-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Преимущества онлайн кредитования
+              </h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-center space-x-3 p-4 bg-green-50 rounded-xl border border-green-100">
+                <Icon name="Zap" className="w-5 h-5 text-green-500" />
+                <span className="text-gray-700">Быстрое рассмотрение заявки</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                <Icon name="FileX" className="w-5 h-5 text-blue-500" />
+                <span className="text-gray-700">Минимум документов</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-purple-50 rounded-xl border border-purple-100">
+                <Icon name="CreditCard" className="w-5 h-5 text-purple-500" />
+                <span className="text-gray-700">Зачисление средств на карту</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-amber-50 rounded-xl border border-amber-100">
+                <Icon name="Clock" className="w-5 h-5 text-amber-500" />
+                <span className="text-gray-700">Оформление в любое время</span>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Особенности получения
-          </h3>
-          <p className="text-gray-700 mb-6">
-            Многие ищут возможность взять кредит без отказа, и онлайн-сервисы часто предлагают более лояльные условия одобрения. Однако следует помнить, что процентные ставки по таким кредитам могут быть выше.
-          </p>
+          <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-8 mt-8">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                <Icon name="AlertTriangle" className="w-5 h-5 text-orange-600" />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                Особенности получения
+              </h3>
+            </div>
+            <p className="text-gray-700">
+              Многие ищут возможность взять кредит без отказа, и онлайн-сервисы часто предлагают более лояльные условия одобрения. Однако следует помнить, что процентные ставки по таким кредитам могут быть выше.
+            </p>
+          </div>
 
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Заключение
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Решение взять кредит требует тщательной подготовки и анализа множества факторов. Современный банковский рынок предлагает широкий выбор продуктов для различных категорий заёмщиков, включая тех, кто имеет проблемы с кредитной историей.
-          </p>
-          <p className="text-gray-700 mb-6">
-            Главное — реально оценивать свои финансовые возможности, сравнивать предложения разных банков и выбирать наиболее подходящий продукт. Правильно подобранный кредит станет эффективным финансовым инструментом для достижения ваших целей, а не источником финансовых проблем.
-          </p>
-          <p className="text-gray-700 font-semibold">
-            Помните: ответственное отношение к кредитным обязательствам — залог успешного сотрудничества с банком и возможность получения более выгодных условий в будущем.
-          </p>
+          <div className="mt-16">
+            <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 border border-slate-200 rounded-3xl p-8 lg:p-12">
+              <div className="flex items-center space-x-4 mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-slate-600 to-blue-600 rounded-2xl flex items-center justify-center">
+                  <Icon name="CheckCircle2" className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-900">
+                    Заключение
+                  </h2>
+                  <p className="text-gray-600">Ключевые принципы успешного кредитования</p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                  <p className="text-gray-700 leading-relaxed">
+                    Решение взять кредит требует тщательной подготовки и анализа множества факторов. Современный банковский рынок предлагает широкий выбор продуктов для различных категорий заёмщиков, включая тех, кто имеет проблемы с кредитной историей.
+                  </p>
+                </div>
+                
+                <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                  <p className="text-gray-700 leading-relaxed">
+                    Главное — реально оценивать свои финансовые возможности, сравнивать предложения разных банков и выбирать наиболее подходящий продукт. Правильно подобранный кредит станет эффективным финансовым инструментом для достижения ваших целей.
+                  </p>
+                </div>
+                
+                <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 rounded-xl p-6 border border-blue-200">
+                  <div className="flex items-start space-x-3">
+                    <Icon name="Lightbulb" className="w-6 h-6 text-blue-600 mt-0.5" />
+                    <p className="text-gray-800 font-medium leading-relaxed">
+                      Помните: ответственное отношение к кредитным обязательствам — залог успешного сотрудничества с банком и возможность получения более выгодных условий в будущем.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
