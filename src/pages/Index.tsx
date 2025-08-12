@@ -136,8 +136,12 @@ const Index = () => {
             <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-green-200 bg-white">
               <div className="absolute top-0 right-0 w-32 h-32 bg-green-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
               <CardHeader className="relative text-center pb-4">
-                <div className="w-20 h-20 bg-green-600 rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg">
-                  <span className="text-white font-bold text-2xl">S</span>
+                <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
+                  <img 
+                    src="https://cdn.poehali.dev/files/f70038da-d6dd-4e66-a474-947315ef3e89.jpg" 
+                    alt="Сбербанк" 
+                    className="w-12 h-12 object-contain"
+                  />
                 </div>
                 <CardTitle className="text-2xl text-gray-900">Сбербанк</CardTitle>
                 <CardDescription className="text-lg font-medium text-green-700">Деньги до зарплаты</CardDescription>
