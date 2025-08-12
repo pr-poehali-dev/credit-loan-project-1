@@ -244,31 +244,59 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* Placeholder для третьего банка */}
-            <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-purple-200 bg-white opacity-75">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full -translate-y-16 translate-x-16 opacity-10"></div>
+            {/* Совкомбанк */}
+            <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-red-200 bg-white">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
               <CardHeader className="relative text-center pb-4">
-                <div className="w-20 h-20 bg-purple-600 rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg">
-                  <Icon name="Building2" size={32} className="text-white" />
+                <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
+                  <img 
+                    src="https://cdn.poehali.dev/files/d2f0ef12-4d16-4a38-8f79-16e16b1881ba.jpg" 
+                    alt="Совкомбанк" 
+                    className="w-12 h-12 object-contain"
+                  />
                 </div>
-                <CardTitle className="text-2xl text-gray-900">Банк №3</CardTitle>
-                <CardDescription className="text-lg font-medium text-purple-700">Скоро здесь</CardDescription>
+                <CardTitle className="text-2xl text-gray-900">Совкомбанк</CardTitle>
+                <CardDescription className="text-lg font-medium text-red-700">Кредит под залог авто «Выгодный»</CardDescription>
               </CardHeader>
               <CardContent className="relative text-center">
                 <div className="space-y-4 mb-8">
-                  <div className="bg-purple-50 rounded-lg p-4">
-                    <p className="text-gray-600">Готовим лучшие условия для вас</p>
+                  <div className="bg-red-50 rounded-lg p-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-gray-600">Сумма:</span>
+                      <span className="font-bold text-lg">до 7 млн ₽</span>
+                    </div>
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-gray-600">Ставка:</span>
+                      <span className="font-bold text-lg text-red-600">от 3.9%</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Срок:</span>
+                      <span className="font-bold text-lg">до 5 лет</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                    <Icon name="Car" size={16} />
+                    <span>Авто остается у вас</span>
+                  </div>
+                  
+                  <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                    <Icon name="CreditCard" size={16} />
+                    <span>Оценка за 15 минут</span>
                   </div>
                 </div>
                 
                 <Button 
                   size="lg" 
-                  disabled
-                  className="w-full bg-gray-400 text-white font-semibold py-4 text-lg"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <Icon name="Clock" className="mr-2" size={20} />
-                  Скоро
+                  <Icon name="ExternalLink" className="mr-2" size={20} />
+                  Получить кредит
                 </Button>
+                
+                <p className="text-xs text-gray-500 mt-3">
+                  * Условия могут изменяться банком
+                </p>
               </CardContent>
             </Card>
           </div>
