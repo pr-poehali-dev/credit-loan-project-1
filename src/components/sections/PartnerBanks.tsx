@@ -119,9 +119,16 @@ const PartnerBanks = () => {
               <Button 
                 size="lg" 
                 className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
               >
-                <Icon name="ExternalLink" className="mr-2" size={20} />
-                Получить кредит
+                <a 
+                  href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6598&p=9546&erid=LjN8KSBL4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon name="ExternalLink" className="mr-2" size={20} />
+                  Получить кредит
+                </a>
               </Button>
               
               <p className="text-xs text-gray-500 mt-3">
