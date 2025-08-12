@@ -41,6 +41,10 @@ const Mortgage = () => {
 
         <article className="max-w-4xl mx-auto px-4 pb-16">
           <header className="text-center mb-12">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-6 py-3 rounded-full mb-6">
+              <Icon name="Home" size={24} />
+              <span className="font-semibold">Ипотека 2025</span>
+            </div>
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Взять ипотеку в 2025 году: полное руководство по выбору и оформлению
             </h1>

@@ -44,6 +44,10 @@ const ConsumerLoan = () => {
 
         <article className="max-w-4xl mx-auto px-4 pb-16">
           <header className="text-center mb-12">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-full mb-6">
+              <Icon name="CreditCard" size={24} />
+              <span className="font-semibold">Потребительский кредит 2025</span>
+            </div>
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Потребительский кредит 2025: полный гид по выбору лучших предложений банков
             </h1>
