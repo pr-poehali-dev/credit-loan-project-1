@@ -71,43 +71,42 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="py-20 px-4">
+      <section id="home" className="py-12 md:py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-4 md:mb-6">
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               ОДОБРЯЕМ
             </span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-4">
             Эксклюзивные кредитные программы для требовательных клиентов. 
             Индивидуальный подход, минимальные ставки, максимальный комфорт.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
-              <Icon name="FileText" className="mr-2" size={20} />
-              Подать заявку онлайн
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
+              <Icon name="FileText" className="mr-2" size={18} />
+              Подать заявку
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4">
-              <Icon name="Calculator" className="mr-2" size={20} />
-              Рассчитать кредит
+            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
+              <Icon name="Calculator" className="mr-2" size={18} />
+              Калькулятор
             </Button>
           </div>
         </div>
       </section>
 
       {/* Partner Banks - Referral Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <header className="text-center mb-12 md:mb-16">
             <Badge className="mb-4 bg-green-100 text-green-800 px-4 py-2">
               Банки-партнёры
             </Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Быстрые кредиты от ведущих банков</h2>
-            <p className="text-xl text-gray-600">Мгновенное одобрение и выдача средств</p>
-          </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 px-4">Быстрые кредиты от ведущих банков</h2>
+            <p className="text-lg md:text-xl text-gray-600 px-4">Мгновенное одобрение и выдача средств</p>
+          </header>
           
-          <div className="grid lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {/* Сбербанк */}
             <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-green-200 bg-white">
               <div className="absolute top-0 right-0 w-32 h-32 bg-green-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
@@ -115,27 +114,28 @@ const Index = () => {
                 <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
                   <img 
                     src="https://cdn.poehali.dev/files/f70038da-d6dd-4e66-a474-947315ef3e89.jpg" 
-                    alt="Сбербанк" 
-                    className="w-12 h-12 object-contain"
+                    alt="Логотип Сбербанка - кредиты онлайн от 19%" 
+                    className="w-10 h-10 md:w-12 md:h-12 object-contain"
+                    loading="lazy"
                   />
                 </div>
-                <CardTitle className="text-2xl text-gray-900">Сбербанк</CardTitle>
-                <CardDescription className="text-lg font-medium text-green-700">Деньги до зарплаты</CardDescription>
+                <CardTitle className="text-xl md:text-2xl text-gray-900">Сбербанк</CardTitle>
+                <CardDescription className="text-base md:text-lg font-medium text-green-700">Деньги до зарплаты</CardDescription>
               </CardHeader>
               <CardContent className="relative text-center">
                 <div className="space-y-4 mb-8">
                   <div className="bg-green-50 rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-600">Сумма:</span>
-                      <span className="font-bold text-lg">до 5 млн ₽</span>
+                      <span className="text-sm md:text-base text-gray-600">Сумма:</span>
+                      <span className="font-bold text-base md:text-lg">до 5 млн ₽</span>
                     </div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-600">Ставка:</span>
-                      <span className="font-bold text-lg text-green-600">от 19%</span>
+                      <span className="text-sm md:text-base text-gray-600">Ставка:</span>
+                      <span className="font-bold text-base md:text-lg text-green-600">от 19%</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Срок:</span>
-                      <span className="font-bold text-lg">до 5 лет</span>
+                      <span className="text-sm md:text-base text-gray-600">Срок:</span>
+                      <span className="font-bold text-base md:text-lg">до 5 лет</span>
                     </div>
                   </div>
                   
@@ -336,14 +336,14 @@ const Index = () => {
       </section>
 
       {/* Loan Types */}
-      <section id="loans" className="py-20 px-4 bg-white">
+      <section id="loans" className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Кредитные программы</h2>
-            <p className="text-xl text-gray-600">Выберите подходящий для вас тип кредитования</p>
-          </div>
+          <header className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 px-4">Кредитные программы</h2>
+            <p className="text-lg md:text-xl text-gray-600 px-4">Выберите подходящий для вас тип кредитования</p>
+          </header>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {loanTypes.map((loan, index) => (
               <Card key={index} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50">
                 <div className={`absolute top-0 right-0 w-32 h-32 ${loan.color} rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity`}></div>
