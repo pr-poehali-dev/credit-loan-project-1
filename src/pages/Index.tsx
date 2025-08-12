@@ -394,40 +394,81 @@ const Index = () => {
             В современном мире финансовые потребности граждан растут, и многие задаются вопросом: где взять кредит на выгодных условиях? Выбор банка и кредитного продукта — ответственное решение, которое требует тщательного изучения рынка и понимания собственных возможностей.
           </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Основные способы получения кредита
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Сегодня существует несколько основных способов того, как можно взять кредит. Каждый из них имеет свои особенности и подходит для различных ситуаций.
-          </p>
+          <div className="mt-16 mb-8">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center">
+                <Icon name="Route" className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">
+                  Основные способы получения кредита
+                </h2>
+                <p className="text-gray-600 mt-1">
+                  Каждый способ имеет свои особенности и подходит для различных ситуаций
+                </p>
+              </div>
+            </div>
+          </div>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Традиционное кредитование в отделении банка
-          </h3>
-          <p className="text-gray-700 mb-6">
-            Классический способ — обратиться непосредственно в банковское отделение. Этот вариант подходит тем, кто предпочитает личное общение с консультантом и хочет получить подробную информацию о всех доступных продуктах.
-          </p>
+          <div className="grid lg:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl p-6">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center">
+                  <Icon name="Building2" className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Традиционное кредитование
+                </h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Классический способ — обратиться в банковское отделение. Подходит тем, кто предпочитает личное общение с консультантом.
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-6">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+                  <Icon name="Globe" className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Онлайн кредитование
+                </h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Подача заявки через интернет значительно экономит время. Процесс может занять от нескольких минут до часов.
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center">
+                  <Icon name="Smartphone" className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Мобильные приложения
+                </h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Банковские приложения позволяют взять кредит на карту в несколько кликов. Особенно удобно для небольших сумм.
+              </p>
+            </div>
+          </div>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Онлайн кредитование
-          </h3>
-          <p className="text-gray-700 mb-6">
-            Возможность взять кредит онлайн становится всё более популярной. Многие банки предлагают подачу заявки через интернет, что значительно экономит время. Процесс может занять от нескольких минут до нескольких часов.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-            Мобильные приложения банков
-          </h3>
-          <p className="text-gray-700 mb-6">
-            Современные банковские приложения позволяют не только управлять счетами, но и взять кредит на карту буквально в несколько кликов. Это особенно удобно для получения небольших сумм на короткий срок.
-          </p>
-
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-            Выбор банка для кредитования
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Вопрос "в каком банке лучше взять кредит в банке" волнует многих заёмщиков. При выборе финансового учреждения следует учитывать несколько ключевых факторов.
-          </p>
+          <div className="mt-16 mb-8">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center">
+                <Icon name="Target" className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900">
+                  Выбор банка для кредитования
+                </h2>
+                <p className="text-gray-600 mt-1">
+                  При выборе финансового учреждения следует учитывать ключевые факторы
+                </p>
+              </div>
+            </div>
+          </div>
 
           <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-6">
             Крупные федеральные банки
