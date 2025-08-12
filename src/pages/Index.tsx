@@ -777,9 +777,7 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="border-t mt-8 pt-8 text-center text-sm text-gray-600">
-            © 2024 Одобряем. Все права защищены.
-          </div>
+          <div className="border-t mt-8 pt-8 text-center text-sm text-gray-600">© 2025 Одобряем. Все права защищены.</div>
         </div>
       </footer>
     </div>
