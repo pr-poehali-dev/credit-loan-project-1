@@ -22,10 +22,6 @@ const Header = () => {
             <a href="#loans" className="text-gray-600 hover:text-blue-600 transition-colors">Кредиты</a>
             <a href="#mortgage" className="text-gray-600 hover:text-blue-600 transition-colors">Ипотека</a>
             <a href="#auto" className="text-gray-600 hover:text-blue-600 transition-colors">Автокредит</a>
-            <a href="#calculator" className="text-gray-600 hover:text-blue-600 transition-colors">Калькулятор</a>
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              Подать заявку
-            </Button>
           </nav>
 
           <Button variant="ghost" className="md:hidden">
