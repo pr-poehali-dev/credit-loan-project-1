@@ -256,7 +256,7 @@ const Index = () => {
                   />
                 </div>
                 <CardTitle className="text-2xl text-gray-900">Совкомбанк</CardTitle>
-                <CardDescription className="text-lg font-medium text-red-700">Кредит под залог авто «Выгодный»</CardDescription>
+                <CardDescription className="text-lg font-medium text-red-700">Кредит наличными "Прогресс"</CardDescription>
               </CardHeader>
               <CardContent className="relative text-center">
                 <div className="space-y-4 mb-8">
@@ -276,13 +276,13 @@ const Index = () => {
                   </div>
                   
                   <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-                    <Icon name="Car" size={16} />
-                    <span>Авто остается у вас</span>
+                    <Icon name="TrendingUp" size={16} />
+                    <span>Без справок о доходах</span>
                   </div>
                   
                   <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-                    <Icon name="CreditCard" size={16} />
-                    <span>Оценка за 15 минут</span>
+                    <Icon name="Clock" size={16} />
+                    <span>Решение за 3 минуты</span>
                   </div>
                 </div>
                 
