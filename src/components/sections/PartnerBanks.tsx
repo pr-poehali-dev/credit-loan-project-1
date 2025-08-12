@@ -6,7 +6,7 @@ import Icon from '@/components/ui/icon';
 
 const PartnerBanks = () => {
   return (
-    <section className="py-12 md:py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
+    <section id="banks" className="py-12 md:py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12 md:mb-16">
           <Badge className="mb-4 bg-green-100 text-green-800 px-4 py-2">

@@ -17,14 +17,16 @@ const HeroSection = () => {
             Эксклюзивные кредитные программы для требовательных клиентов. 
             Индивидуальный подход, минимальные ставки, максимальный комфорт.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
-              <Icon name="FileText" className="mr-2" size={18} />
-              Подать заявку
-            </Button>
-            <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
-              <Icon name="Calculator" className="mr-2" size={18} />
-              Калькулятор
+          <div className="flex justify-center">
+            <Button 
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto max-w-sm"
+              asChild
+            >
+              <a href="#banks">
+                <Icon name="FileText" className="mr-2" size={18} />
+                Подать заявку
+              </a>
             </Button>
           </div>
         </div>
