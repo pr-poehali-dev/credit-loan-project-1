@@ -239,11 +239,11 @@ const Index = () => {
                   <div className="bg-red-50 rounded-lg p-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-gray-600">Сумма:</span>
-                      <span className="font-bold text-lg">до 7 млн ₽</span>
+                      <span className="font-bold text-lg">до 5 млн ₽</span>
                     </div>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-gray-600">Ставка:</span>
-                      <span className="font-bold text-lg text-red-600">от 3.9%</span>
+                      <span className="font-bold text-lg text-red-600">от 13%</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-gray-600">Срок:</span>
