@@ -18,10 +18,10 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">Главная</a>
-            <a href="#loans" className="text-gray-600 hover:text-blue-600 transition-colors">Кредиты</a>
-            <a href="#mortgage" className="text-gray-600 hover:text-blue-600 transition-colors">Ипотека</a>
-            <a href="#auto" className="text-gray-600 hover:text-blue-600 transition-colors">Автокредит</a>
+            <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors scroll-smooth">Главная</a>
+            <a href="#loans" className="text-gray-600 hover:text-blue-600 transition-colors scroll-smooth">Кредиты</a>
+            <a href="#mortgage" className="text-gray-600 hover:text-blue-600 transition-colors scroll-smooth">Ипотека</a>
+            <a href="#auto" className="text-gray-600 hover:text-blue-600 transition-colors scroll-smooth">Автокредит</a>
           </nav>
 
           <Button variant="ghost" className="md:hidden">

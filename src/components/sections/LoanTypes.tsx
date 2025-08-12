@@ -43,8 +43,17 @@ const LoanTypes = () => {
         </header>
         
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-          {loanTypes.map((loan, index) => (
-            <Card key={index} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50">
+          {loanTypes.map((loan, index) => {
+            const getCardId = (index: number) => {
+              switch(index) {
+                case 1: return 'mortgage';
+                case 2: return 'auto';
+                default: return '';
+              }
+            };
+            
+            return (
+            <Card key={index} id={getCardId(index)} className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50">
               <div className={`absolute top-0 right-0 w-32 h-32 ${loan.color} rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity`}></div>
               <CardHeader className="relative">
                 <div className={`w-12 h-12 ${loan.color} rounded-xl flex items-center justify-center mb-4`}>
@@ -90,7 +99,8 @@ const LoanTypes = () => {
                 </Button>
               </CardContent>
             </Card>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
