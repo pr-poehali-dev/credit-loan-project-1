@@ -47,7 +47,7 @@ const Index = () => {
                 <Icon name="CreditCard" size={24} className="text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">ОДОБРЯЕМ</h1>
+                <div className="text-xl font-bold text-gray-900">ОДОБРЯЕМ</div>
                 <p className="text-xs text-gray-500">Финансовые решения</p>
               </div>
             </div>
@@ -73,11 +73,11 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="py-12 md:py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-4 md:mb-6">
+          <div className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-4 md:mb-6">
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               ОДОБРЯЕМ
             </span>
-          </h1>
+          </div>
           <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-4">
             Эксклюзивные кредитные программы для требовательных клиентов. 
             Индивидуальный подход, минимальные ставки, максимальный комфорт.
