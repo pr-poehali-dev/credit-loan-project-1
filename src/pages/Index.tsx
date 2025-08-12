@@ -73,9 +73,7 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <Badge className="mb-6 bg-blue-100 text-blue-800 px-4 py-2">
-            VIP Обслуживание
-          </Badge>
+
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               ОДОБРЯЕМ
