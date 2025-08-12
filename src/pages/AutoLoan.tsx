@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { useEffect } from "react";
+import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/Footer";
 
 const AutoLoan = () => {
   useEffect(() => {
@@ -18,7 +20,9 @@ const AutoLoan = () => {
     }
   }, []);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-50">
+    <>
+      <Header />
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-50">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <Button 
           variant="ghost" 
@@ -325,7 +329,8 @@ const AutoLoan = () => {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
