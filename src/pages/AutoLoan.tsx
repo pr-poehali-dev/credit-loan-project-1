@@ -7,17 +7,93 @@ import Footer from "@/components/sections/Footer";
 
 const AutoLoan = () => {
   useEffect(() => {
-    document.title = "Взять автокредит в 2025 году — лучшие банки, условия и советы";
+    // SEO Title
+    document.title = "Автокредит 2025: ставки банков от 4.5%, без первоначального взноса, новые и б/у авто";
     
+    // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Где выгодно взять автокредит в 2025 году. Банки, автосалоны, автокредит без первоначального взноса и с плохой кредитной историей.');
+      metaDescription.setAttribute('content', 'Автокредит 2025: ставки от 4.5% годовых, без первого взноса, новые и подержанные автомобили. Сбербанк, ВТБ, Газпромбанк. Одобрение с плохой КИ. Калькулятор, требования, оформление онлайн.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Где выгодно взять автокредит в 2025 году. Банки, автосалоны, автокредит без первоначального взноса и с плохой кредитной историей.';
+      meta.content = 'Автокредит 2025: ставки от 4.5% годовых, без первого взноса, новые и подержанные автомобили. Сбербанк, ВТБ, Газпромбанк. Одобрение с плохой КИ. Калькулятор, требования, оформление онлайн.';
       document.getElementsByTagName('head')[0].appendChild(meta);
     }
+    
+    // Keywords meta
+    let keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (!keywordsMeta) {
+      keywordsMeta = document.createElement('meta');
+      keywordsMeta.name = 'keywords';
+      document.getElementsByTagName('head')[0].appendChild(keywordsMeta);
+    }
+    keywordsMeta.setAttribute('content', 'автокредит 2025, кредит на автомобиль, ставки банков, сбербанк автокредит, втб автокредит, газпромбанк, без первоначального взноса, новые автомобили, подержанные авто, плохая кредитная история, калькулятор автокредита, оформить автокредит онлайн');
+    
+    // Open Graph meta tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.getElementsByTagName('head')[0].appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Автокредит 2025: ставки от 4.5% | Новые и б/у авто, без первого взноса');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.getElementsByTagName('head')[0].appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Выгодные условия автокредитования от ведущих банков России. Новые и подержанные автомобили, программы без первого взноса, одобрение с любой КИ.');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.getElementsByTagName('head')[0].appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
+    
+    // Canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.getElementsByTagName('head')[0].appendChild(canonical);
+    }
+    canonical.setAttribute('href', window.location.origin + '/auto-loan');
+    
+    // Structured Data
+    let structuredData = document.querySelector('#structured-data-auto-loan');
+    if (!structuredData) {
+      structuredData = document.createElement('script');
+      structuredData.id = 'structured-data-auto-loan';
+      structuredData.type = 'application/ld+json';
+      document.getElementsByTagName('head')[0].appendChild(structuredData);
+    }
+    structuredData.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Автокредитование",
+      "description": "Автокредиты от ведущих банков России с выгодными условиями для покупки автомобилей",
+      "url": window.location.href,
+      "serviceType": "Автокредитование",
+      "provider": {
+        "@type": "Organization",
+        "name": "ОДОБРЯЕМ"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Автокредит от 4.5% годовых",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "4.5",
+          "priceCurrency": "RUB",
+          "unitText": "% годовых"
+        }
+      }
+    });
   }, []);
 
   return (

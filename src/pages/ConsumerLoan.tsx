@@ -16,11 +16,93 @@ import ConclusionSection from '@/components/consumer-loan/ConclusionSection';
 
 const ConsumerLoan = () => {
   useEffect(() => {
-    document.title = 'Потребительский кредит 2025: ставки банков, калькулятор';
+    // SEO Title
+    document.title = 'Потребительский кредит 2025: ставки банков от 4.5%, калькулятор, условия';
+    
+    // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Потребительские кредиты в банках 2025: сравните ставки от 4.5%, рассчитайте платеж онлайн. Выгодные условия в Сбербанке, ВТБ, Альфа-Банке. Оформите за 5 минут!');
+      metaDescription.setAttribute('content', 'Потребительские кредиты в банках 2025: сравните ставки от 4.5%, рассчитайте платеж онлайн. Выгодные условия в Сбербанке, ВТБ, Альфа-Банке. Одобрение за 5 минут!');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Потребительские кредиты в банках 2025: сравните ставки от 4.5%, рассчитайте платеж онлайн. Выгодные условия в Сбербанке, ВТБ, Альфа-Банке. Одобрение за 5 минут!';
+      document.getElementsByTagName('head')[0].appendChild(meta);
     }
+    
+    // Keywords meta
+    let keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (!keywordsMeta) {
+      keywordsMeta = document.createElement('meta');
+      keywordsMeta.name = 'keywords';
+      document.getElementsByTagName('head')[0].appendChild(keywordsMeta);
+    }
+    keywordsMeta.setAttribute('content', 'потребительский кредит, кредит наличными, ставки банков 2025, калькулятор кредита, сбербанк, втб, альфа-банк, оформить кредит онлайн');
+    
+    // Open Graph meta tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.getElementsByTagName('head')[0].appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Потребительский кредит 2025: ставки от 4.5% | Одобрение за 5 минут');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.getElementsByTagName('head')[0].appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Сравните условия потребительских кредитов от ведущих банков России. Калькулятор, требования, оформление онлайн.');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.getElementsByTagName('head')[0].appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
+    
+    // Canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.getElementsByTagName('head')[0].appendChild(canonical);
+    }
+    canonical.setAttribute('href', window.location.origin + '/consumer-loan');
+    
+    // Structured Data
+    let structuredData = document.querySelector('#structured-data-consumer-loan');
+    if (!structuredData) {
+      structuredData = document.createElement('script');
+      structuredData.id = 'structured-data-consumer-loan';
+      structuredData.type = 'application/ld+json';
+      document.getElementsByTagName('head')[0].appendChild(structuredData);
+    }
+    structuredData.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Потребительский кредит",
+      "description": "Потребительские кредиты от ведущих банков России с выгодными условиями",
+      "url": window.location.href,
+      "serviceType": "Потребительское кредитование",
+      "provider": {
+        "@type": "Organization",
+        "name": "ОДОБРЯЕМ"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Потребительский кредит от 4.5% годовых",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "4.5",
+          "priceCurrency": "RUB",
+          "unitText": "% годовых"
+        }
+      }
+    });
   }, []);
 
   return (

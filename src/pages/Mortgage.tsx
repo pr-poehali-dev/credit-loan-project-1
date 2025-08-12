@@ -13,11 +13,93 @@ import ConclusionSection from '@/components/mortgage/ConclusionSection';
 
 const Mortgage = () => {
   useEffect(() => {
-    document.title = 'Взять ипотеку в 2025: условия банков без первоначального взноса';
+    // SEO Title
+    document.title = 'Ипотека 2025: ставки банков от 6%, семейная ипотека, без первоначального взноса';
+    
+    // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Как взять ипотеку в 2025 году: сравните условия банков, ставки от 6%, возможность без первоначального взноса. Семейная ипотека на новостройки и вторичку.');
+      metaDescription.setAttribute('content', 'Ипотечные кредиты 2025: ставки от 6% годовых, семейная и льготная ипотека, без первого взноса. Сбербанк, ВТБ, Газпромбанк. Новостройки и вторичка. Калькулятор, требования, оформление.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Ипотечные кредиты 2025: ставки от 6% годовых, семейная и льготная ипотека, без первого взноса. Сбербанк, ВТБ, Газпромбанк. Новостройки и вторичка. Калькулятор, требования, оформление.';
+      document.getElementsByTagName('head')[0].appendChild(meta);
     }
+    
+    // Keywords meta
+    let keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (!keywordsMeta) {
+      keywordsMeta = document.createElement('meta');
+      keywordsMeta.name = 'keywords';
+      document.getElementsByTagName('head')[0].appendChild(keywordsMeta);
+    }
+    keywordsMeta.setAttribute('content', 'ипотека 2025, ипотечный кредит, семейная ипотека, льготная ипотека, ставки банков, сбербанк ипотека, втб ипотека, газпромбанк, новостройки, вторичка, калькулятор ипотеки, оформить ипотеку онлайн');
+    
+    // Open Graph meta tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.getElementsByTagName('head')[0].appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Ипотека 2025: ставки от 6% | Семейная ипотека, льготные программы');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.getElementsByTagName('head')[0].appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Выгодные условия ипотечного кредитования от ведущих банков России. Семейная ипотека, льготные программы, новостройки и вторичное жилье.');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.getElementsByTagName('head')[0].appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
+    
+    // Canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.getElementsByTagName('head')[0].appendChild(canonical);
+    }
+    canonical.setAttribute('href', window.location.origin + '/mortgage');
+    
+    // Structured Data
+    let structuredData = document.querySelector('#structured-data-mortgage');
+    if (!structuredData) {
+      structuredData = document.createElement('script');
+      structuredData.id = 'structured-data-mortgage';
+      structuredData.type = 'application/ld+json';
+      document.getElementsByTagName('head')[0].appendChild(structuredData);
+    }
+    structuredData.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Ипотечное кредитование",
+      "description": "Ипотечные кредиты от ведущих банков России с выгодными условиями для покупки жилья",
+      "url": window.location.href,
+      "serviceType": "Ипотечное кредитование",
+      "provider": {
+        "@type": "Organization",
+        "name": "ОДОБРЯЕМ"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Ипотечный кредит от 6% годовых",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "6",
+          "priceCurrency": "RUB",
+          "unitText": "% годовых"
+        }
+      }
+    });
   }, []);
 
   return (
