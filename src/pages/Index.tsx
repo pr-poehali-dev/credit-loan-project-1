@@ -187,7 +187,7 @@ const Index = () => {
                     </div>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-gray-600">Ставка:</span>
-                      <span className="font-bold text-lg text-yellow-600">от 8%</span>
+                      <span className="font-bold text-lg text-yellow-600">от 11%</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-gray-600">Срок:</span>
