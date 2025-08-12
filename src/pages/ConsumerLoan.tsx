@@ -51,9 +51,23 @@ const ConsumerLoan = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Потребительский кредит 2025: полный гид по выбору лучших предложений банков
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
               Потребительский кредит остается одним из самых востребованных финансовых продуктов в России. В 2025 году банки предлагают разнообразные условия кредитования, и важно понимать, как выбрать наиболее выгодное предложение для ваших потребностей.
             </p>
+            
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-12">
+              <img 
+                src="/img/c4d28825-0035-419d-a0f6-c7f10e2c06fe.jpg" 
+                alt="Счастливый человек с кредитной картой - потребительский кредит 2025" 
+                className="w-full h-64 md:h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="text-sm md:text-base font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">
+                  💳 Получите кредит на любые цели с выгодными условиями
+                </p>
+              </div>
+            </div>
           </header>
 
           <div className="prose prose-lg max-w-none">

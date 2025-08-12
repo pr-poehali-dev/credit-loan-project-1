@@ -38,9 +38,23 @@ const AutoLoan = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Взять автокредит в 2025 году — полный гид
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
               Автокредит в 2025 году остаётся одним из самых популярных способов покупки автомобиля, будь то новая или подержанная машина. Возможность взять автокредит есть почти в каждом банке, а автосалоны предлагают программы в сотрудничестве с кредитными организациями.
             </p>
+            
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-12">
+              <img 
+                src="/img/4a1d8a30-7c62-4a23-b4c7-f351755c745e.jpg" 
+                alt="Красивый автомобиль на дороге - автокредит 2025" 
+                className="w-full h-64 md:h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <p className="text-sm md:text-base font-medium bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm">
+                  🚗 Осуществите мечту о новом автомобиле уже сегодня
+                </p>
+              </div>
+            </div>
           </div>
 
           <Card className="border-l-4 border-l-purple-500 shadow-lg">
