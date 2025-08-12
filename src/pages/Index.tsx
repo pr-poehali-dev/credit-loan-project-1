@@ -429,18 +429,62 @@ const Index = () => {
             Вопрос "в каком банке лучше взять кредит в банке" волнует многих заёмщиков. При выборе финансового учреждения следует учитывать несколько ключевых факторов.
           </p>
 
-          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+          <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-6">
             Крупные федеральные банки
           </h3>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 mb-8">
             Банки взять кредит в которых можно на стабильных условиях, включают Сбербанк, ВТБ, Альфа-Банк и другие крупные игроки рынка. Они предлагают широкую линейку продуктов и имеют развитую сеть отделений.
           </p>
-          <ul className="text-gray-700 mb-6 space-y-2">
-            <li>• Сбербанк — лидер по объёму кредитного портфеля</li>
-            <li>• ВТБ — выгодные условия для зарплатных клиентов</li>
-            <li>• Альфа-Банк — быстрое рассмотрение заявок</li>
-            <li>• Тинькофф Банк — удобное онлайн-обслуживание</li>
-          </ul>
+          
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">S</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Сбербанк</h4>
+                  <p className="text-sm text-gray-600">лидер по объёму кредитного портфеля</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">В</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">ВТБ</h4>
+                  <p className="text-sm text-gray-600">выгодные условия для зарплатных клиентов</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">А</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Альфа-Банк</h4>
+                  <p className="text-sm text-gray-600">быстрое рассмотрение заявок</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 border border-yellow-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">Т</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Тинькофф Банк</h4>
+                  <p className="text-sm text-gray-600">удобное онлайн-обслуживание</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
             Региональные банки
