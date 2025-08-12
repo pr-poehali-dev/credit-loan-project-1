@@ -95,6 +95,18 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Main H1 Title */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Где и как взять кредит на выгодных условиях
+          </h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Получите кредит от ведущих банков России. Мгновенное одобрение, минимальные ставки.
+          </p>
+        </div>
+      </section>
+
       {/* Partner Banks - Referral Section */}
       <section className="py-12 md:py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
@@ -384,10 +396,7 @@ const Index = () => {
       {/* SEO Content Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto prose prose-lg prose-blue">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8">
-            Где и как взять кредит на выгодных условиях — советы, банки и онлайн-оформление
-          </h1>
-          
+
           <p className="text-xl text-gray-700 mb-8 leading-relaxed">
             В современном мире финансовые потребности граждан растут, и многие задаются вопросом: где взять кредит на выгодных условиях? Выбор банка и кредитного продукта — ответственное решение, которое требует тщательного изучения рынка и понимания собственных возможностей.
           </p>
