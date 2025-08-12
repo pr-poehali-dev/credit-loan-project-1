@@ -57,8 +57,8 @@ const ConsumerLoan = () => {
             
             <div className="relative overflow-hidden rounded-2xl shadow-2xl mb-12">
               <img 
-                src="/img/b8c82b73-9a7a-4ce9-ba82-4d6720b44359.jpg" 
-                alt="Улыбающаяся женщина с кредитной картой - потребительский кредит 2025" 
+                src="/img/bc9fa1c5-c055-427f-9f26-f8b3297cbc89.jpg" 
+                alt="Уверенный человек с кредитной картой - потребительский кредит 2025" 
                 className="w-full h-64 md:h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
