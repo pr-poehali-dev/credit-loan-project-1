@@ -120,6 +120,129 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partner Banks - Referral Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-green-100 text-green-800 px-4 py-2">
+              Банки-партнёры
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Быстрые кредиты от ведущих банков</h2>
+            <p className="text-xl text-gray-600">Мгновенное одобрение и выдача средств</p>
+          </div>
+          
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Сбербанк */}
+            <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-green-200 bg-white">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+              <CardHeader className="relative text-center pb-4">
+                <div className="w-20 h-20 bg-green-600 rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg">
+                  <span className="text-white font-bold text-2xl">S</span>
+                </div>
+                <CardTitle className="text-2xl text-gray-900">Сбербанк</CardTitle>
+                <CardDescription className="text-lg font-medium text-green-700">Деньги до зарплаты</CardDescription>
+              </CardHeader>
+              <CardContent className="relative text-center">
+                <div className="space-y-4 mb-8">
+                  <div className="bg-green-50 rounded-lg p-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-gray-600">Сумма:</span>
+                      <span className="font-bold text-lg">до 300 000 ₽</span>
+                    </div>
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-gray-600">Ставка:</span>
+                      <span className="font-bold text-lg text-green-600">от 4.9%</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-600">Срок:</span>
+                      <span className="font-bold text-lg">до 5 лет</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                    <Icon name="Clock" size={16} />
+                    <span>Решение за 2 минуты</span>
+                  </div>
+                  
+                  <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                    <Icon name="Shield" size={16} />
+                    <span>Без справок и поручителей</span>
+                  </div>
+                </div>
+                
+                <Button 
+                  size="lg" 
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <Icon name="ExternalLink" className="mr-2" size={20} />
+                  Получить кредит
+                </Button>
+                
+                <p className="text-xs text-gray-500 mt-3">
+                  * Условия могут изменяться банком
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Placeholder для второго банка */}
+            <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-blue-200 bg-white opacity-75">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full -translate-y-16 translate-x-16 opacity-10"></div>
+              <CardHeader className="relative text-center pb-4">
+                <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg">
+                  <Icon name="Building2" size={32} className="text-white" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">Банк №2</CardTitle>
+                <CardDescription className="text-lg font-medium text-blue-700">Скоро здесь</CardDescription>
+              </CardHeader>
+              <CardContent className="relative text-center">
+                <div className="space-y-4 mb-8">
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <p className="text-gray-600">Готовим лучшие условия для вас</p>
+                  </div>
+                </div>
+                
+                <Button 
+                  size="lg" 
+                  disabled
+                  className="w-full bg-gray-400 text-white font-semibold py-4 text-lg"
+                >
+                  <Icon name="Clock" className="mr-2" size={20} />
+                  Скоро
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Placeholder для третьего банка */}
+            <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-purple-200 bg-white opacity-75">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full -translate-y-16 translate-x-16 opacity-10"></div>
+              <CardHeader className="relative text-center pb-4">
+                <div className="w-20 h-20 bg-purple-600 rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg">
+                  <Icon name="Building2" size={32} className="text-white" />
+                </div>
+                <CardTitle className="text-2xl text-gray-900">Банк №3</CardTitle>
+                <CardDescription className="text-lg font-medium text-purple-700">Скоро здесь</CardDescription>
+              </CardHeader>
+              <CardContent className="relative text-center">
+                <div className="space-y-4 mb-8">
+                  <div className="bg-purple-50 rounded-lg p-4">
+                    <p className="text-gray-600">Готовим лучшие условия для вас</p>
+                  </div>
+                </div>
+                
+                <Button 
+                  size="lg" 
+                  disabled
+                  className="w-full bg-gray-400 text-white font-semibold py-4 text-lg"
+                >
+                  <Icon name="Clock" className="mr-2" size={20} />
+                  Скоро
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Loan Types */}
       <section id="loans" className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
