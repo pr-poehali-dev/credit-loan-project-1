@@ -68,7 +68,7 @@ const Index = () => {
                 <Icon name="CreditCard" size={24} className="text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">PREMIUM CREDIT</h1>
+                <h1 className="text-xl font-bold text-gray-900">ОДОБРЯЕМ</h1>
                 <p className="text-xs text-gray-500">Финансовые решения</p>
               </div>
             </div>
@@ -98,9 +98,8 @@ const Index = () => {
             VIP Обслуживание
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            PREMIUM
             <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              CREDIT
+              ОДОБРЯЕМ
             </span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -582,7 +581,7 @@ const Index = () => {
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                   <Icon name="CreditCard" size={16} className="text-white" />
                 </div>
-                <span className="font-bold text-gray-900">PREMIUM CREDIT</span>
+                <span className="font-bold text-gray-900">ОДОБРЯЕМ</span>
               </div>
               <p className="text-gray-600 text-sm">
                 Надёжные финансовые решения для вашего будущего
@@ -626,7 +625,7 @@ const Index = () => {
           </div>
           
           <div className="border-t mt-8 pt-8 text-center text-sm text-gray-600">
-            © 2024 Premium Credit. Все права защищены.
+            © 2024 Одобряем. Все права защищены.
           </div>
         </div>
       </footer>
