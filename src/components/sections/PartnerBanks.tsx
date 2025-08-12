@@ -124,7 +124,7 @@ const PartnerBanks = () => {
                 <a 
                   href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6598&p=9546&erid=LjN8KSBL4"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                 >
                   <Icon name="ExternalLink" className="mr-2" size={20} />
                   Получить кредит
