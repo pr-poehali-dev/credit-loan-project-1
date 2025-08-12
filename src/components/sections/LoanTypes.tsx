@@ -68,8 +68,17 @@ const LoanTypes = () => {
                     <span className="font-semibold">{loan.term}</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gray-900 hover:bg-gray-800">
-                  Подробнее
+                <Button 
+                  className="w-full bg-gray-900 hover:bg-gray-800"
+                  asChild={index === 0}
+                >
+                  {index === 0 ? (
+                    <a href="/consumer-loan">
+                      Подробнее
+                    </a>
+                  ) : (
+                    "Подробнее"
+                  )}
                 </Button>
               </CardContent>
             </Card>
