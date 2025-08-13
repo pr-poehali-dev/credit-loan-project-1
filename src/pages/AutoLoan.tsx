@@ -428,7 +428,7 @@ const AutoLoan = () => {
                           </div>
                           <div className="flex justify-between items-center mb-2">
                             <span className="text-sm md:text-base text-gray-600">Ставка:</span>
-                            <span className="font-bold text-base md:text-lg text-red-600">от 5.5%</span>
+                            <span className="font-bold text-base md:text-lg text-red-600">от 14.5%</span>
                           </div>
                           <div className="flex justify-between items-center">
                             <span className="text-sm md:text-base text-gray-600">Срок:</span>
