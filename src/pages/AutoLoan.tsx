@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { useEffect } from "react";
 import Header from "@/components/sections/Header";
@@ -186,32 +186,7 @@ const AutoLoan = () => {
                     </p>
                   </div>
 
-                  <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                      <Icon name="Car" size={20} className="text-green-600" />
-                      Совкомбанк - Автокредит
-                    </h3>
-                    <p className="text-gray-700 mb-4 leading-relaxed">
-                      Надежный банк с выгодными условиями автокредитования для российских семей.
-                    </p>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="bg-white rounded-lg px-3 py-2 border border-green-200">
-                        <span className="text-sm text-gray-600">Ставка от</span>
-                        <div className="text-xl font-bold text-green-600">5.5%</div>
-                      </div>
-                      <div className="bg-white rounded-lg px-3 py-2 border border-green-200">
-                        <span className="text-sm text-gray-600">Сумма до</span>
-                        <div className="text-xl font-bold text-green-600">5 млн ₽</div>
-                      </div>
-                      <div className="bg-white rounded-lg px-3 py-2 border border-green-200">
-                        <span className="text-sm text-gray-600">Срок до</span>
-                        <div className="text-xl font-bold text-green-600">7 лет</div>
-                      </div>
-                    </div>
-                    <Button className="bg-green-600 hover:bg-green-700 text-white">
-                      Оформить автокредит в Совкомбанке
-                    </Button>
-                  </div>
+
 
                   <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
@@ -416,6 +391,75 @@ const AutoLoan = () => {
                     <Icon name="Scale" size={20} className="text-pink-600 mt-1 flex-shrink-0" />
                     <span className="text-gray-700">Если есть сомнения, что лучше — кредит или автокредит, посчитайте переплату в обоих случаях.</span>
                   </div>
+                </div>
+              </section>
+
+              <section className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl shadow-lg p-8">
+                <div className="text-center mb-12">
+                  <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-full mb-6">
+                    <Icon name="Building2" size={24} />
+                    <span className="font-semibold">Банки-партнёры</span>
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Автокредиты от ведущих банков</h2>
+                  <p className="text-lg text-gray-600">Выгодные условия и быстрое одобрение</p>
+                </div>
+                
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {/* Совкомбанк */}
+                  <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-red-200 bg-white">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-red-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                    <div className="relative text-center p-6">
+                      <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
+                        <img 
+                          src="https://cdn.poehali.dev/files/1c25f927-7d45-4cd8-99f5-cf64c1621436.jpg" 
+                          alt="Совкомбанк - автокредит" 
+                          className="w-12 h-12 object-contain"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Совкомбанк</h3>
+                      <p className="text-base md:text-lg font-medium text-red-700 mb-6">Автокредит</p>
+                      
+                      <div className="space-y-4 mb-8">
+                        <div className="bg-red-50 rounded-lg p-4">
+                          <div className="flex justify-between items-center mb-2">
+                            <span className="text-sm md:text-base text-gray-600">Сумма:</span>
+                            <span className="font-bold text-base md:text-lg">до 5 млн ₽</span>
+                          </div>
+                          <div className="flex justify-between items-center mb-2">
+                            <span className="text-sm md:text-base text-gray-600">Ставка:</span>
+                            <span className="font-bold text-base md:text-lg text-red-600">от 5.5%</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-sm md:text-base text-gray-600">Срок:</span>
+                            <span className="font-bold text-base md:text-lg">до 7 лет</span>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                          <Icon name="Car" size={16} />
+                          <span>Новые и б/у автомобили</span>
+                        </div>
+                        
+                        <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                          <Icon name="Shield" size={16} />
+                          <span>Без первоначального взноса</span>
+                        </div>
+                      </div>
+                      
+                      <Button 
+                        size="lg" 
+                        className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                      >
+                        <Icon name="ExternalLink" className="mr-2" size={20} />
+                        Оформить автокредит
+                      </Button>
+                      
+                      <p className="text-xs text-gray-500 mt-3">
+                        * Условия могут изменяться банком
+                      </p>
+                    </div>
+                  </Card>
                 </div>
               </section>
 
