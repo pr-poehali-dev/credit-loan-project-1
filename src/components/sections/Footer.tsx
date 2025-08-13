@@ -22,10 +22,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Продукты</h3>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li>Потребительские кредиты</li>
-              <li>Ипотечное кредитование</li>
-              <li>Автокредитование</li>
-              <li>Рефинансирование</li>
+              <li><a href="/consumer-loan" className="hover:text-blue-600 transition-colors">Потребительские кредиты</a></li>
+              <li><a href="/mortgage" className="hover:text-blue-600 transition-colors">Ипотечное кредитование</a></li>
+              <li><a href="/auto-loan" className="hover:text-blue-600 transition-colors">Автокредитование</a></li>
+              <li><a href="/debit-cards" className="hover:text-blue-600 transition-colors">Дебетовые карты</a></li>
             </ul>
           </div>
           
