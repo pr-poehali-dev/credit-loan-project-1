@@ -1,4 +1,6 @@
 import Icon from '@/components/ui/icon';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 const BankComparisonSection = () => {
   return (
@@ -16,6 +18,83 @@ const BankComparisonSection = () => {
         <h3 className="text-xl font-semibold text-gray-900 mb-6">
           В каком банке взять ипотеку выгоднее
         </h3>
+      </div>
+
+      {/* Секция с банками-партнерами */}
+      <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 mb-8">
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 rounded-full mb-4">
+            <Icon name="Building2" size={20} />
+            <span className="font-semibold">Банки-партнёры</span>
+          </div>
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Ипотека от ведущих банков</h3>
+          <p className="text-gray-600">Выгодные условия и быстрое одобрение</p>
+        </div>
+        
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* Совкомбанк */}
+          <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-red-200 bg-white p-6">
+            <div className="absolute top-0 right-0 w-20 h-20 bg-red-500 rounded-full -translate-y-10 translate-x-10 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div className="relative text-center">
+              <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md border border-gray-200">
+                <img 
+                  src="https://cdn.poehali.dev/files/1c25f927-7d45-4cd8-99f5-cf64c1621436.jpg" 
+                  alt="Совкомбанк - ипотека" 
+                  className="w-10 h-10 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <h4 className="text-lg font-bold text-gray-900 mb-1">Совкомбанк</h4>
+              <p className="text-sm font-medium text-red-700 mb-4">Ипотека</p>
+              
+              <div className="space-y-3 mb-6">
+                <div className="bg-red-50 rounded-lg p-3">
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="text-gray-600">Сумма:</span>
+                    <span className="font-bold">до 30 млн ₽</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm mt-1">
+                    <span className="text-gray-600">Ставка:</span>
+                    <span className="font-bold text-red-600">от 8.5%</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm mt-1">
+                    <span className="text-gray-600">Срок:</span>
+                    <span className="font-bold">до 30 лет</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-1 text-xs text-gray-600">
+                  <Icon name="Home" size={14} />
+                  <span>Новостройки и вторичка</span>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-1 text-xs text-gray-600">
+                  <Icon name="Shield" size={14} />
+                  <span>От 10% первый взнос</span>
+                </div>
+              </div>
+              
+              <Button 
+                size="sm" 
+                className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300"
+                asChild
+              >
+                <a 
+                  href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6949&p=9546&erid=2W5zFK4STJg"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <Icon name="ExternalLink" className="mr-1" size={16} />
+                  Оформить ипотеку
+                </a>
+              </Button>
+              
+              <p className="text-xs text-gray-500 mt-2">
+                * Условия могут изменяться банком
+              </p>
+            </div>
+          </Card>
+        </div>
       </div>
 
       <div className="grid lg:grid-cols-2 gap-6 mb-8">
