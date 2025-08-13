@@ -42,7 +42,7 @@ const DebitCardsHero = () => {
         {/* Обложка с изображением */}
         <div className="mt-12 rounded-xl overflow-hidden shadow-2xl">
           <img 
-            src="https://cdn.poehali.dev/files/2dca4679-2162-4ad0-bc23-3d9e811d6448.jpg"
+            src="/img/15e2c579-2731-4db9-834a-c3cd7bf600df.jpg"
             alt="Дебетовые карты банков 2025"
             className="w-full h-64 md:h-80 lg:h-96 object-cover"
           />
