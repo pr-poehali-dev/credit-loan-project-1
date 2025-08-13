@@ -22,9 +22,7 @@ const DebitCardsHero = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-600 rounded-full mb-4">
             <Icon name="Wallet" size={32} className="text-white" />
           </div>
-          <div className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
-            💳 Дебетовые карты 2025
-          </div>
+          <div className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">💳 Дебетовые карты </div>
         </div>
 
         <div className="text-center">
