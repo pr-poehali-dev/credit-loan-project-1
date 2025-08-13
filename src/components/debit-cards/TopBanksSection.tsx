@@ -212,8 +212,12 @@ const TopBanksSection = () => {
           {/* МТС Банк */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mr-4">
-                <Icon name="CreditCard" className="text-white" size={24} />
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/18969298-ba70-42de-ac9c-a8083a775752.png" 
+                  alt="МТС Банк логотип" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900">МТС Банк</h3>
             </div>
