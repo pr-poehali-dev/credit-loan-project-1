@@ -31,6 +31,15 @@ const LoanTypes = () => {
       icon: 'Car',
       description: 'Новые и подержанные автомобили',
       color: 'bg-purple-600'
+    },
+    {
+      title: 'Дебетовые карты',
+      rate: 'до 7%',
+      amount: 'кэшбэк до 33%',
+      term: 'бесплатно',
+      icon: 'Wallet',
+      description: 'Карты с выгодными условиями',
+      color: 'bg-orange-600'
     }
   ];
 
@@ -42,12 +51,13 @@ const LoanTypes = () => {
           <p className="text-lg md:text-xl text-gray-600 px-4">Выберите подходящий для вас тип кредитования</p>
         </header>
         
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {loanTypes.map((loan, index) => {
             const getCardId = (index: number) => {
               switch(index) {
                 case 1: return 'mortgage';
                 case 2: return 'auto';
+                case 3: return 'debit-cards';
                 default: return '';
               }
             };
@@ -79,7 +89,7 @@ const LoanTypes = () => {
                 </div>
                 <Button 
                   className="w-full bg-gray-900 hover:bg-gray-800"
-                  asChild={index === 0 || index === 1 || index === 2}
+                  asChild={index === 0 || index === 1 || index === 2 || index === 3}
                 >
                   {index === 0 ? (
                     <a href="/consumer-loan">
@@ -91,6 +101,10 @@ const LoanTypes = () => {
                     </a>
                   ) : index === 2 ? (
                     <a href="/auto-loan">
+                      Подробнее
+                    </a>
+                  ) : index === 3 ? (
+                    <a href="/debit-cards">
                       Подробнее
                     </a>
                   ) : (
