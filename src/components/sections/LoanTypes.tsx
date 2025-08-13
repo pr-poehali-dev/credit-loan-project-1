@@ -6,7 +6,7 @@ import Icon from '@/components/ui/icon';
 const LoanTypes = () => {
   const loanTypes = [
     {
-      title: 'Потребительский кредит',
+      title: 'Потребительский',
       rate: 'от 5.9%',
       amount: 'до 5 млн ₽',
       term: 'до 7 лет',
