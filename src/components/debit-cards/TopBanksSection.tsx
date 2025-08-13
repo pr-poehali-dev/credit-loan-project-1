@@ -251,8 +251,17 @@ const TopBanksSection = () => {
                 Бесплатное обслуживание карты
               </div>
             </div>
-            <Button className="w-full bg-red-600 hover:bg-red-700">
-              Оформить карту
+            <Button 
+              className="w-full bg-red-600 hover:bg-red-700"
+              asChild
+            >
+              <a 
+                href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6766&p=9546&erid=LjN8KHkKD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Оформить карту
+              </a>
             </Button>
           </div>
         </div>
