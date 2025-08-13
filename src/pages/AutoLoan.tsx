@@ -114,7 +114,7 @@ const AutoLoan = () => {
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-full mb-6">
                 <Icon name="Car" size={24} />
-                <span className="font-semibold">Автокредит 2025</span>
+                <span className="font-semibold">Автокредит </span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 Взять автокредит в 2025 году — полный гид
