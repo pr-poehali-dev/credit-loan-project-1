@@ -51,7 +51,7 @@ const LoanTypes = () => {
           <p className="text-lg md:text-xl text-gray-600 px-4">Выберите подходящий для вас тип кредитования</p>
         </header>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
           {loanTypes.map((loan, index) => {
             const getCardId = (index: number) => {
               switch(index) {
