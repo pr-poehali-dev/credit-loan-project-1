@@ -22,8 +22,12 @@ const TopBanksSection = () => {
               Популярный
             </div>
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
-                <Icon name="CreditCard" className="text-white" size={24} />
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/9b4f5a12-30fc-4131-9894-a36140607880.png" 
+                  alt="Альфа-Банк логотип" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Альфа-Банк</h3>
             </div>
@@ -56,8 +60,12 @@ const TopBanksSection = () => {
           {/* ВТБ */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
-                <Icon name="CreditCard" className="text-white" size={24} />
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/33088dd0-04f7-440c-a15a-c31a0df99e73.jpeg" 
+                  alt="ВТБ логотип" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900">ВТБ</h3>
             </div>
@@ -90,8 +98,12 @@ const TopBanksSection = () => {
           {/* Тинькофф */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mr-4">
-                <Icon name="CreditCard" className="text-white" size={24} />
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/84ed8de6-276a-4766-8272-b3ffe9b8dd2d.jpg" 
+                  alt="Тинькофф логотип" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Тинькофф</h3>
             </div>
@@ -124,8 +136,12 @@ const TopBanksSection = () => {
           {/* Сбербанк */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
-                <Icon name="CreditCard" className="text-white" size={24} />
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/f18a694f-e978-42e9-9578-b7f6d2130161.jpg" 
+                  alt="Сбербанк логотип" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Сбербанк</h3>
             </div>
@@ -158,8 +174,12 @@ const TopBanksSection = () => {
           {/* ОЗОН Банк */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
-                <Icon name="CreditCard" className="text-white" size={24} />
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/5c271b2c-fc71-444a-8904-34e3522b7c19.jpg" 
+                  alt="ОЗОН Банк логотип" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900">ОЗОН Банк</h3>
             </div>
