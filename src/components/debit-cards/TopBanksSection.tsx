@@ -90,8 +90,17 @@ const TopBanksSection = () => {
                 Широкая сеть банкоматов
               </div>
             </div>
-            <Button className="w-full bg-blue-600 hover:bg-blue-700">
-              Оформить карту
+            <Button 
+              className="w-full bg-blue-600 hover:bg-blue-700"
+              asChild
+            >
+              <a 
+                href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=7040&p=9546&erid=2W5zFJiwtFA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Оформить карту
+              </a>
             </Button>
           </div>
 
