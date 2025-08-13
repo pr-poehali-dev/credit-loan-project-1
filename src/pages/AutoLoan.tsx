@@ -186,6 +186,33 @@ const AutoLoan = () => {
                     </p>
                   </div>
 
+                  <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                      <Icon name="Car" size={20} className="text-green-600" />
+                      Совкомбанк - Автокредит
+                    </h3>
+                    <p className="text-gray-700 mb-4 leading-relaxed">
+                      Надежный банк с выгодными условиями автокредитования для российских семей.
+                    </p>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="bg-white rounded-lg px-3 py-2 border border-green-200">
+                        <span className="text-sm text-gray-600">Ставка от</span>
+                        <div className="text-xl font-bold text-green-600">5.5%</div>
+                      </div>
+                      <div className="bg-white rounded-lg px-3 py-2 border border-green-200">
+                        <span className="text-sm text-gray-600">Сумма до</span>
+                        <div className="text-xl font-bold text-green-600">5 млн ₽</div>
+                      </div>
+                      <div className="bg-white rounded-lg px-3 py-2 border border-green-200">
+                        <span className="text-sm text-gray-600">Срок до</span>
+                        <div className="text-xl font-bold text-green-600">7 лет</div>
+                      </div>
+                    </div>
+                    <Button className="bg-green-600 hover:bg-green-700 text-white">
+                      Оформить автокредит в Совкомбанке
+                    </Button>
+                  </div>
+
                   <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
                       <Icon name="Store" size={20} className="text-blue-600" />
