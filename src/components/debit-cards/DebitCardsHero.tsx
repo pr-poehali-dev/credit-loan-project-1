@@ -42,8 +42,8 @@ const DebitCardsHero = () => {
         {/* Обложка с изображением */}
         <div className="mt-12 rounded-xl overflow-hidden shadow-2xl">
           <img 
-            src="/img/15e2c579-2731-4db9-834a-c3cd7bf600df.jpg"
-            alt="Дебетовые карты банков 2025"
+            src="https://cdn.poehali.dev/files/2873978a-b912-4d14-ae37-712ab991e042.jpg"
+            alt="Дебетовые карты Альфа-Банк и Тинькофф"
             className="w-full h-64 md:h-80 lg:h-96 object-cover"
           />
         </div>
