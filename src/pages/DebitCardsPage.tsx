@@ -1,564 +1,578 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import Icon from '@/components/ui/icon';
 import Header from '@/components/sections/Header';
 import Footer from '@/components/sections/Footer';
-import Hero from '@/components/sections/Hero';
-import BankOffers from '@/components/sections/BankOffers';
-import HowItWorks from '@/components/sections/HowItWorks';
-import FAQ from '@/components/sections/FAQ';
-import CallToAction from '@/components/sections/CallToAction';
-import FeaturesGrid from '@/components/sections/FeaturesGrid';
-import ComparisonTable from '@/components/sections/ComparisonTable';
 
 const DebitCardsPage = () => {
-  const heroData = {
-    title: "Дебетовые карты банков 2025",
-    subtitle: "Выбор дебетовой карты в 2025 году стал особенно актуальным вопросом для российских потребителей. Современные банки предлагают широкий спектр дебетовых карт с различными условиями обслуживания, программами кэшбэка и дополнительными услугами. В этом обзоре мы рассмотрим лучшие предложения от ведущих банков России и поможем вам заказать дебетовую карту, которая максимально соответствует вашим потребностям.",
-    ctaText: "Выбрать дебетовую карту",
-    backgroundImage: "bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700"
-  };
-
-  const banks = [
-    {
-      name: "Альфа-Банк",
-      description: "Лидер по популярности поисковых запросов. Дебетовая карта Альфа-Банка привлекает клиентов бесплатным обслуживанием и выгодными условиями кэшбэка.",
-      rate: "до 33%",
-      features: [
-        "Бесплатная дебетовая карта навсегда",
-        "Доставка карты на дом", 
-        "Кэшбэк до 33% в категориях",
-        "Процент на остаток до 7%"
-      ],
-      color: "bg-red-500",
-      isPopular: true
-    },
-    {
-      name: "ВТБ",
-      description: "Дебетовая карта ВТБ занимает второе место по популярности среди пользователей. Банк предлагает надежные условия обслуживания.",
-      rate: "до 15%", 
-      features: [
-        "Карта с бесплатным обслуживанием",
-        "Онлайн-оформление за 5 минут",
-        "Кэшбэк в популярных категориях",
-        "Широкая сеть банкоматов"
-      ],
-      color: "bg-blue-600"
-    },
-    {
-      name: "Тинькофф",
-      description: "Дебетовая карта Тинькофф известна инновационными решениями и удобным мобильным приложением.",
-      rate: "до 30%",
-      features: [
-        "100% онлайн-банк",
-        "Бесплатная доставка дебетовой карты", 
-        "Процент на остаток",
-        "Развитая программа лояльности"
-      ],
-      color: "bg-yellow-500"
-    },
-    {
-      name: "Сбербанк",
-      description: "Дебетовая карта Сбербанка остается классическим выбором для консервативных клиентов.",
-      rate: "до 10%",
-      features: [
-        "Самая большая сеть отделений",
-        "Надежность и стабильность",
-        "Различные типы дебетовых карт",
-        "Интеграция с госуслугами"
-      ],
-      color: "bg-green-600"
-    },
-    {
-      name: "ОЗОН Банк", 
-      description: "Растущая популярность дебетовой карты ОЗОН связана с интеграцией с экосистемой интернет-торговли.",
-      rate: "до 25%",
-      features: [
-        "Кэшбэк за покупки в ОЗОН",
-        "Быстрое оформление онлайн",
-        "Интеграция с маркетплейсом", 
-        "Современный дизайн карты"
-      ],
-      color: "bg-purple-600"
-    },
-    {
-      name: "МТС Банк",
-      description: "Дебетовая карта МТС Банка предлагает уникальные возможности для клиентов оператора связи.",
-      rate: "до 20%",
-      features: [
-        "Кэшбэк за мобильную связь",
-        "Интеграция с услугами МТС",
-        "Выгодные тарифы",
-        "Бесплатное обслуживание карты"
-      ],
-      color: "bg-red-600"
+  useEffect(() => {
+    // SEO Title
+    document.title = 'Заказать Дебетовую карту : сравнение условий и выбор лучшей карты';
+    
+    // Meta Description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Полное руководство по выбору лучшей дебетовой карты с бесплатным обслуживанием. Заказать карту из банка.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Полное руководство по выбору лучшей дебетовой карты с бесплатным обслуживанием. Заказать карту из банка.';
+      document.getElementsByTagName('head')[0].appendChild(meta);
     }
-  ];
-
-  const steps = [
-    {
-      title: "Выберите банк",
-      description: "Сравните предложения банков и выберите карту с подходящими условиями"
-    },
-    {
-      title: "Подайте онлайн-заявку",
-      description: "Заполните заявку на сайте банка за 5-10 минут"
-    },
-    {
-      title: "Получите одобрение",
-      description: "Дождитесь решения банка в течение 5-15 минут"
-    },
-    {
-      title: "Получите карту",
-      description: "Получите карту курьером на дом или в отделении банка"
+    
+    // Keywords meta
+    let keywordsMeta = document.querySelector('meta[name="keywords"]');
+    if (!keywordsMeta) {
+      keywordsMeta = document.createElement('meta');
+      keywordsMeta.name = 'keywords';
+      document.getElementsByTagName('head')[0].appendChild(keywordsMeta);
     }
-  ];
-
-  const features = [
-    {
-      title: "Бесплатная дебетовая карта",
-      description: "Большинство современных банков предлагают карты без платы за обслуживание при соблюдении определенных условий."
-    },
-    {
-      title: "Кэшбэк программы",
-      description: "Получайте возврат средств за покупки в различных категориях: рестораны, АЗС, супермаркеты."
-    },
-    {
-      title: "Процент на остаток",
-      description: "Многие дебетовые карты предлагают начисление процентов на остаток средств на счете от 3% до 8% годовых."
-    },
-    {
-      title: "Доставка на дом",
-      description: "Заказать дебетовую карту с доставкой на дом особенно актуально для занятых людей и жителей удаленных районов."
-    },
-    {
-      title: "Мобильное приложение",
-      description: "Удобные мобильные приложения для управления картой и контроля расходов 24/7."
-    },
-    {
-      title: "Широкая сеть банкоматов",
-      description: "Снимайте наличные без комиссии в банкоматах партнерской сети по всей России."
+    keywordsMeta.setAttribute('content', 'дебетовая карта, заказать дебетовую карту, бесплатная дебетовая карта, дебетовая карта онлайн, кэшбэк карта, банки россии, альфа банк, втб, тинькофф, сбербанк, озон банк, мтс банк');
+    
+    // Open Graph meta tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.getElementsByTagName('head')[0].appendChild(ogTitle);
     }
-  ];
+    ogTitle.setAttribute('content', 'Заказать Дебетовую карту : сравнение условий и выбор лучшей карты');
 
-  const comparisonData = [
-    {
-      bank: "Альфа-Банк",
-      cashback: "До 33%",
-      categories: "Рестораны, АЗС, супермаркеты",
-      interestRate: "До 7%",
-      freeService: "Да"
-    },
-    {
-      bank: "Тинькофф", 
-      cashback: "До 30%",
-      categories: "Категории на выбор",
-      interestRate: "До 6%",
-      freeService: "Да"
-    },
-    {
-      bank: "ВТБ",
-      cashback: "До 15%", 
-      categories: "Транспорт, развлечения",
-      interestRate: "До 5%",
-      freeService: "Да"
-    },
-    {
-      bank: "ОЗОН Банк",
-      cashback: "До 25%",
-      categories: "ОЗОН, интернет-покупки",
-      interestRate: "До 8%",
-      freeService: "Да"
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.getElementsByTagName('head')[0].appendChild(ogDescription);
     }
-  ];
+    ogDescription.setAttribute('content', 'Полное руководство по выбору лучшей дебетовой карты с бесплатным обслуживанием. Заказать карту из банка.');
 
-  const faqs = [
-    {
-      question: "Почему дебетовые карты так популярны?",
-      answer: "Согласно анализу поисковых запросов, интерес к дебетовым картам достигает почти миллиона запросов в месяц. Пользователи активно ищут информацию о том, как оформить дебетовую карту онлайн, какие банки предлагают бесплатное обслуживание и доставку карт на дом."
-    },
-    {
-      question: "Как заказать дебетовую карту онлайн?",
-      answer: "Выберите банк и тип карты, заполните онлайн-заявку, дождитесь одобрения (5-15 минут), получите карту курьером или в отделении."
-    },
-    {
-      question: "Какие документы нужны для оформления дебетовой карты?",
-      answer: "Для оформления дебетовой карты обычно требуется только паспорт гражданина РФ. Некоторые банки могут запросить справку о доходах для премиальных карт."
-    },
-    {
-      question: "Можно ли получить дебетовую карту с доставкой на дом?",
-      answer: "Да, большинство банков предлагают бесплатную доставку дебетовых карт курьером. Это особенно удобно для жителей удаленных районов и занятых людей."
-    },
-    {
-      question: "Что такое виртуальная дебетовая карта?",
-      answer: "Виртуальная дебетовая карта - это современное решение для онлайн-покупок без физического носителя. Вы получаете номер карты мгновенно и можете использовать её для безопасных интернет-платежей."
-    },
-    {
-      question: "Какие ошибки часто допускают при выборе дебетовой карты?",
-      answer: "Основные ошибки: выбор только по размеру кэшбэка, игнорирование условий бесплатного обслуживания, неучет лимитов и ограничений, выбор без учета личных потребностей."
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.getElementsByTagName('head')[0].appendChild(ogType);
     }
-  ];
+    ogType.setAttribute('content', 'website');
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FinancialService",
-    "name": "Дебетовые карты банков 2025",
-    "description": "Полное руководство по выбору лучшей дебетовой карты с бесплатным обслуживанием. Заказать карту из банка.",
-    "provider": {
-      "@type": "Organization", 
-      "name": "ОДОБРЯЕМ"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Дебетовые карты",
-      "itemListElement": banks.map(bank => ({
-        "@type": "Offer",
-        "name": bank.name,
-        "description": bank.description,
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "0",
-          "priceCurrency": "RUB"
-        }
-      }))
+    // Canonical link
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.getElementsByTagName('head')[0].appendChild(canonical);
     }
-  };
+    canonical.setAttribute('href', window.location.origin + '/debit-cards');
+
+    // JSON-LD structured data
+    const jsonLdScript = document.createElement('script');
+    jsonLdScript.type = 'application/ld+json';
+    jsonLdScript.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Дебетовые карты банков 2025",
+      "description": "Полное руководство по выбору лучшей дебетовой карты с бесплатным обслуживанием. Заказать карту из банка.",
+      "provider": {
+        "@type": "Organization", 
+        "name": "ОДОБРЯЕМ"
+      }
+    });
+    document.getElementsByTagName('head')[0].appendChild(jsonLdScript);
+
+    // Cleanup function
+    return () => {
+      if (jsonLdScript.parentNode) {
+        jsonLdScript.parentNode.removeChild(jsonLdScript);
+      }
+    };
+  }, []);
 
   return (
-    <>
-      <Helmet>
-        <title>Заказать Дебетовую карту : сравнение условий и выбор лучшей карты</title>
-        <meta name="description" content="Полное руководство по выбору лучшей дебетовой карты с бесплатным обслуживанием. Заказать карту из банка." />
-        <meta name="keywords" content="дебетовая карта, заказать дебетовую карту, бесплатная дебетовая карта, дебетовая карта онлайн, кэшбэк карта, банки россии, альфа банк, втб, тинькофф, сбербанк, озон банк, мтс банк" />
-        <link rel="canonical" href="https://example.com/debit-cards" />
-        
-        <meta property="og:title" content="Заказать Дебетовую карту : сравнение условий и выбор лучшей карты" />
-        <meta property="og:description" content="Полное руководство по выбору лучшей дебетовой карты с бесплатным обслуживанием. Заказать карту из банка." />
-        <meta property="og:type" content="website" />
-        
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
-        </script>
-      </Helmet>
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+      
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Дебетовые карты банков 2025
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
+            Выбор дебетовой карты в 2025 году стал особенно актуальным вопросом для российских потребителей. Современные банки предлагают широкий спектр дебетовых карт с различными условиями обслуживания, программами кэшбэка и дополнительными услугами.
+          </p>
+          <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+            Выбрать дебетовую карту
+          </Button>
+        </div>
+      </section>
 
-      <div className="min-h-screen bg-gray-50">
-        <Header />
-        
-        <Hero {...heroData} />
-        
-        <BankOffers 
-          title="Топ банков для заказа дебетовой карты"
-          subtitle="Сравните лучшие предложения от ведущих банков России"
-          banks={banks}
-        />
-
-        <div className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Сравнение дебетовых карт с кэшбэком
-              </h2>
-              <p className="text-xl text-gray-600">
-                Программы кэшбэка становятся важным фактором выбора дебетовой карты
-              </p>
-            </div>
-            
-            <ComparisonTable 
-              headers={["Банк", "Максимальный кэшбэк", "Популярные категории", "Процент на остаток", "Бесплатное обслуживание"]}
-              data={comparisonData}
-              keyField="bank"
-            />
+      {/* Popularity Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Почему дебетовые карты так популярны?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Согласно анализу поисковых запросов, интерес к дебетовым картам достигает почти миллиона запросов в месяц. Пользователи активно ищут информацию о том, как оформить дебетовую карту онлайн, какие банки предлагают бесплатное обслуживание и доставку карт на дом.
+            </p>
           </div>
         </div>
+      </section>
 
-        <HowItWorks 
-          title="Как заказать дебетовую карту: пошаговая инструкция"
-          subtitle="Простой алгоритм получения дебетовой карты от выбора банка до получения карты"
-          steps={steps}
-        />
+      {/* Top Banks Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Топ банков для заказа дебетовой карты
+            </h2>
+            <p className="text-xl text-gray-600">
+              Сравните лучшие предложения от ведущих банков России
+            </p>
+          </div>
 
-        <FeaturesGrid 
-          title="Ключевые особенности дебетовых карт"
-          subtitle="Важные функции и преимущества современных дебетовых карт"
-          features={features}
-        />
-
-        <div className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Специальные типы дебетовых карт
-              </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Альфа-Банк */}
+            <div className="bg-white rounded-xl shadow-lg p-6 relative">
+              <div className="absolute -top-3 -right-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                Популярный
+              </div>
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                  <Icon name="CreditCard" className="text-white" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Альфа-Банк</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Лидер по популярности поисковых запросов. Дебетовая карта Альфа-Банка привлекает клиентов бесплатным обслуживанием и выгодными условиями кэшбэка.
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Бесплатная дебетовая карта навсегда
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Доставка карты на дом
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Кэшбэк до 33% в категориях
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Процент на остаток до 7%
+                </div>
+              </div>
+              <Button className="w-full bg-red-500 hover:bg-red-600">
+                Оформить карту
+              </Button>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Виртуальная дебетовая карта
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  Современное решение для онлайн-покупок и цифровых платежей без физического носителя.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div>✓ Мгновенное получение</div>
-                  <div>✓ Безопасность онлайн-платежей</div>
-                  <div>✓ Нет риска потери физической карты</div>
+            {/* ВТБ */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                  <Icon name="CreditCard" className="text-white" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">ВТБ</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Дебетовая карта ВТБ занимает второе место по популярности среди пользователей. Банк предлагает надежные условия обслуживания.
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Карта с бесплатным обслуживанием
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Онлайн-оформление за 5 минут
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Кэшбэк в популярных категориях
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Широкая сеть банкоматов
                 </div>
               </div>
+              <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                Оформить карту
+              </Button>
+            </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Детская дебетовая карта
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  Специальные дебетовые карты для детей и подростков с 6-14 лет с родительским контролем.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div>✓ Лимиты трат</div>
-                  <div>✓ Уведомления родителям</div>
-                  <div>✓ Обучение финансовой грамотности</div>
+            {/* Тинькофф */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mr-4">
+                  <Icon name="CreditCard" className="text-white" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Тинькофф</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Дебетовая карта Тинькофф известна инновационными решениями и удобным мобильным приложением.
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  100% онлайн-банк
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Бесплатная доставка дебетовой карты
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Процент на остаток
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Развитая программа лояльности
                 </div>
               </div>
+              <Button className="w-full bg-yellow-500 hover:bg-yellow-600">
+                Оформить карту
+              </Button>
+            </div>
 
-              <div className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Премиальная дебетовая карта
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  Карты с расширенными привилегиями для клиентов с высокими доходами.
-                </p>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <div>✓ Повышенные лимиты</div>
-                  <div>✓ Консьерж-сервис</div>
-                  <div>✓ VIP-зоны в аэропортах</div>
+            {/* Сбербанк */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                  <Icon name="CreditCard" className="text-white" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Сбербанк</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Дебетовая карта Сбербанка остается классическим выбором для консервативных клиентов.
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Самая большая сеть отделений
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Надежность и стабильность
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Различные типы дебетовых карт
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Интеграция с госуслугами
                 </div>
               </div>
+              <Button className="w-full bg-green-600 hover:bg-green-700">
+                Оформить карту
+              </Button>
+            </div>
+
+            {/* ОЗОН Банк */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
+                  <Icon name="CreditCard" className="text-white" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">ОЗОН Банк</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Растущая популярность дебетовой карты ОЗОН связана с интеграцией с экосистемой интернет-торговли.
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Кэшбэк за покупки в ОЗОН
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Быстрое оформление онлайн
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Интеграция с маркетплейсом
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Современный дизайн карты
+                </div>
+              </div>
+              <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                Оформить карту
+              </Button>
+            </div>
+
+            {/* МТС Банк */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mr-4">
+                  <Icon name="CreditCard" className="text-white" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">МТС Банк</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Дебетовая карта МТС Банка предлагает уникальные возможности для клиентов оператора связи.
+              </p>
+              <div className="space-y-2 mb-6">
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Кэшбэк за мобильную связь
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Интеграция с услугами МТС
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Выгодные тарифы
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                  Бесплатное обслуживание карты
+                </div>
+              </div>
+              <Button className="w-full bg-red-600 hover:bg-red-700">
+                Оформить карту
+              </Button>
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Критерии выбора дебетовой карты
-              </h2>
-              <p className="text-xl text-gray-600">
-                Как выбрать лучшую дебетовую карту для ваших потребностей
-              </p>
-            </div>
+      {/* Comparison Table */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Сравнение дебетовых карт с кэшбэком
+            </h2>
+            <p className="text-xl text-gray-600">
+              Программы кэшбэка становятся важным фактором выбора дебетовой карты
+            </p>
+          </div>
+          
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Банк</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Максимальный кэшбэк</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Популярные категории</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Процент на остаток</th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Бесплатное обслуживание</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr>
+                  <td className="px-6 py-4 text-sm font-medium text-gray-900">Альфа-Банк</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 33%</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">Рестораны, АЗС, супермаркеты</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 7%</td>
+                  <td className="px-6 py-4 text-sm text-green-600">Да</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm font-medium text-gray-900">Тинькофф</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 30%</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">Категории на выбор</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 6%</td>
+                  <td className="px-6 py-4 text-sm text-green-600">Да</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm font-medium text-gray-900">ВТБ</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 15%</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">Транспорт, развлечения</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 5%</td>
+                  <td className="px-6 py-4 text-sm text-green-600">Да</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 text-sm font-medium text-gray-900">ОЗОН Банк</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 25%</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">ОЗОН, интернет-покупки</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">До 8%</td>
+                  <td className="px-6 py-4 text-sm text-green-600">Да</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  💰 Финансовые условия
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <span className="text-blue-600 font-semibold mr-2">1.</span>
-                    <div>
-                      <strong>Стоимость обслуживания:</strong> Ищите бесплатные дебетовые карты или с минимальной платой
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-blue-600 font-semibold mr-2">2.</span>
-                    <div>
-                      <strong>Кэшбэк программы:</strong> Оцените соответствие категорий вашим тратам
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-blue-600 font-semibold mr-2">3.</span>
-                    <div>
-                      <strong>Процент на остаток:</strong> Дополнительный доход с ваших сбережений
-                    </div>
-                  </div>
-                </div>
+      {/* How to Order Steps */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Как заказать дебетовую карту: пошаговая инструкция
+            </h2>
+            <p className="text-xl text-gray-600">
+              Простой алгоритм получения дебетовой карты от выбора банка до получения карты
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                1
               </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  📱 Удобство использования
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <span className="text-purple-600 font-semibold mr-2">1.</span>
-                    <div>
-                      <strong>Мобильное приложение:</strong> Качество и функциональность банковского приложения
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-purple-600 font-semibold mr-2">2.</span>
-                    <div>
-                      <strong>Сеть банкоматов:</strong> Доступность снятия наличных без комиссии
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <span className="text-purple-600 font-semibold mr-2">3.</span>
-                    <div>
-                      <strong>Служба поддержки:</strong> Качество и доступность клиентского сервиса
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Выберите банк</h3>
+              <p className="text-gray-600">Сравните предложения банков и выберите карту с подходящими условиями</p>
             </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                2
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Подайте онлайн-заявку</h3>
+              <p className="text-gray-600">Заполните заявку на сайте банка за 5-10 минут</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                3
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Получите одобрение</h3>
+              <p className="text-gray-600">Дождитесь решения банка в течение 5-15 минут</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                4
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Получите карту</h3>
+              <p className="text-gray-600">Получите карту курьером на дом или в отделении банка</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-red-800 mb-4">
-                ⚠️ Популярные ошибки при выборе дебетовой карты
+      {/* Key Features */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Ключевые особенности дебетовых карт
+            </h2>
+            <p className="text-xl text-gray-600">
+              Важные функции и преимущества современных дебетовых карт
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <Icon name="CreditCard" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Бесплатная дебетовая карта
               </h3>
-              <div className="grid md:grid-cols-2 gap-4 text-red-700">
-                <div className="space-y-2">
-                  <div>× Выбор только по размеру кэшбэка</div>
-                  <div>× Игнорирование условий бесплатного обслуживания</div>
-                  <div>× Неучет лимитов и ограничений</div>
-                </div>
-                <div className="space-y-2">
-                  <div>× Пренебрежение отзывами других клиентов</div>
-                  <div>× Неизучение тарифов на дополнительные услуги</div>
-                  <div>× Выбор без учета личных потребностей</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Отзывы клиентов о дебетовых картах
-              </h2>
-              <p className="text-xl text-gray-600">
-                Анализ отзывов показывает, что клиенты наиболее высоко ценят
+              <p className="text-gray-700">
+                Большинство современных банков предлагают карты без платы за обслуживание при соблюдении определенных условий.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-green-50 border border-green-200 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-green-800 mb-4 flex items-center">
-                  ✅ Положительные аспекты
-                </h3>
-                <div className="space-y-3 text-green-700">
-                  <div className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    Бесплатное обслуживание при выполнении условий
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    Быстрое оформление дебетовой карты онлайн
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    Удобные мобильные приложения
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    Выгодные программы кэшбэка
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    Надежность крупных банков
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-green-600 mr-2">✓</span>
-                    Доставка карты на дом
-                  </div>
-                </div>
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6">
+              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                <Icon name="Percent" className="text-white" size={24} />
               </div>
-
-              <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-red-800 mb-4 flex items-center">
-                  ❌ Частые жалобы
-                </h3>
-                <div className="space-y-3 text-red-700">
-                  <div className="flex items-center">
-                    <span className="text-red-600 mr-2">×</span>
-                    Скрытые комиссии за некоторые операции
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-red-600 mr-2">×</span>
-                    Сложности с отменой карты
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-red-600 mr-2">×</span>
-                    Ограничения в программах кэшбэка
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-red-600 mr-2">×</span>
-                    Проблемы с работой технической поддержки
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-red-600 mr-2">×</span>
-                    Длительное время доставки в отдаленные регионы
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-red-600 mr-2">×</span>
-                    Изменение условий обслуживания
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Заключение и рекомендации
-              </h2>
-              <p className="text-xl text-gray-600">
-                Выбор дебетовой карты в 2025 году требует комплексного подхода
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-blue-900 mb-4">
-                  👋 Для начинающих пользователей
-                </h3>
-                <div className="space-y-3 text-gray-700">
-                  <div>• Выбирайте бесплатные дебетовые карты с простыми условиями</div>
-                  <div>• Обратите внимание на Альфа-Банк или ВТБ</div>
-                  <div>• Изучите базовые функции мобильного приложения</div>
-                  <div>• Начните с карты без сложных программ лояльности</div>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-purple-900 mb-4">
-                  🎯 Для опытных пользователей
-                </h3>
-                <div className="space-y-3 text-gray-700">
-                  <div>• Сравните программы кэшбэка разных банков</div>
-                  <div>• Рассмотрите Тинькофф или ОЗОН Банк для инноваций</div>
-                  <div>• Изучите возможности получения процентов на остаток</div>
-                  <div>• Оцените дополнительные сервисы и привилегии</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-blue-800 mb-3">
-                💡 Главный совет
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Кэшбэк программы
               </h3>
-              <p className="text-blue-700">
-                Перед тем как заказать дебетовую карту, обязательно изучите актуальные условия на официальном сайте банка, так как тарифы и программы лояльности могут изменяться. Не стесняйтесь обращаться в службу поддержки банка для уточнения всех интересующих вас вопросов.
+              <p className="text-gray-700">
+                Получайте возврат средств за покупки в различных категориях: рестораны, АЗС, супермаркеты.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6">
+              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <Icon name="TrendingUp" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Процент на остаток
+              </h3>
+              <p className="text-gray-700">
+                Многие дебетовые карты предлагают начисление процентов на остаток средств на счете от 3% до 8% годовых.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6">
+              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
+                <Icon name="Truck" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Доставка на дом
+              </h3>
+              <p className="text-gray-700">
+                Заказать дебетовую карту с доставкой на дом особенно актуально для занятых людей и жителей удаленных районов.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg p-6">
+              <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                <Icon name="Smartphone" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Мобильное приложение
+              </h3>
+              <p className="text-gray-700">
+                Удобные мобильные приложения для управления картой и контроля расходов 24/7.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-6">
+              <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                <Icon name="MapPin" className="text-white" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Широкая сеть банкоматов
+              </h3>
+              <p className="text-gray-700">
+                Снимайте наличные без комиссии в банкоматах партнерской сети по всей России.
               </p>
             </div>
           </div>
         </div>
+      </section>
 
-        <FAQ faqs={faqs} />
-        
-        <CallToAction 
-          title="Готовы заказать дебетовую карту?"
-          subtitle="Сравните предложения банков и выберите карту с лучшими условиями для ваших потребностей"
-          ctaText="Выбрать дебетовую карту"
-        />
-        
-        <Footer />
-      </div>
-    </>
+      {/* Conclusion Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Заключение и рекомендации
+            </h2>
+            <p className="text-xl text-gray-600">
+              Выбор дебетовой карты в 2025 году требует комплексного подхода
+            </p>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 className="text-lg font-semibold text-blue-800 mb-3">
+              💡 Главный совет
+            </h3>
+            <p className="text-blue-700">
+              Перед тем как заказать дебетовую карту, обязательно изучите актуальные условия на официальном сайте банка, так как тарифы и программы лояльности могут изменяться. Не стесняйтесь обращаться в службу поддержки банка для уточнения всех интересующих вас вопросов.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Готовы заказать дебетовую карту?
+          </h2>
+          <p className="text-xl mb-8">
+            Сравните предложения банков и выберите карту с лучшими условиями для ваших потребностей
+          </p>
+          <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+            Выбрать дебетовую карту
+          </Button>
+        </div>
+      </section>
+      
+      <Footer />
+    </div>
   );
 };
 
