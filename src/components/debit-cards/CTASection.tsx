@@ -11,8 +11,11 @@ const CTASection = () => {
         <p className="text-xl mb-8">
           Сравните предложения банков и выберите карту с лучшими условиями для ваших потребностей
         </p>
-        <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-          Выбрать дебетовую карту
+        <Button 
+          asChild 
+          className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold"
+        >
+          <a href="#banks">Выбрать дебетовую карту</a>
         </Button>
       </div>
     </section>
