@@ -450,10 +450,7 @@ const AutoLoan = () => {
                       <Button 
                         size="lg" 
                         className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                      >
-                        <Icon name="ExternalLink" className="mr-2" size={20} />
-                        Оформить автокредит
-                      </Button>
+                      >Оформить </Button>
                       
                       <p className="text-xs text-gray-500 mt-3">
                         * Условия могут изменяться банком
