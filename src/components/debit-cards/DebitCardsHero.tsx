@@ -34,8 +34,11 @@ const DebitCardsHero = () => {
           <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-gray-600">
             Выбор дебетовой карты в 2025 году стал особенно актуальным вопросом для российских потребителей. Современные банки предлагают широкий спектр дебетовых карт с различными условиями обслуживания, программами кэшбэка и дополнительными услугами.
           </p>
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg font-semibold mb-8">
-            Выбрать дебетовую карту
+          <Button 
+            asChild 
+            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg font-semibold mb-8"
+          >
+            <a href="#banks">Выбрать дебетовую карту</a>
           </Button>
         </div>
 
