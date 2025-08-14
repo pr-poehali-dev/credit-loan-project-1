@@ -37,7 +37,7 @@ const PartnerBanks = () => {
                 <div className="bg-green-50 rounded-lg p-4">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm md:text-base text-gray-600">Сумма:</span>
-                    <span className="font-bold text-base md:text-lg">до 5 млн ₽</span>
+                    <span className="font-bold text-base md:text-lg">до 1 млн ₽</span>
                   </div>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm md:text-base text-gray-600">Ставка:</span>
