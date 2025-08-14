@@ -61,26 +61,25 @@ const Footer = () => {
           
           {/* LiveInternet counter */}
           <div className="flex items-center justify-center">
-            <a 
-              href="https://www.liveinternet.ru/click" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
-              title="LiveInternet"
-            >
-              <div className="w-8 h-8 bg-orange-500 rounded-sm flex items-center justify-center">
-                <Icon name="ArrowUpRight" size={16} className="text-white" />
-              </div>
+            <a href="https://www.liveinternet.ru/click" target="_blank" rel="noopener noreferrer">
+              <img 
+                id="licnt105E" 
+                width="31" 
+                height="31" 
+                style={{border:0}} 
+                title="LiveInternet"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""
+              />
             </a>
           </div>
           <script dangerouslySetInnerHTML={{
-            __html: `(function(d,s){
-              var img = new Image();
-              img.src = "https://counter.yadro.ru/hit?t44.6;r"+escape(d.referrer)+
+            __html: `(function(d,s){d.getElementById("licnt105E").src=
+              "https://counter.yadro.ru/hit?t44.6;r"+escape(d.referrer)+
               ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
               (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
-              ";h"+escape(d.title.substring(0,150))+";"+Math.random();
-            })(document,screen)`
+              ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+              (document,screen)`
           }} />
         </div>
       </div>
