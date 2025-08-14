@@ -180,41 +180,50 @@ const TopBanksSection = () => {
             </Button>
           </div>
 
-          {/* ОЗОН Банк */}
+          {/* ОТП Банк */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+              <div className="w-12 h-12 bg-lime-400 rounded-lg flex items-center justify-center mr-4 overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/files/5c271b2c-fc71-444a-8904-34e3522b7c19.jpg" 
-                  alt="ОЗОН Банк логотип" 
+                  src="https://cdn.poehali.dev/files/7b79c919-c2af-4142-8afc-8dc962b5dc6d.png" 
+                  alt="ОТП Банк логотип" 
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">ОЗОН Банк</h3>
+              <h3 className="text-xl font-bold text-gray-900">ОТП Банк</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              Растущая популярность дебетовой карты ОЗОН связана с интеграцией с экосистемой интернет-торговли.
+              Европейский банк с современными решениями и выгодными условиями для дебетовых карт.
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center text-sm text-gray-600">
                 <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                Кэшбэк за покупки в ОЗОН
+                Высокий процент на остаток
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                Быстрое оформление онлайн
+                Бесплатное обслуживание
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                Интеграция с маркетплейсом
+                Выгодный кэшбэк в категориях
               </div>
               <div className="flex items-center text-sm text-gray-600">
                 <Icon name="Check" size={16} className="text-green-500 mr-2" />
-                Современный дизайн карты
+                Европейские стандарты качества
               </div>
             </div>
-            <Button className="w-full bg-purple-600 hover:bg-purple-700">
-              Оформить карту
+            <Button 
+              className="w-full bg-lime-500 hover:bg-lime-600"
+              asChild
+            >
+              <a 
+                href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6626&p=9546&erid=2W5zFJQ1CVE"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Оформить карту
+              </a>
             </Button>
           </div>
 

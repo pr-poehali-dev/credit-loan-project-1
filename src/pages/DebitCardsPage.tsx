@@ -33,7 +33,7 @@ const DebitCardsPage = () => {
       keywordsMeta.name = 'keywords';
       document.getElementsByTagName('head')[0].appendChild(keywordsMeta);
     }
-    keywordsMeta.setAttribute('content', 'дебетовая карта, заказать дебетовую карту, бесплатная дебетовая карта, дебетовая карта онлайн, кэшбэк карта, банки россии, альфа банк, втб, тинькофф, сбербанк, озон банк, мтс банк');
+    keywordsMeta.setAttribute('content', 'дебетовая карта, заказать дебетовую карту, бесплатная дебетовая карта, дебетовая карта онлайн, кэшбэк карта, банки россии, альфа банк, втб, тинькофф, сбербанк, отп банк, мтс банк');
     
     // Open Graph meta tags
     let ogTitle = document.querySelector('meta[property="og:title"]');

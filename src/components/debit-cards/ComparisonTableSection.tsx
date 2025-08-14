@@ -47,9 +47,9 @@ const ComparisonTableSection = () => {
                 <td className="px-6 py-4 text-sm text-green-600">Да</td>
               </tr>
               <tr>
-                <td className="px-6 py-4 text-sm font-medium text-gray-900">ОЗОН Банк</td>
-                <td className="px-6 py-4 text-sm text-gray-600">До 25%</td>
-                <td className="px-6 py-4 text-sm text-gray-600">ОЗОН, интернет-покупки</td>
+                <td className="px-6 py-4 text-sm font-medium text-gray-900">ОТП Банк</td>
+                <td className="px-6 py-4 text-sm text-gray-600">До 20%</td>
+                <td className="px-6 py-4 text-sm text-gray-600">Супермаркеты, аптеки</td>
                 <td className="px-6 py-4 text-sm text-gray-600">До 8%</td>
                 <td className="px-6 py-4 text-sm text-green-600">Да</td>
               </tr>
