@@ -65,12 +65,12 @@ const Footer = () => {
               href="https://www.liveinternet.ru/click" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-xs text-gray-400 hover:text-gray-600 transition-colors flex items-center space-x-2"
+              className="hover:opacity-80 transition-opacity"
+              title="LiveInternet"
             >
               <div className="w-8 h-8 bg-orange-500 rounded-sm flex items-center justify-center">
                 <Icon name="ArrowUpRight" size={16} className="text-white" />
               </div>
-              <span>LiveInternet</span>
             </a>
           </div>
           <script dangerouslySetInnerHTML={{
