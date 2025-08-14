@@ -266,8 +266,18 @@ const HowToChooseSection = () => {
                 </div>
               </div>
               
-              <Button size="sm" className="w-full bg-purple-600 hover:bg-purple-700 text-white text-xs">
-                Получить кредит
+              <Button 
+                size="sm" 
+                className="w-full bg-purple-600 hover:bg-purple-700 text-white text-xs"
+                asChild
+              >
+                <a 
+                  href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=2583&p=9546&erid=LjN8KGDaw"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Получить кредит
+                </a>
               </Button>
             </div>
           </Card>
