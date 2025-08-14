@@ -93,14 +93,14 @@ const PartnerBanks = () => {
                 />
               </div>
               <CardTitle className="text-2xl text-gray-900">Т-Банк</CardTitle>
-              <CardDescription className="text-lg font-medium text-yellow-700">Рефинансирование</CardDescription>
+              <CardDescription className="text-lg font-medium text-yellow-700">Быстрые деньги</CardDescription>
             </CardHeader>
             <CardContent className="relative text-center">
               <div className="space-y-4 mb-8">
                 <div className="bg-yellow-50 rounded-lg p-4">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-gray-600">Сумма:</span>
-                    <span className="font-bold text-lg">до 5 млн ₽</span>
+                    <span className="font-bold text-lg">до 1 млн ₽</span>
                   </div>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-gray-600">Ставка:</span>
