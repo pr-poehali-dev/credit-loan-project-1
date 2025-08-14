@@ -67,8 +67,8 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-xs text-gray-400 hover:text-gray-600 transition-colors flex items-center space-x-2"
             >
-              <div className="w-8 h-8 bg-gray-100 border rounded flex items-center justify-center">
-                <span className="text-xs font-mono">LI</span>
+              <div className="w-8 h-8 bg-orange-500 rounded-sm flex items-center justify-center">
+                <Icon name="ArrowUpRight" size={16} className="text-white" />
               </div>
               <span>LiveInternet</span>
             </a>
