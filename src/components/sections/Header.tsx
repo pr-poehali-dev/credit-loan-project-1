@@ -32,7 +32,6 @@ const Header = () => {
           </a>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">Главная</a>
             <a href="/consumer-loan" className="text-gray-600 hover:text-blue-600 transition-colors">Потребительский кредит</a>
             <a href="/mortgage" className="text-gray-600 hover:text-blue-600 transition-colors">Ипотека</a>
             <a href="/auto-loan" className="text-gray-600 hover:text-blue-600 transition-colors">Автокредит</a>
@@ -55,14 +54,6 @@ const Header = () => {
         <div className="md:hidden bg-white border-b shadow-lg">
           <nav className="max-w-7xl mx-auto px-4 py-4">
             <div className="flex flex-col space-y-4">
-              <a 
-                href="/" 
-                className="flex items-center text-gray-600 hover:text-blue-600 transition-colors py-2"
-                onClick={handleMenuLinkClick}
-              >
-                <Icon name="Home" size={20} className="mr-3" />
-                Главная
-              </a>
               <a 
                 href="/consumer-loan" 
                 className="flex items-center text-gray-600 hover:text-blue-600 transition-colors py-2"
