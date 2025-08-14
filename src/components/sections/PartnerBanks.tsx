@@ -41,7 +41,7 @@ const PartnerBanks = () => {
                   </div>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-sm md:text-base text-gray-600">Ставка:</span>
-                    <span className="font-bold text-base md:text-lg text-green-600">от 19%</span>
+                    <span className="font-bold text-base md:text-lg text-green-600">от 9,8%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-sm md:text-base text-gray-600">Срок:</span>
