@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import Header from '@/components/sections/Header';
+import Footer from '@/components/sections/Footer';
+import SEOHead from '@/components/SEOHead';
 
 const BlogPage = () => {
   const articles = [
@@ -39,7 +42,16 @@ const BlogPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <>
+      <SEOHead
+        title="Блог о кредитах и финансах — Экспертные советы и обзоры банков 2024"
+        description="Читайте полезные статьи о кредитах, банках и финансах. Экспертные советы по получению кредитов, улучшению кредитной истории и выбору банковских продуктов."
+        keywords="блог о кредитах, финансовые советы, банковские продукты, кредитная история, одобрение кредита, банки России"
+        url="/blog"
+        type="website"
+      />
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+        <Header />
       {/* Hero Section */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -123,7 +135,10 @@ const BlogPage = () => {
           </Button>
         </div>
       </section>
+      
+      <Footer />
     </div>
+    </>
   );
 };
 
