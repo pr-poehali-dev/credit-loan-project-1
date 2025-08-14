@@ -156,7 +156,7 @@ const PartnerBanks = () => {
                 />
               </div>
               <CardTitle className="text-2xl text-gray-900">Совкомбанк</CardTitle>
-              <CardDescription className="text-lg font-medium text-red-700">Кредит наличными </CardDescription>
+              <CardDescription className="text-lg font-medium text-red-700">В расро</CardDescription>
             </CardHeader>
             <CardContent className="relative text-center">
               <div className="space-y-4 mb-8">
@@ -167,11 +167,11 @@ const PartnerBanks = () => {
                   </div>
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-gray-600">Ставка:</span>
-                    <span className="font-bold text-lg text-red-600">от 13%</span>
+                    <span className="font-bold text-lg text-red-600">от 1%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Срок:</span>
-                    <span className="font-bold text-lg">до 5 лет</span>
+                    <span className="font-bold text-lg">до 2 лет</span>
                   </div>
                 </div>
                 
