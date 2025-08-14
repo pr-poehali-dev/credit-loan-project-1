@@ -45,7 +45,7 @@ const PartnerBanks = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-sm md:text-base text-gray-600">Срок:</span>
-                    <span className="font-bold text-base md:text-lg">до 5 лет</span>
+                    <span className="font-bold text-base md:text-lg">до 2 лет</span>
                   </div>
                 </div>
                 
