@@ -252,9 +252,16 @@ const PartnerBanks = () => {
               <Button 
                 size="lg" 
                 className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
               >
-                <Icon name="ExternalLink" className="mr-2" size={20} />
-                Получить кредит
+                <a 
+                  href="https://trk.ppdu.ru/click/bFoELgmK?erid=2SDnjeBUY44"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <Icon name="ExternalLink" className="mr-2" size={20} />
+                  Получить кредит
+                </a>
               </Button>
               
               <p className="text-xs text-gray-500 mt-3">
