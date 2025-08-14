@@ -129,7 +129,7 @@ const PartnerBanks = () => {
                 asChild
               >
                 <a 
-                  href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6598&p=9546&erid=LjN8KSBL4"
+                  href="https://trk.ppdu.ru/click/qMN0f7EE?erid=2SDnjcyz7NY"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
