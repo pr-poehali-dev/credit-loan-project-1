@@ -156,7 +156,7 @@ const PartnerBanks = () => {
                 />
               </div>
               <CardTitle className="text-2xl text-gray-900">Совкомбанк</CardTitle>
-              <CardDescription className="text-lg font-medium text-red-700">В расро</CardDescription>
+              <CardDescription className="text-lg font-medium text-red-700">В рассрочку</CardDescription>
             </CardHeader>
             <CardContent className="relative text-center">
               <div className="space-y-4 mb-8">
