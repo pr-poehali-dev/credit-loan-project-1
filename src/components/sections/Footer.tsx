@@ -60,8 +60,27 @@ const Footer = () => {
           <div className="text-center text-sm text-gray-600">© 2025 Одобряем. Все права защищены.</div>
           
           {/* LiveInternet counter */}
-          <div dangerouslySetInnerHTML={{
-            __html: `<a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt105E" width="31" height="31" style="border:0" title="LiveInternet" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/></a><script>(function(d,s){d.getElementById("licnt105E").src="https://counter.yadro.ru/hit?t44.6;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script>`
+          <div className="flex items-center justify-center">
+            <a 
+              href="https://www.liveinternet.ru/click" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xs text-gray-400 hover:text-gray-600 transition-colors flex items-center space-x-2"
+            >
+              <div className="w-8 h-8 bg-gray-100 border rounded flex items-center justify-center">
+                <span className="text-xs font-mono">LI</span>
+              </div>
+              <span>LiveInternet</span>
+            </a>
+          </div>
+          <script dangerouslySetInnerHTML={{
+            __html: `(function(d,s){
+              var img = new Image();
+              img.src = "https://counter.yadro.ru/hit?t44.6;r"+escape(d.referrer)+
+              ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+              (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+              ";h"+escape(d.title.substring(0,150))+";"+Math.random();
+            })(document,screen)`
           }} />
         </div>
       </div>
