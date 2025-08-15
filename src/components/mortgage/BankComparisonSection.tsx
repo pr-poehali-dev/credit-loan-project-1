@@ -32,30 +32,25 @@ const BankComparisonSection = () => {
         </div>
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Совкомбанк */}
+          {/* Альфа-Банк */}
           <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-red-200 bg-white p-6">
             <div className="absolute top-0 right-0 w-20 h-20 bg-red-500 rounded-full -translate-y-10 translate-x-10 opacity-10 group-hover:opacity-20 transition-opacity"></div>
             <div className="relative text-center">
               <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md border border-gray-200">
-                <img 
-                  src="https://cdn.poehali.dev/files/1c25f927-7d45-4cd8-99f5-cf64c1621436.jpg" 
-                  alt="Совкомбанк - ипотека" 
-                  className="w-10 h-10 object-contain"
-                  loading="lazy"
-                />
+                <span className="text-red-600 font-bold text-xl">А</span>
               </div>
-              <h4 className="text-lg font-bold text-gray-900 mb-1">Совкомбанк</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-1">Альфа-Банк</h4>
               <p className="text-sm font-medium text-red-700 mb-4">Ипотека</p>
               
               <div className="space-y-3 mb-6">
                 <div className="bg-red-50 rounded-lg p-3">
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-gray-600">Сумма:</span>
-                    <span className="font-bold">до 50 млн ₽</span>
+                    <span className="font-bold">до 100 млн ₽</span>
                   </div>
                   <div className="flex justify-between items-center text-sm mt-1">
                     <span className="text-gray-600">Ставка:</span>
-                    <span className="font-bold text-red-600">от 8.5%</span>
+                    <span className="font-bold text-red-600">от 16%</span>
                   </div>
                   <div className="flex justify-between items-center text-sm mt-1">
                     <span className="text-gray-600">Срок:</span>
@@ -64,13 +59,13 @@ const BankComparisonSection = () => {
                 </div>
                 
                 <div className="flex items-center justify-center space-x-1 text-xs text-gray-600">
-                  <Icon name="Home" size={14} />
-                  <span>Новостройки и вторичка</span>
+                  <Icon name="Zap" size={14} />
+                  <span>Быстрое онлайн-одобрение</span>
                 </div>
                 
                 <div className="flex items-center justify-center space-x-1 text-xs text-gray-600">
-                  <Icon name="Shield" size={14} />
-                  <span>От 10% первый взнос</span>
+                  <Icon name="User" size={14} />
+                  <span>Индивидуальный подход</span>
                 </div>
               </div>
               
@@ -80,7 +75,7 @@ const BankComparisonSection = () => {
                 asChild
               >
                 <a 
-                  href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6949&p=9546&erid=2W5zFK4STJg"
+                  href="https://trk.ppdu.ru/click/NxlG4ZJ2?erid=2SDnjeCspbN"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
