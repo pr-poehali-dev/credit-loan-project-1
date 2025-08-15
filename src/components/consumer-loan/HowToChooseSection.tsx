@@ -253,7 +253,7 @@ const HowToChooseSection = () => {
                 asChild
               >
                 <a 
-                  href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=5199&p=9546&erid=2W5zFGFFjxt"
+                  href="https://trk.ppdu.ru/click/TH2PKq63?erid=Kra246d9e"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
