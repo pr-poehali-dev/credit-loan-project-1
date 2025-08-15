@@ -273,36 +273,41 @@ const HowToChooseSection = () => {
             </div>
           </Card>
 
-          {/* АТБ */}
-          <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-purple-200 bg-white p-4">
-            <div className="absolute top-0 right-0 w-16 h-16 bg-purple-500 rounded-full -translate-y-8 translate-x-8 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+          {/* Банк ПСБ */}
+          <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-orange-200 bg-white p-4">
+            <div className="absolute top-0 right-0 w-16 h-16 bg-orange-500 rounded-full -translate-y-8 translate-x-8 opacity-10 group-hover:opacity-20 transition-opacity"></div>
             <div className="relative text-center">
               <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-3 mx-auto shadow-md border border-gray-200">
-                <span className="text-purple-600 font-bold text-sm">А</span>
+                <img 
+                  src="https://cdn.poehali.dev/files/69bb8226-1827-490c-b7f1-1999253e456e.jpg" 
+                  alt="Банк ПСБ" 
+                  className="w-8 h-8 object-contain"
+                  loading="lazy"
+                />
               </div>
-              <h4 className="text-base font-bold text-gray-900 mb-1">АТБ</h4>
-              <p className="text-xs font-medium text-purple-700 mb-3">Потребительский кредит</p>
+              <h4 className="text-base font-bold text-gray-900 mb-1">Банк ПСБ</h4>
+              <p className="text-xs font-medium text-orange-700 mb-3">Потребительский кредит</p>
               
-              <div className="bg-purple-50 rounded-lg p-2 mb-3">
+              <div className="bg-orange-50 rounded-lg p-2 mb-3">
                 <div className="text-xs space-y-1">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Ставка:</span>
-                    <span className="font-bold text-purple-600">от 12%</span>
+                    <span className="font-bold text-orange-600">от 8.9%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Сумма:</span>
-                    <span className="font-bold">до 2 млн ₽</span>
+                    <span className="font-bold">до 3 млн ₽</span>
                   </div>
                 </div>
               </div>
               
               <Button 
                 size="sm" 
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white text-xs"
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white text-xs"
                 asChild
               >
                 <a 
-                  href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=2583&p=9546&erid=LjN8KGDaw"
+                  href="https://trk.ppdu.ru/click/0Gd4N1ki?erid=2SDnjcVVfjj"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
