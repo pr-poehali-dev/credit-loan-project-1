@@ -26,7 +26,16 @@ const Footer = () => {
               <li><a href="/mortgage" className="hover:text-blue-600 transition-colors">Ипотечное кредитование</a></li>
               <li><a href="/auto-loan" className="hover:text-blue-600 transition-colors">Автокредитование</a></li>
               <li><a href="/debit-cards" className="hover:text-blue-600 transition-colors">Дебетовые карты</a></li>
-              <li><a href="/blog" className="hover:text-blue-600 transition-colors">Блог</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-4">Блог</h3>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li><a href="/blog" className="hover:text-blue-600 transition-colors">Все статьи</a></li>
+              <li><a href="/blog/how-banks-approve-loans" className="hover:text-blue-600 transition-colors">Как банки одобряют кредиты</a></li>
+              <li><a href="/blog/improve-credit-history" className="hover:text-blue-600 transition-colors">Улучшение кредитной истории</a></li>
+              <li><a href="/blog/why-bank-refused-loan" className="hover:text-blue-600 transition-colors">Причины отказов банков</a></li>
             </ul>
           </div>
           

@@ -4,6 +4,8 @@ import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import SEOHead from '@/components/SEOHead';
+import Header from '@/components/sections/Header';
+import Footer from '@/components/sections/Footer';
 
 const ImproveCreditHistory = () => {
   return (
@@ -18,6 +20,7 @@ const ImproveCreditHistory = () => {
         section="Кредитная история"
         tags={["кредитная история", "кредиты", "рейтинг", "банки", "просрочки"]}
       />
+      <Header />
       <div className="min-h-screen bg-white">
         {/* Breadcrumbs */}
         <div className="bg-gray-50 py-3 sm:py-4 px-4 border-b">
@@ -363,6 +366,7 @@ const ImproveCreditHistory = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };
