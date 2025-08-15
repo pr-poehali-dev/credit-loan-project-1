@@ -15,7 +15,7 @@ const BankComparisonSection = () => {
 
       <div className="mb-8">
         <h3 className="text-xl font-semibold text-gray-900 mb-6">
-          Топ-5 банков с выгодными условиями
+          Топ-6 банков с выгодными условиями
         </h3>
       </div>
 
@@ -104,9 +104,41 @@ const BankComparisonSection = () => {
           </div>
         </div>
 
+        <div className="bg-gradient-to-r from-black to-gray-800 rounded-xl p-6 border border-gray-700">
+          <h4 className="text-lg font-semibold text-white mb-3 flex items-center">
+            <span className="bg-yellow-500 text-black rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">5</span>
+            Т-Банк
+          </h4>
+          <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
+            <div className="flex items-center space-x-2">
+              <Icon name="Zap" className="w-4 h-4 text-yellow-400" />
+              <span className="text-gray-200">Инновационные решения</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Icon name="Smartphone" className="w-4 h-4 text-yellow-400" />
+              <span className="text-gray-200">100% цифровой банк</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Icon name="Award" className="w-4 h-4 text-yellow-400" />
+              <span className="text-gray-200">Лучшие условия онлайн</span>
+            </div>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="https://trk.ppdu.ru/click/bwRIjaIG?erid=Kra23b5bW" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer" 
+              className="inline-flex items-center bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+            >
+              <Icon name="ExternalLink" className="w-4 h-4 mr-2" />
+              Оформить в Т-Банке
+            </a>
+          </div>
+        </div>
+
         <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-6 border border-purple-200">
           <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-            <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">5</span>
+            <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">6</span>
             Региональные банки
           </h4>
           <div className="grid md:grid-cols-3 gap-4 text-sm">
