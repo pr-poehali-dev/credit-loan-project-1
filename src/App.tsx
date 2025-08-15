@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import ConsumerLoan from "./pages/ConsumerLoan";
 import Mortgage from "./pages/Mortgage";
 import AutoLoan from "./pages/AutoLoan";
+import MicroloansPage from "./pages/MicroloansPage";
 import DebitCardsPage from "./pages/DebitCardsPage";
 import BlogPage from "./pages/BlogPage";
 import HowBanksApproveLoans from "./pages/blog/HowBanksApproveLoans";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/consumer-loan" element={<ConsumerLoan />} />
             <Route path="/mortgage" element={<Mortgage />} />
             <Route path="/auto-loan" element={<AutoLoan />} />
+            <Route path="/microloans" element={<MicroloansPage />} />
             <Route path="/debit-cards" element={<DebitCardsPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/how-banks-approve-loans" element={<HowBanksApproveLoans />} />
