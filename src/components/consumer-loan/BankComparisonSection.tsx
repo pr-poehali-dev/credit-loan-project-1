@@ -67,7 +67,7 @@ const BankComparisonSection = () => {
             <span className="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
             Альфа-Банк
           </h4>
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
+          <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
             <div className="flex items-center space-x-2">
               <Icon name="Zap" className="w-4 h-4 text-yellow-500" />
               <span className="text-gray-700">Быстрое рассмотрение заявок</span>
@@ -80,6 +80,17 @@ const BankComparisonSection = () => {
               <Icon name="Smartphone" className="w-4 h-4 text-green-500" />
               <span className="text-gray-700">Удобное мобильное приложение</span>
             </div>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="https://trk.ppdu.ru/click/bFoELgmK?erid=2SDnjeBUY44" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer" 
+              className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+            >
+              <Icon name="ExternalLink" className="w-4 h-4 mr-2" />
+              Оформить в Альфа-Банке
+            </a>
           </div>
         </div>
 
