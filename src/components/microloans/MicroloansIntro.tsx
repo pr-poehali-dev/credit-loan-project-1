@@ -13,28 +13,27 @@ const MicroloansIntro = () => {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 mb-8 sm:mb-12">
           <div>
             <p className="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
-              Микрозайм (микрозаем) — это небольшая денежная сумма, которую можно взять в микрофинансовой 
-              организации (МФО) на короткий срок. Основные преимущества:
+              <strong>Микрозайм (микрозаем)</strong> — это небольшая денежная сумма от 1 000 до 100 000 рублей, которую можно взять в <strong>микрофинансовой организации (МФО)</strong> на срок от 7 до 365 дней. Основные преимущества микрозаймов:
             </p>
             
-            <div className="space-y-4">
-              <div className="flex items-center">
+            <ul className="space-y-4">
+              <li className="flex items-center">
                 <Icon name="Zap" size={20} className="text-orange-600 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">Быстрое оформление онлайн</span>
-              </div>
-              <div className="flex items-center">
+                <span className="text-gray-700">Быстрое оформление онлайн за 15 минут</span>
+              </li>
+              <li className="flex items-center">
                 <Icon name="FileText" size={20} className="text-blue-600 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">Минимальный пакет документов</span>
-              </div>
-              <div className="flex items-center">
+                <span className="text-gray-700">Минимальный пакет документов (только паспорт)</span>
+              </li>
+              <li className="flex items-center">
                 <Icon name="CreditCard" size={20} className="text-green-600 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">Получение средств на карту за несколько минут</span>
-              </div>
-              <div className="flex items-center">
+                <span className="text-gray-700">Получение средств на карту круглосуточно</span>
+              </li>
+              <li className="flex items-center">
                 <Icon name="Shield" size={20} className="text-purple-600 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">Возможность получить без справок о доходах</span>
-              </div>
-            </div>
+                <span className="text-gray-700">Одобрение без справок о доходах и поручителей</span>
+              </li>
+            </ul>
           </div>
           
           <Card className="p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-gray-100">

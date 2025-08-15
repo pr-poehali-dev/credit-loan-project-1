@@ -14,8 +14,8 @@ const MicroloansZeroPercent = () => {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
           <div>
             <p className="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed">
-              Многие МФО предлагают первый займ без процентов для новых клиентов. Это отличная возможность 
-              решить финансовые проблемы без переплат.
+              Многие <strong>МФО предлагают первый займ без процентов</strong> для новых клиентов. Это отличная возможность 
+              решить финансовые проблемы без переплат и получить <em>бесплатные деньги на карту</em>.
             </p>
             
             <Card className="p-6 bg-green-50 border-green-200 mb-6">
