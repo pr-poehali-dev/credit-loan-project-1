@@ -211,45 +211,40 @@ const AutoLoan = () => {
                 </div>
                 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {/* Совкомбанк */}
+                  {/* Альфа-Банк */}
                   <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-red-200 bg-white">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-red-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
                     <div className="relative text-center p-6">
                       <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
-                        <img 
-                          src="https://cdn.poehali.dev/files/1c25f927-7d45-4cd8-99f5-cf64c1621436.jpg" 
-                          alt="Совкомбанк - автокредит" 
-                          className="w-12 h-12 object-contain"
-                          loading="lazy"
-                        />
+                        <span className="text-red-600 font-bold text-2xl">А</span>
                       </div>
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Совкомбанк</h3>
-                      <p className="text-base md:text-lg font-medium text-red-700 mb-6">Автокредит</p>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Альфа-Банк</h3>
+                      <p className="text-base md:text-lg font-medium text-red-700 mb-6">Кредит наличными на автомобиль</p>
                       
                       <div className="space-y-4 mb-8">
                         <div className="bg-red-50 rounded-lg p-4">
                           <div className="flex justify-between items-center mb-2">
                             <span className="text-sm md:text-base text-gray-600">Сумма:</span>
-                            <span className="font-bold text-base md:text-lg">до 3 млн ₽</span>
+                            <span className="font-bold text-base md:text-lg">до 7 млн ₽</span>
                           </div>
                           <div className="flex justify-between items-center mb-2">
                             <span className="text-sm md:text-base text-gray-600">Ставка:</span>
-                            <span className="font-bold text-base md:text-lg text-red-600">от 14.5%</span>
+                            <span className="font-bold text-base md:text-lg text-red-600">от 19.99%</span>
                           </div>
                           <div className="flex justify-between items-center">
                             <span className="text-sm md:text-base text-gray-600">Срок:</span>
-                            <span className="font-bold text-base md:text-lg">до 7 лет</span>
+                            <span className="font-bold text-base md:text-lg">до 5 лет</span>
                           </div>
                         </div>
                         
                         <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-                          <Icon name="Car" size={16} />
-                          <span>Новые и б/у автомобили</span>
+                          <Icon name="Zap" size={16} />
+                          <span>Быстрое решение онлайн</span>
                         </div>
                         
                         <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-                          <Icon name="Shield" size={16} />
-                          <span>Без первоначального взноса</span>
+                          <Icon name="User" size={16} />
+                          <span>Без залога и поручителей</span>
                         </div>
                       </div>
                       
@@ -259,10 +254,10 @@ const AutoLoan = () => {
                         asChild
                       >
                         <a 
-                          href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=6950&p=9546&erid=2W5zFG1jojN"
+                          href="https://trk.ppdu.ru/click/Jslqnuid?erid=2SDnjcg1wPa"
                           target="_blank"
                           rel="noopener noreferrer nofollow"
-                        >Оформить </a>
+                        >Оформить кредит</a>
                       </Button>
                       
                       <p className="text-xs text-gray-500 mt-3">
