@@ -25,7 +25,7 @@ const BankComparisonSection = () => {
             <span className="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">1</span>
             Сбербанк
           </h4>
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
+          <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
             <div className="flex items-center space-x-2">
               <Icon name="Shield" className="w-4 h-4 text-green-500" />
               <span className="text-gray-700">Надежность и репутация</span>
@@ -38,6 +38,17 @@ const BankComparisonSection = () => {
               <Icon name="Star" className="w-4 h-4 text-yellow-500" />
               <span className="text-gray-700">Льготы для зарплатных клиентов</span>
             </div>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="https://trk.ppdu.ru/click/CpNSOA4a?erid=2SDnje8KVjs" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer" 
+              className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+            >
+              <Icon name="ExternalLink" className="w-4 h-4 mr-2" />
+              Оформить в Сбербанке
+            </a>
           </div>
         </div>
 

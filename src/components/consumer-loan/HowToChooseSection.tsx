@@ -130,8 +130,18 @@ const HowToChooseSection = () => {
                 </div>
               </div>
               
-              <Button size="sm" className="w-full bg-green-600 hover:bg-green-700 text-white text-xs">
-                Получить кредит
+              <Button 
+                size="sm" 
+                className="w-full bg-green-600 hover:bg-green-700 text-white text-xs"
+                asChild
+              >
+                <a 
+                  href="https://trk.ppdu.ru/click/CpNSOA4a?erid=2SDnje8KVjs"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  Получить кредит
+                </a>
               </Button>
             </div>
           </Card>
