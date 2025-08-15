@@ -15,7 +15,7 @@ const BankComparisonSection = () => {
 
       <div className="mb-8">
         <h3 className="text-xl font-semibold text-gray-900 mb-6">
-          Топ-6 банков с выгодными условиями
+          Топ-7 банков с выгодными условиями
         </h3>
       </div>
 
@@ -62,9 +62,41 @@ const BankComparisonSection = () => {
           </div>
         </div>
 
+        <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 border border-blue-200">
+          <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+            <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
+            Банк ЗЕНИТ
+          </h4>
+          <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
+            <div className="flex items-center space-x-2">
+              <Icon name="TrendingUp" className="w-4 h-4 text-blue-500" />
+              <span className="text-gray-700">Выгодные ставки</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Icon name="Users" className="w-4 h-4 text-green-500" />
+              <span className="text-gray-700">Персональный подход</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Icon name="Shield" className="w-4 h-4 text-purple-500" />
+              <span className="text-gray-700">Надежность и стабильность</span>
+            </div>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="https://trk.ppdu.ru/click/XlIaQimB?erid=2SDnjdKGNEg" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer" 
+              className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+            >
+              <Icon name="ExternalLink" className="w-4 h-4 mr-2" />
+              Оформить в Банке ЗЕНИТ
+            </a>
+          </div>
+        </div>
+
         <div className="bg-gradient-to-r from-red-50 to-red-100 rounded-xl p-6 border border-red-200">
           <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-            <span className="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
+            <span className="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">4</span>
             Альфа-Банк
           </h4>
           <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
@@ -96,10 +128,10 @@ const BankComparisonSection = () => {
 
         <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-xl p-6 border border-orange-200">
           <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-            <span className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">4</span>
+            <span className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">5</span>
             Совкомбанк
           </h4>
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
+          <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
             <div className="flex items-center space-x-2">
               <Icon name="Percent" className="w-4 h-4 text-green-500" />
               <span className="text-gray-700">Конкурентные ставки</span>
@@ -113,11 +145,22 @@ const BankComparisonSection = () => {
               <span className="text-gray-700">Специальные предложения</span>
             </div>
           </div>
+          <div className="mt-4">
+            <a 
+              href="https://trk.ppdu.ru/click/TH2PKq63?erid=Kra246d9e" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer" 
+              className="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+            >
+              <Icon name="ExternalLink" className="w-4 h-4 mr-2" />
+              Оформить в Совкомбанке
+            </a>
+          </div>
         </div>
 
         <div className="bg-gradient-to-r from-black to-gray-800 rounded-xl p-6 border border-gray-700">
           <h4 className="text-lg font-semibold text-white mb-3 flex items-center">
-            <span className="bg-yellow-500 text-black rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">5</span>
+            <span className="bg-yellow-500 text-black rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">6</span>
             Т-Банк
           </h4>
           <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
@@ -149,7 +192,7 @@ const BankComparisonSection = () => {
 
         <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-6 border border-purple-200">
           <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-            <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">6</span>
+            <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">7</span>
             Региональные банки
           </h4>
           <div className="grid md:grid-cols-3 gap-4 text-sm">
