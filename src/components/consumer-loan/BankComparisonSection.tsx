@@ -52,24 +52,40 @@ const BankComparisonSection = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 border border-blue-200">
+        <div className="bg-gradient-to-r from-orange-50 to-purple-50 rounded-xl p-6 border border-orange-200">
           <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-            <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
-            ВТБ
+            <span className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
+            <img 
+              src="https://cdn.poehali.dev/files/69bb8226-1827-490c-b7f1-1999253e456e.jpg" 
+              alt="Банк ПСБ" 
+              className="w-6 h-6 mr-2"
+            />
+            Банк ПСБ
           </h4>
-          <div className="grid md:grid-cols-3 gap-4 text-sm">
+          <div className="grid md:grid-cols-3 gap-4 text-sm mb-4">
             <div className="flex items-center space-x-2">
-              <Icon name="TrendingUp" className="w-4 h-4 text-blue-500" />
-              <span className="text-gray-700">Высокие суммы кредитования</span>
+              <Icon name="TrendingUp" className="w-4 h-4 text-orange-500" />
+              <span className="text-gray-700">Выгодные ставки</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Icon name="Settings" className="w-4 h-4 text-purple-500" />
-              <span className="text-gray-700">Гибкие условия</span>
+              <Icon name="Shield" className="w-4 h-4 text-purple-500" />
+              <span className="text-gray-700">Государственная поддержка</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Icon name="Heart" className="w-4 h-4 text-red-500" />
-              <span className="text-gray-700">Программы лояльности</span>
+              <Icon name="Award" className="w-4 h-4 text-blue-500" />
+              <span className="text-gray-700">Премиальное обслуживание</span>
             </div>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="https://trk.ppdu.ru/click/0Gd4N1ki?erid=2SDnjcVVfjj" 
+              target="_blank" 
+              rel="nofollow noopener noreferrer" 
+              className="inline-flex items-center bg-gradient-to-r from-orange-600 to-purple-600 hover:from-orange-700 hover:to-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200"
+            >
+              <Icon name="ExternalLink" className="w-4 h-4 mr-2" />
+              Оформить в Банке ПСБ
+            </a>
           </div>
         </div>
 
