@@ -35,7 +35,6 @@ const Header = () => {
             <a href="/consumer-loan" className="text-gray-600 hover:text-blue-600 transition-colors">Потребительский кредит</a>
             <a href="/mortgage" className="text-gray-600 hover:text-blue-600 transition-colors">Ипотека</a>
             <a href="/auto-loan" className="text-gray-600 hover:text-blue-600 transition-colors">Автокредит</a>
-            <a href="/microloans" className="text-gray-600 hover:text-blue-600 transition-colors">Микрозаймы</a>
             <a href="/debit-cards" className="text-gray-600 hover:text-blue-600 transition-colors">Дебетовые карты</a>
             <a href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors">Блог</a>
           </nav>
