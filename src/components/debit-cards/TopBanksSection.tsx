@@ -367,6 +367,53 @@ const TopBanksSection = () => {
               Оформить карту
             </Button>
           </div>
+
+          {/* Банк ПСБ */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="/img/9f16aeb6-4025-4da8-82d5-7872f537b84f.jpg" 
+                  alt="ПСБ логотип" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">Банк ПСБ</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Дебетовая карта ПСБ (Промсвязьбанк) предлагает современные банковские решения и выгодные условия для клиентов.
+            </p>
+            <div className="space-y-2 mb-6">
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Бесплатное обслуживание карты
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Высокий процент на остаток
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Кэшбэк за покупки
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Современное мобильное приложение
+              </div>
+            </div>
+            <Button 
+              className="w-full bg-green-600 hover:bg-green-700"
+              asChild
+            >
+              <a 
+                href="https://trk.ppdu.ru/click/PkSfuNTn?erid=2SDnjehD1C8"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Оформить карту
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
