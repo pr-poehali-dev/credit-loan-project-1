@@ -246,8 +246,8 @@ const CreditCards = () => {
               {/* Совкомбанк */}
               <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-red-100">
                 <div className="flex items-center mb-4">
-                  <div className="bg-red-100 p-3 rounded-lg mr-4">
-                    <Icon name="Wallet" className="text-red-600" size={24} />
+                  <div className="w-12 h-12 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="https://cdn.poehali.dev/files/2ea96d8a-10e8-409e-839d-dfdb05689917.jpg" alt="Совкомбанк" className="w-10 h-10 rounded" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">Совкомбанк</h3>
                 </div>
