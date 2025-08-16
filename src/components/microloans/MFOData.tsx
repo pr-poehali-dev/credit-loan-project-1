@@ -248,7 +248,7 @@ export const mfoList: MFOData[] = [
   },
   {
     name: "Отличные наличные",
-    logo: "",
+    logo: "https://cdn.poehali.dev/files/093c9dc5-04a3-47d6-ad0f-48ac4863547b.png",
     subtitle: "Микрозайм",
     amount: "1-30 тыс ₽",
     rate: "0-0,8% в день",
@@ -256,10 +256,10 @@ export const mfoList: MFOData[] = [
     iconName: "Banknote",
     iconText: "Отличные условия",
     url: "https://trk.ppdu.ru/click/YBCysnxk?erid=Kra23g1Lt",
-    borderColor: "border-teal-200",
-    bgColor: "bg-teal-500",
-    textColor: "text-teal-700",
-    buttonColor: "bg-teal-600",
-    buttonHoverColor: "hover:bg-teal-700"
+    borderColor: "border-green-200",
+    bgColor: "bg-green-500",
+    textColor: "text-green-700",
+    buttonColor: "bg-green-600",
+    buttonHoverColor: "hover:bg-green-700"
   }
 ];
