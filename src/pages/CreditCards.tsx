@@ -27,7 +27,7 @@ const CreditCards = () => {
             {/* Hero Image */}
             <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/img/baf5d501-73ca-481c-9dcc-1a3a3254f4f9.jpg" 
+                src="/img/1ea841e0-3891-47d0-adbc-472b0fc9d2b1.jpg" 
                 alt="Кредитные карты 2025"
                 className="w-full h-64 md:h-80 object-cover"
               />
