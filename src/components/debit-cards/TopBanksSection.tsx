@@ -378,7 +378,7 @@ const TopBanksSection = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Банк ПСБ</h3>
+              <h3 className="text-xl font-bold text-gray-900">ПСБ</h3>
             </div>
             <p className="text-gray-600 mb-4">
               Дебетовая карта ПСБ (Промсвязьбанк) предлагает современные банковские решения и выгодные условия для клиентов.
