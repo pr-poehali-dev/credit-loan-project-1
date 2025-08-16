@@ -178,5 +178,20 @@ export const additionalBanksData: BankData[] = [
     buttonColor: "bg-blue-600",
     buttonHoverColor: "hover:bg-blue-700",
     href: "https://trk.ppdu.ru/click/vHB7jJr1?erid=2SDnjcYvm8c"
+  },
+  {
+    name: "МКБ",
+    logo: "https://cdn.poehali.dev/files/11907ecb-a647-4e2d-b529-b5d8e8815b4e.jpg",
+    logoAlt: "МКБ логотип",
+    description: "Московский Кредитный Банк предлагает современные дебетовые карты с выгодными условиями и широкими возможностями.",
+    features: [
+      { text: "Бесплатное обслуживание карты" },
+      { text: "Кэшбэк в различных категориях" },
+      { text: "Высокий процент на остаток" },
+      { text: "Удобное мобильное приложение" }
+    ],
+    buttonColor: "bg-red-500",
+    buttonHoverColor: "hover:bg-red-600",
+    href: "https://trk.ppdu.ru/click/d4h5GJ9G?erid=Kra24BgpE"
   }
 ];
