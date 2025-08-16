@@ -208,5 +208,20 @@ export const additionalBanksData: BankData[] = [
     buttonColor: "bg-red-600",
     buttonHoverColor: "hover:bg-red-700",
     href: "https://trk.ppdu.ru/click/7f2vYZWW?erid=Kra23nkSR"
+  },
+  {
+    name: "Плати по миру",
+    logo: "/img/7c6e45e7-c92a-44b2-9073-020a1eda2610.jpg",
+    logoAlt: "Плати по миру логотип",
+    description: "Виртуальная карта в USD для оплаты товаров и услуг за рубежом. Быстрое оформление и мгновенное получение реквизитов карты.",
+    features: [
+      { text: "Виртуальная карта в долларах США" },
+      { text: "Оплата зарубежных сервисов" },
+      { text: "Мгновенное получение реквизитов" },
+      { text: "Безопасные онлайн-платежи" }
+    ],
+    buttonColor: "bg-blue-500",
+    buttonHoverColor: "hover:bg-blue-600",
+    href: "https://trk.ppdu.ru/click/oZe40rn2?erid=2SDnjdQghsC"
   }
 ];
