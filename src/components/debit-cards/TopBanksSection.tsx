@@ -461,6 +461,53 @@ const TopBanksSection = () => {
               </a>
             </Button>
           </div>
+
+          {/* Кредит Европа Банк */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/5f8ecd5d-cc80-4d30-aeca-728ac70fbad6.jpg" 
+                  alt="Кредит Европа Банк логотип" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">Кредит Европа Банк</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Дебетовая карта Кредит Европа Банка предлагает европейские стандарты обслуживания и выгодные условия для российских клиентов.
+            </p>
+            <div className="space-y-2 mb-6">
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Бесплатное ведение карты
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Европейские стандарты качества
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Кэшбэк в популярных категориях
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Выгодный процент на остаток
+              </div>
+            </div>
+            <Button 
+              className="w-full bg-blue-600 hover:bg-blue-700"
+              asChild
+            >
+              <a 
+                href="https://trk.ppdu.ru/click/vHB7jJr1?erid=2SDnjcYvm8c"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Оформить карту
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
