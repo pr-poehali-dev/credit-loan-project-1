@@ -193,5 +193,20 @@ export const additionalBanksData: BankData[] = [
     buttonColor: "bg-red-500",
     buttonHoverColor: "hover:bg-red-600",
     href: "https://trk.ppdu.ru/click/d4h5GJ9G?erid=Kra24BgpE"
+  },
+  {
+    name: "Фора-Банк",
+    logo: "https://cdn.poehali.dev/files/66b8fedb-c036-41ef-8cff-7ce7360b7fcd.png",
+    logoAlt: "Фора-Банк логотип",
+    description: "Фора-Банк предлагает выгодные дебетовые карты с индивидуальным подходом к каждому клиенту и современными банковскими решениями.",
+    features: [
+      { text: "Персональные условия обслуживания" },
+      { text: "Конкурентный кэшбэк" },
+      { text: "Льготы для постоянных клиентов" },
+      { text: "Качественная клиентская поддержка" }
+    ],
+    buttonColor: "bg-red-600",
+    buttonHoverColor: "hover:bg-red-700",
+    href: "https://trk.ppdu.ru/click/7f2vYZWW?erid=Kra23nkSR"
   }
 ];
