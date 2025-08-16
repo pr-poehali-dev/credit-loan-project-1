@@ -119,6 +119,12 @@ const CreditCards = () => {
 
           {/* Bank Offers Section */}
           <section className="mb-16">
+            <div className="flex justify-center mb-8">
+              <div className="bg-green-600 text-white px-6 py-3 rounded-full flex items-center space-x-2 shadow-lg">
+                <Icon name="FileText" size={20} />
+                <span className="font-semibold">Банки-партнёры</span>
+              </div>
+            </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Лучшие предложения банков</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
