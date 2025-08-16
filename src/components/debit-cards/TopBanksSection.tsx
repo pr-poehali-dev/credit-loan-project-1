@@ -378,7 +378,7 @@ const TopBanksSection = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">ПСБ</h3>
+              <h3 className="text-xl font-bold text-gray-900">Банк ПСБ</h3>
             </div>
             <p className="text-gray-600 mb-4">
               Дебетовая карта ПСБ (Промсвязьбанк) предлагает современные банковские решения и выгодные условия для клиентов.
@@ -407,6 +407,53 @@ const TopBanksSection = () => {
             >
               <a 
                 href="https://trk.ppdu.ru/click/PkSfuNTn?erid=2SDnjehD1C8"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Оформить карту
+              </a>
+            </Button>
+          </div>
+
+          {/* УБРиР */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/47de067e-62ea-45c2-bbaf-e161d4a9f09e.jpg" 
+                  alt="УБРиР логотип" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">УБРиР</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Уральский банк реконструкции и развития предлагает дебетовые карты с выгодными условиями и региональными преимуществами.
+            </p>
+            <div className="space-y-2 mb-6">
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Бесплатное годовое обслуживание
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Выгодный кэшбэк на заправках
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Процент на остаток средств
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Региональные партнерские программы
+              </div>
+            </div>
+            <Button 
+              className="w-full bg-red-700 hover:bg-red-800"
+              asChild
+            >
+              <a 
+                href="https://trk.ppdu.ru/click/NjZ2wVHJ?erid=2SDnjdU9bbN"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
