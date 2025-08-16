@@ -55,25 +55,6 @@ const MicroloansConclusion = () => {
           </Card>
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-orange-600 to-yellow-600">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
-            Готовы получить микрозайм?
-          </h3>
-          <p className="text-lg sm:text-xl text-orange-100 mb-6 sm:mb-8">
-            Подберем лучшие предложения от надежных МФО с высокой вероятностью одобрения
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-orange-600 hover:bg-gray-100 px-8 sm:px-12 py-3 sm:py-4 text-lg font-semibold"
-          >
-            <Icon name="Zap" size={20} className="mr-2" />
-            Подобрать микрозайм
-          </Button>
-        </div>
-      </section>
     </>
   );
 };
