@@ -47,7 +47,7 @@ const LoanTypes = () => {
       amount: 'кэшбэк до 33%',
       term: 'бесплатно',
       icon: 'Wallet',
-      description: 'Карты с выгодными условиями',
+      description: 'Выгодные условия',
       color: 'bg-orange-600'
     }
   ];
