@@ -11,7 +11,7 @@ const HeroSection = () => {
       {/* Hero Image */}
       <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl">
         <img 
-          src="/img/4d740937-c723-4aed-b51c-b84865360ac2.jpg" 
+          src="/img/8d060ee4-7ee9-48dc-a90c-09984d75b71f.jpg" 
           alt="Кредитные карты 2025"
           className="w-full h-64 md:h-80 object-cover"
           width="1186"
