@@ -373,7 +373,7 @@ const TopBanksSection = () => {
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
                 <img 
-                  src="/img/9f16aeb6-4025-4da8-82d5-7872f537b84f.jpg" 
+                  src="https://cdn.poehali.dev/files/5e078e9b-ae42-456a-8009-0d9629e92dfa.jpg" 
                   alt="ПСБ логотип" 
                   className="w-full h-full object-contain"
                 />
