@@ -271,9 +271,11 @@ const HowBanksApproveLoans = () => {
                   <p className="text-sm sm:text-lg mb-4 sm:mb-6 opacity-90">
                     Подберем лучшие предложения от надежных банков с высокой вероятностью одобрения
                   </p>
-                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 touch-manipulation w-full sm:w-auto" aria-label="Подобрать кредит">
-                    <Icon name="CreditCard" size={16} className="sm:size-5 mr-2" />
-                    Подобрать кредит
+                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 touch-manipulation w-full sm:w-auto" asChild>
+                    <a href="/microloans#mfo-partners" aria-label="Перейти к МФО-партнёрам для получения микрозайма">
+                      <Icon name="CreditCard" size={16} className="sm:size-5 mr-2" />
+                      Подобрать кредит
+                    </a>
                   </Button>
                 </div>
               </section>

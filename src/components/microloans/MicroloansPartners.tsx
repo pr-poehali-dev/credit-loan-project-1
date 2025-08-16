@@ -4,7 +4,7 @@ import MFOGrid from './MFOGrid';
 
 const MicroloansPartners = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-12 sm:py-16 px-4">
+    <section id="mfo-partners" className="bg-gradient-to-r from-blue-50 to-indigo-50 py-12 sm:py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <MFOHeader />
         <MFOGrid />
