@@ -13,7 +13,7 @@ const HeroSection = () => {
         <img 
           src="https://cdn.poehali.dev/files/2b46e473-bf5b-4dc9-8da3-9112f1f5b702.jpg" 
           alt="Кредитные карты 2025"
-          className="w-full h-64 md:h-80 object-cover"
+          className="w-full h-64 md:h-80 object-contain"
           width="1186"
           height="565"
         />
