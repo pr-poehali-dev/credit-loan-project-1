@@ -38,6 +38,16 @@ const BlogPage = () => {
       readTime: "6 мин",
       category: "Советы",
       image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&h=400&fit=crop"
+    },
+    {
+      id: 4,
+      title: "Пошаговый план получения ипотеки — от заявки до договора",
+      description: "Подробная инструкция по получению ипотеки: заявка в банк, проверка, документы, выбор квартиры, оценка и подписание договора.",
+      slug: "mortgage-step-by-step",
+      date: "16 августа 2025",
+      readTime: "8 мин",
+      category: "Ипотека",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop"
     }
   ];
 
@@ -109,6 +119,22 @@ const BlogPage = () => {
                 "author": {
                   "@type": "Person",
                   "name": "Эксперт по кредитам"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Одобрили Кредит"
+                }
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "Пошаговый план получения ипотеки — от заявки до договора",
+                "description": "Подробная инструкция по получению ипотеки: заявка в банк, проверка, документы, выбор квартиры, оценка и подписание договора.",
+                "url": "https://odobrilicredit.ru/blog/mortgage-step-by-step",
+                "datePublished": "2025-08-16T00:00:00.000Z",
+                "dateModified": "2025-08-16T00:00:00.000Z",
+                "author": {
+                  "@type": "Person",
+                  "name": "Эксперт по ипотеке"
                 },
                 "publisher": {
                   "@type": "Organization",
