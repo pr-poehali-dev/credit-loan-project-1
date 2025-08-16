@@ -386,5 +386,55 @@ export const mfoList: MFOData[] = [
     textColor: "text-red-700",
     buttonColor: "bg-red-600",
     buttonHoverColor: "hover:bg-red-700"
+  },
+  {
+    name: "ДрайвЗайм",
+    logo: "https://cdn.poehali.dev/files/13c63920-11f6-45e1-b7ea-d08c4c25a54c.png",
+    subtitle: "Займы для бизнеса",
+    amount: "15 000 - 500 000 ₽",
+    amountDetails: "физ. лица / 100 000 - 3 000 000 ₽ юр. лица",
+    term: "до 12 месяцев",
+    termDetails: "гибкие условия",
+    rate: "от 2%",
+    rateDetails: "до 7,4% в месяц",
+    features: [
+      "Займы до 3 млн для бизнеса",
+      "Физ. лица до 500 000 ₽",
+      "Ставка от 2% в месяц",
+      "Быстрое рассмотрение"
+    ],
+    iconName: "Building",
+    iconText: "Для бизнеса",
+    url: "https://trk.ppdu.ru/click/9ZKztEI2?erid=2SDnjevdxUT",
+    borderColor: "border-slate-200",
+    bgColor: "bg-slate-500",
+    textColor: "text-slate-700",
+    buttonColor: "bg-slate-600",
+    buttonHoverColor: "hover:bg-slate-700"
+  },
+  {
+    name: "Капиталина",
+    logo: "https://cdn.poehali.dev/files/ab59f16f-ac7c-4acc-85fd-6fceaf7dd569.png",
+    subtitle: "Микрозайм",
+    amount: "5 000 - 30 000 ₽",
+    amountDetails: "оптимальные суммы",
+    term: "от 5 дней",
+    termDetails: "минимальный срок",
+    rate: "0,8%",
+    rateDetails: "в день",
+    features: [
+      "Минимум от 5 дней",
+      "Суммы до 30 000 ₽",
+      "Быстрое одобрение",
+      "Простые условия"
+    ],
+    iconName: "Timer",
+    iconText: "От 5 дней",
+    url: "https://trk.ppdu.ru/click/m4JPpbhF?erid=2SDnjemexxm",
+    borderColor: "border-orange-200",
+    bgColor: "bg-orange-500",
+    textColor: "text-orange-700",
+    buttonColor: "bg-orange-600",
+    buttonHoverColor: "hover:bg-orange-700"
   }
 ];
