@@ -28,7 +28,7 @@ const MicroloansHero = () => {
               <div className="text-sm sm:text-base text-gray-600">Первый займ</div>
             </Card>
             <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm">
-              <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">100 000₽</div>
+              <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">300 000₽</div>
               <div className="text-sm sm:text-base text-gray-600">Максимальная сумма</div>
             </Card>
             <Card className="p-4 sm:p-6 bg-white/80 backdrop-blur-sm">
