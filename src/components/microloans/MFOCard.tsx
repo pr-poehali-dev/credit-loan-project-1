@@ -32,12 +32,18 @@ const MFOCard: React.FC<MFOCardProps> = ({ mfo }) => {
       <div className={`absolute top-0 right-0 w-32 h-32 ${mfo.bgColor} rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity`}></div>
       <div className="relative text-center p-6">
         <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
-          <img 
-            src={mfo.logo} 
-            alt={`${mfo.name} - микрозайм`} 
-            className="w-12 h-12 object-contain"
-            loading="lazy"
-          />
+          {mfo.logo ? (
+            <img 
+              src={mfo.logo} 
+              alt={`${mfo.name} - микрозайм`} 
+              className="w-12 h-12 object-contain"
+              loading="lazy"
+            />
+          ) : (
+            <span className={`font-bold text-lg ${mfo.textColor}`}>
+              {mfo.name.charAt(0)}
+            </span>
+          )}
         </div>
         <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{mfo.name}</h3>
         <p className={`text-base md:text-lg font-medium ${mfo.textColor} mb-6`}>{mfo.subtitle}</p>
