@@ -131,8 +131,8 @@ const CreditCards = () => {
               {/* СберБанк */}
               <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-green-100">
                 <div className="flex items-center mb-4">
-                  <div className="bg-green-100 p-3 rounded-lg mr-4">
-                    <Icon name="Shield" className="text-green-600" size={24} />
+                  <div className="w-12 h-12 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="https://cdn.poehali.dev/files/bb273335-8717-461b-a405-dbab5e2bc82f.jpg" alt="СберБанк" className="w-10 h-10 rounded" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">СберБанк</h3>
                 </div>
@@ -154,8 +154,8 @@ const CreditCards = () => {
               {/* Т-Банк */}
               <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-black/10">
                 <div className="flex items-center mb-4">
-                  <div className="bg-black p-3 rounded-lg mr-4">
-                    <Icon name="Smartphone" className="text-white" size={24} />
+                  <div className="w-12 h-12 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="https://cdn.poehali.dev/files/625ac4f1-6c9c-492c-b049-349d3645cf9e.jpg" alt="Т-Банк" className="w-10 h-10 rounded" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">Т-Банк</h3>
                 </div>
@@ -177,8 +177,8 @@ const CreditCards = () => {
               {/* ПСБ */}
               <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-blue-100">
                 <div className="flex items-center mb-4">
-                  <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <Icon name="Building" className="text-blue-600" size={24} />
+                  <div className="w-12 h-12 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="https://cdn.poehali.dev/files/a4d81d4e-da9a-4a0f-aa3d-62e21b98ec6d.jpg" alt="ПСБ" className="w-10 h-10 rounded" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">ПСБ</h3>
                 </div>
@@ -198,10 +198,10 @@ const CreditCards = () => {
               </div>
 
               {/* Уралсиб */}
-              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-orange-100">
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-purple-100">
                 <div className="flex items-center mb-4">
-                  <div className="bg-orange-100 p-3 rounded-lg mr-4">
-                    <Icon name="CreditCard" className="text-orange-600" size={24} />
+                  <div className="w-12 h-12 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="https://cdn.poehali.dev/files/4809a2b6-fff8-42d2-9fcd-eb2c0dd32d6d.png" alt="Уралсиб" className="w-10 h-10 rounded" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">Уралсиб</h3>
                 </div>
@@ -214,17 +214,17 @@ const CreditCards = () => {
                   href="https://trk.ppdu.ru/click/K9fJiMd2?erid=2SDnjeTpMvR" 
                   target="_blank" 
                   rel="nofollow noopener noreferrer"
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors block text-center"
+                  className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors block text-center"
                 >
                   Оформить карту
                 </a>
               </div>
 
               {/* Зенит Банк */}
-              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-purple-100">
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-teal-100">
                 <div className="flex items-center mb-4">
-                  <div className="bg-purple-100 p-3 rounded-lg mr-4">
-                    <Icon name="Star" className="text-purple-600" size={24} />
+                  <div className="w-12 h-12 rounded-lg mr-4 flex items-center justify-center">
+                    <img src="https://cdn.poehali.dev/files/c1bf3e98-cf91-46de-9232-941354fff010.png" alt="Зенит Банк" className="w-10 h-10 rounded" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">Зенит Банк</h3>
                 </div>
@@ -237,7 +237,7 @@ const CreditCards = () => {
                   href="https://trk.ppdu.ru/click/3JwviK95?erid=2SDnjcXHk4C" 
                   target="_blank" 
                   rel="nofollow noopener noreferrer"
-                  className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors block text-center"
+                  className="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors block text-center"
                 >
                   Оформить карту
                 </a>
