@@ -104,9 +104,9 @@ const TopBanksSection = () => {
               asChild
             >
               <a 
-                href="https://go.leadgid.ru/aff_c?aff_id=132201&offer_id=7040&p=9546&erid=2W5zFJiwtFA"
+                href="https://trk.ppdu.ru/click/bHNbRcC7?erid=Kra23bfT9"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
               >
                 Оформить карту
               </a>
