@@ -329,6 +329,44 @@ const TopBanksSection = () => {
               Оформить карту
             </Button>
           </div>
+
+          {/* Уралсиб */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="/img/e89af1dc-ed4d-45f6-963d-1b41d8aa0dc8.jpg" 
+                  alt="Уралсиб логотип" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">Уралсиб</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Дебетовая карта Уралсиб предлагает удобные условия обслуживания и привлекательные возможности для экономии.
+            </p>
+            <div className="space-y-2 mb-6">
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Бесплатное ведение счета
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Кэшбэк в партнерских магазинах
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Льготное снятие наличных
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Онлайн-банкинг и мобильное приложение
+              </div>
+            </div>
+            <Button className="w-full bg-red-600 hover:bg-red-700">
+              Оформить карту
+            </Button>
+          </div>
         </div>
       </div>
     </section>
