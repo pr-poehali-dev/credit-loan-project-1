@@ -9,6 +9,47 @@ const CreditCards = () => {
       <Helmet>
         <title>Кредитные карты 2025: оформить онлайн без отказа с плохой кредитной историей</title>
         <meta name="description" content="Кредитные карты банков 2025 ★ Оформить онлайн без отказа ★ С плохой кредитной историей ★ Без процентов до 365 дней ★ Сравнение условий Сбербанк, Альфа-Банк, Т - Банк ★ Займы на карту срочно" />
+        <meta name="keywords" content="кредитные карты, оформить кредитную карту, кредитная карта онлайн, без отказа, плохая кредитная история, льготный период, без процентов, сбербанк, альфа банк, тинькофф банк, кредитные карты 2025" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Одобряем - финансовые решения" />
+        <meta property="og:title" content="Кредитные карты 2025: оформить онлайн без отказа" />
+        <meta property="og:description" content="Лучшие кредитные карты банков России. Оформление онлайн без отказа, даже с плохой кредитной историей. Льготные периоды до 365 дней." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://poehali.dev/credit-cards" />
+        <meta property="og:image" content="https://cdn.poehali.dev/files/069de826-3508-4ea6-a26e-4791a96facac.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Кредитные карты 2025: оформить онлайн без отказа" />
+        <meta name="twitter:description" content="Лучшие кредитные карты банков России с льготными периодами до 365 дней" />
+        <meta name="twitter:image" content="https://cdn.poehali.dev/files/069de826-3508-4ea6-a26e-4791a96facac.jpg" />
+        <link rel="canonical" href="https://poehali.dev/credit-cards" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Кредитные карты 2025",
+            "description": "Полное руководство по выбору и оформлению кредитных карт в 2025 году",
+            "url": "https://poehali.dev/credit-cards",
+            "mainEntity": {
+              "@type": "Article",
+              "headline": "Кредитные карты 2025: полное руководство по выбору и оформлению",
+              "author": {
+                "@type": "Organization",
+                "name": "Одобряем"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Одобряем",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://poehali.dev/logo.png"
+                }
+              },
+              "datePublished": "2025-01-01",
+              "dateModified": "2025-08-16",
+              "image": "https://cdn.poehali.dev/files/069de826-3508-4ea6-a26e-4791a96facac.jpg"
+            }
+          })}
+        </script>
       </Helmet>
 
       <Header />
@@ -35,7 +76,7 @@ const CreditCards = () => {
           </div>
 
           {/* Top Banks Section */}
-          <section className="mb-16">
+          <section className="mb-16" itemScope itemType="https://schema.org/Article">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Топ-5 банков с лучшими кредитными картами</h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,9 +86,9 @@ const CreditCards = () => {
                   <div className="bg-red-100 p-3 rounded-lg mr-4">
                     <Icon name="CreditCard" className="text-red-600" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">Альфа-Банк</h3>
+                  <h3 className="text-xl font-bold text-gray-900" itemProp="name">Кредитная карта Альфа-Банк: лидер по популярности</h3>
                 </div>
-                <p className="text-gray-600 mb-4">Кредитная карта Альфа-Банк — самый популярный выбор среди россиян.</p>
+                <p className="text-gray-600 mb-4" itemProp="description">Кредитная карта Альфа-Банк — самый популярный выбор среди россиян в 2025 году.</p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li>• Льготный период до 365 дней без процентов</li>
                   <li>• Оформление онлайн за 5 минут</li>
@@ -302,11 +343,11 @@ const CreditCards = () => {
 
           {/* Application Guide */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Оформление кредитной карты: пошаговое руководство</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Как оформить кредитную карту: пошаговое руководство</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Способы оформления</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Как оформить кредитную карту онлайн</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Icon name="Globe" className="text-blue-600 mr-3" size={20} />
@@ -328,7 +369,7 @@ const CreditCards = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Документы для оформления</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Какие документы нужны для оформления кредитной карты</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Icon name="FileText" className="text-blue-600 mr-3" size={20} />
@@ -349,11 +390,11 @@ const CreditCards = () => {
 
           {/* No Rejection Cards */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Кредитные карты без отказа: миф или реальность?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Кредитные карты без отказа с плохой кредитной историей</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Банки, которые редко отказывают</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Кредитные карты без отказа: какие банки одобряют</h3>
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4 shadow-sm">
                     <div className="font-semibold text-gray-900">Почта Банк</div>
@@ -371,7 +412,7 @@ const CreditCards = () => {
               </div>
 
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Кредитные карты с плохой кредитной историей</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Оформить кредитную карту с плохой кредитной историей</h3>
                 <p className="text-gray-600 mb-4">Даже с проблемной кредитной историей можно получить карту:</p>
                 <div className="space-y-4">
                   <div className="bg-white rounded-lg p-4 shadow-sm">
@@ -393,13 +434,13 @@ const CreditCards = () => {
 
           {/* Interest Rates */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Льготные периоды и проценты</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Льготные периоды кредитных карт: без процентов до 365 дней</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <div className="text-center mb-6">
                   <Icon name="Calendar" className="text-green-600 mx-auto mb-3" size={32} />
-                  <h3 className="text-xl font-bold text-gray-900">Беспроцентные кредитные карты</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Кредитные карты без процентов в 2025 году</h3>
                 </div>
                 <ul className="space-y-3 text-gray-600">
                   <li>• 120 дней без процентов — стандартный период</li>
@@ -411,7 +452,7 @@ const CreditCards = () => {
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <div className="text-center mb-6">
                   <Icon name="Percent" className="text-blue-600 mx-auto mb-3" size={32} />
-                  <h3 className="text-xl font-bold text-gray-900">Процентные ставки 2025</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Процентные ставки по кредитным картам в 2025 году</h3>
                 </div>
                 <ul className="space-y-3 text-gray-600">
                   <li>• Минимальная ставка: от 11,9% годовых</li>
@@ -423,7 +464,7 @@ const CreditCards = () => {
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <div className="text-center mb-6">
                   <Icon name="Banknote" className="text-purple-600 mx-auto mb-3" size={32} />
-                  <h3 className="text-xl font-bold text-gray-900">Снятие наличных</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Как снять наличные с кредитной карты</h3>
                 </div>
                 <ul className="space-y-3 text-gray-600">
                   <li>• В своих банкоматах: 0-3%</li>
@@ -436,13 +477,13 @@ const CreditCards = () => {
 
           {/* Tips Section */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Советы по использованию кредитных карт</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Как правильно пользоваться кредитной картой</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                   <Icon name="CheckCircle" className="text-green-600 mr-3" size={24} />
-                  Как максимально использовать льготный период
+                  Как максимально использовать льготный период кредитной карты
                 </h3>
                 <ul className="space-y-3 text-gray-600">
                   <li>• Изучите условия льготного периода</li>
@@ -455,7 +496,7 @@ const CreditCards = () => {
               <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                   <Icon name="AlertTriangle" className="text-red-600 mr-3" size={24} />
-                  Ошибки, которых стоит избегать
+                  Ошибки при использовании кредитной карты
                 </h3>
                 <ul className="space-y-3 text-gray-600">
                   <li>• Снятие наличных в льготном периоде</li>
@@ -469,7 +510,7 @@ const CreditCards = () => {
 
           {/* Conclusion */}
           <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl p-12 text-center">
-            <h2 className="text-3xl font-bold mb-6">Заключение</h2>
+            <h2 className="text-3xl font-bold mb-6">Кредитные карты 2025: выводы и рекомендации</h2>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto">
               Выбор кредитной карты в 2025 году зависит от ваших потребностей и финансового положения. 
               Независимо от кредитной истории, существуют варианты получения карты. Главное — внимательно 
