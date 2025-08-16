@@ -1,78 +1,71 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { ArrowLeft, DollarSign, Calendar, TrendingDown, CheckCircle, AlertCircle, Shield, Percent } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import SEOHead from '@/components/SEOHead';
+import Header from '@/components/sections/Header';
+import Footer from '@/components/sections/Footer';
 
 const FastLoanRepaymentPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Как быстро погасить кредит и сэкономить на процентах — эффективные стратегии</title>
-        <meta name="description" content="Рассказываем, как быстро погасить кредит и снизить переплату: советы по досрочному погашению, правильному выбору срока и экономии на процентах." />
-        <meta name="keywords" content="досрочное погашение кредита, как быстро погасить кредит, сэкономить на процентах, уменьшить переплату, стратегии погашения кредита, рефинансирование" />
-        <link rel="canonical" href="https://odobrilicredit.ru/blog/fast-loan-repayment" />
-        
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Как быстро погасить кредит и сэкономить на процентах",
-            "description": "Рассказываем, как быстро погасить кредит и снизить переплату: советы по досрочному погашению, правильному выбору срока и экономии на процентах.",
-            "author": {
-              "@type": "Person",
-              "name": "Эксперт по кредитам"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Одобрили Кредит",
-              "url": "https://odobrilicredit.ru"
-            },
-            "datePublished": "2025-08-16T00:00:00.000Z",
-            "dateModified": "2025-08-16T00:00:00.000Z",
-            "url": "https://odobrilicredit.ru/blog/fast-loan-repayment",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://odobrilicredit.ru/blog/fast-loan-repayment"
-            }
-          })}
-        </script>
-      </Helmet>
+      <SEOHead
+        title="Как быстро погасить кредит и сэкономить на процентах — эффективные стратегии"
+        description="Рассказываем, как быстро погасить кредит и снизить переплату: советы по досрочному погашению, правильному выбору срока и экономии на процентах."
+        keywords="досрочное погашение кредита, как быстро погасить кредит, сэкономить на процентах, уменьшить переплату, стратегии погашения кредита, рефинансирование"
+        url="/blog/fast-loan-repayment"
+        type="article"
+        publishedTime="2025-08-16T00:00:00.000Z"
+        section="Советы"
+        tags={["кредиты", "досрочное погашение", "советы", "экономия", "проценты"]}
+      />
+      <Header />
+      <div className="min-h-screen bg-white">
+        {/* Breadcrumbs */}
+        <div className="bg-gray-50 py-3 sm:py-4 px-4 border-b">
+          <div className="max-w-4xl mx-auto px-2">
+            <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm text-gray-600 flex-wrap">
+              <a href="/" className="hover:text-blue-600 touch-manipulation" aria-label="Перейти на главную страницу">Главная</a>
+              <Icon name="ChevronRight" size={12} className="sm:size-4" />
+              <a href="/blog" className="hover:text-blue-600 touch-manipulation" aria-label="Перейти к блогу">Блог</a>
+              <Icon name="ChevronRight" size={12} className="sm:size-4" />
+              <span className="text-gray-900">Как быстро погасить кредит и сэкономить на процентах</span>
+            </nav>
+          </div>
+        </div>
 
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-        <div className="container mx-auto px-4 py-8 max-w-4xl">
-          {/* Навигация */}
-          <Link 
-            to="/blog" 
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 mb-8 font-medium"
-          >
-            <Icon name="ArrowLeft" size={20} />
-            Вернуться к блогу
-          </Link>
-
-          {/* Заголовок статьи */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-slate-600 mb-4">
-              <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">
-                Советы
-              </span>
-              <span>•</span>
-              <span>16 августа 2025</span>
-              <span>•</span>
-              <span>6 мин чтения</span>
+        {/* Article Header */}
+        <header className="py-8 sm:py-12 px-4 bg-gradient-to-r from-green-50 to-blue-50">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 sm:gap-4 mb-4 sm:mb-6 flex-wrap">
+              <Badge className="bg-green-100 text-green-800">Советы</Badge>
+              <div className="flex items-center text-gray-600 text-xs sm:text-sm flex-wrap gap-2">
+                <div className="flex items-center">
+                  <Icon name="Calendar" size={12} className="sm:size-4 mr-1" />
+                  <span>16 августа 2025</span>
+                </div>
+                <div className="flex items-center">
+                  <Icon name="Clock" size={12} className="sm:size-4 mr-1" />
+                  <span>6 мин чтения</span>
+                </div>
+              </div>
             </div>
-            
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 leading-tight">
+
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4">
               Как быстро погасить кредит и сэкономить на процентах
             </h1>
             
-            <p className="text-xl text-slate-700 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
               Многие заемщики хотят сократить срок выплат и уменьшить переплату. Это реально, если знать правильные стратегии. Рассмотрим, как быстро погасить кредит и при этом сэкономить на процентах, не перегружая семейный бюджет.
             </p>
-          </header>
+          </div>
+        </header>
 
-          {/* Основной контент */}
-          <article className="prose prose-lg max-w-none">
+        {/* Main Content */}
+        <div className="max-w-4xl mx-auto px-4 py-8 sm:py-12">
+
+          <article className="prose prose-lg max-w-none bg-white">
             {/* Почему выгодно погасить кредит раньше срока */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
@@ -269,19 +262,87 @@ const FastLoanRepaymentPage = () => {
               </div>
             </section>
           </article>
-
-          {/* Навигация в конце */}
-          <div className="text-center pt-8 border-t border-slate-200">
-            <Link 
-              to="/blog" 
-              className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              <Icon name="ArrowLeft" size={20} />
-              Вернуться к блогу
-            </Link>
-          </div>
         </div>
+
+        {/* Related Articles */}
+        <section className="py-8 sm:py-12 bg-gray-50 border-t">
+          <div className="max-w-4xl mx-auto px-4">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">
+              Читайте также
+            </h3>
+            <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+              <Card className="p-4 sm:p-6 bg-white hover:shadow-lg transition-shadow touch-manipulation">
+                <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
+                  <a href="/blog/how-banks-approve-loans" className="hover:text-blue-600 touch-manipulation" aria-label="Читать статью о том, как банки принимают решения">
+                    Как банки принимают решение о выдаче кредита
+                  </a>
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Узнайте, что влияет на одобрение кредита и как повысить свои шансы.
+                </p>
+                <Button variant="outline" size="sm" asChild className="touch-manipulation w-full sm:w-auto">
+                  <a href="/blog/how-banks-approve-loans" aria-label="Читать статью полностью">
+                    Читать
+                    <Icon name="ArrowRight" size={12} className="sm:size-3.5 ml-1" />
+                  </a>
+                </Button>
+              </Card>
+
+              <Card className="p-4 sm:p-6 bg-white hover:shadow-lg transition-shadow touch-manipulation">
+                <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
+                  <a href="/blog/improve-credit-history" className="hover:text-blue-600 touch-manipulation" aria-label="Читать статью о улучшении кредитной истории">
+                    Как улучшить кредитную историю — 7 шагов
+                  </a>
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Пошаговое руководство по улучшению кредитного рейтинга.
+                </p>
+                <Button variant="outline" size="sm" asChild className="touch-manipulation w-full sm:w-auto">
+                  <a href="/blog/improve-credit-history" aria-label="Читать статью полностью">
+                    Читать
+                    <Icon name="ArrowRight" size={12} className="sm:size-3.5 ml-1" />
+                  </a>
+                </Button>
+              </Card>
+
+              <Card className="p-4 sm:p-6 bg-white hover:shadow-lg transition-shadow touch-manipulation">
+                <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
+                  <a href="/blog/mortgage-step-by-step" className="hover:text-blue-600 touch-manipulation" aria-label="Читать статью о получении ипотеки">
+                    Пошаговый план получения ипотеки — от заявки до договора
+                  </a>
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Подробная инструкция по всем этапам оформления ипотеки.
+                </p>
+                <Button variant="outline" size="sm" asChild className="touch-manipulation w-full sm:w-auto">
+                  <a href="/blog/mortgage-step-by-step" aria-label="Читать статью полностью">
+                    Читать
+                    <Icon name="ArrowRight" size={12} className="sm:size-3.5 ml-1" />
+                  </a>
+                </Button>
+              </Card>
+
+              <Card className="p-4 sm:p-6 bg-white hover:shadow-lg transition-shadow touch-manipulation">
+                <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
+                  <a href="/blog/why-bank-refused-loan" className="hover:text-blue-600 touch-manipulation" aria-label="Читать статью о причинах отказа банка">
+                    Почему банк отказал в кредите — причины и решения
+                  </a>
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+                  Разбираем основные причины отказов и даем практические советы.
+                </p>
+                <Button variant="outline" size="sm" asChild className="touch-manipulation w-full sm:w-auto">
+                  <a href="/blog/why-bank-refused-loan" aria-label="Читать статью полностью">
+                    Читать
+                    <Icon name="ArrowRight" size={12} className="sm:size-3.5 ml-1" />
+                  </a>
+                </Button>
+              </Card>
+            </div>
+          </div>
+        </section>
       </div>
+      <Footer />
     </>
   );
 };
