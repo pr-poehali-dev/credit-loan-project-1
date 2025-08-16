@@ -346,6 +346,226 @@ const MicroloansPartners = () => {
               </p>
             </div>
           </Card>
+
+          {/* Ваш кредит */}
+          <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-green-200 bg-white">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-green-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div className="relative text-center p-6">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
+                <img 
+                  src="https://cdn.poehali.dev/files/ca8e3d92-1c16-4d07-9efd-dd3dd355c986.png" 
+                  alt="Ваш кредит - микрозайм" 
+                  className="w-12 h-12 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Ваш кредит</h3>
+              <p className="text-base md:text-lg font-medium text-green-700 mb-6">Микрозайм</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="bg-green-50 rounded-lg p-4">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Сумма:</span>
+                    <span className="font-bold text-base md:text-lg">2-30 тыс ₽</span>
+                  </div>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Срок:</span>
+                    <span className="font-bold text-base md:text-lg">до 30 дней</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm md:text-base text-gray-600">Особенности:</span>
+                    <span className="font-bold text-base md:text-lg text-green-600">Первый бесплатно</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                  <Icon name="Gift" size={16} />
+                  <span>Бесплатно до 7 дней</span>
+                </div>
+              </div>
+              
+              <Button 
+                size="lg" 
+                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
+              >
+                <a 
+                  href="https://trk.ppdu.ru/click/zo5OCU1U?erid=2SDnjdPMs5P"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >Оформить займ</a>
+              </Button>
+              
+              <p className="text-xs text-gray-500 mt-3">
+                * Условия могут изменяться МФО
+              </p>
+            </div>
+          </Card>
+
+          {/* Свои люди */}
+          <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-blue-200 bg-white">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div className="relative text-center p-6">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
+                <img 
+                  src="https://cdn.poehali.dev/files/7add6f84-4026-4d23-9945-7d786f04deec.png" 
+                  alt="Свои люди - микрозайм" 
+                  className="w-12 h-12 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Свои люди</h3>
+              <p className="text-base md:text-lg font-medium text-blue-700 mb-6">Микрозайм</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Сумма:</span>
+                    <span className="font-bold text-base md:text-lg">3-30 тыс ₽</span>
+                  </div>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Ставка:</span>
+                    <span className="font-bold text-base md:text-lg text-blue-600">0,8% в день</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm md:text-base text-gray-600">Срок:</span>
+                    <span className="font-bold text-base md:text-lg">5-30 дней</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                  <Icon name="Users" size={16} />
+                  <span>Семейный МФО</span>
+                </div>
+              </div>
+              
+              <Button 
+                size="lg" 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
+              >
+                <a 
+                  href="https://trk.ppdu.ru/click/qNnv8jjF?erid=LjN8KMSTi"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >Оформить займ</a>
+              </Button>
+              
+              <p className="text-xs text-gray-500 mt-3">
+                * Условия могут изменяться МФО
+              </p>
+            </div>
+          </Card>
+
+          {/* Небус */}
+          <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-cyan-200 bg-white">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div className="relative text-center p-6">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
+                <img 
+                  src="https://cdn.poehali.dev/files/efebe482-4753-45e8-9a62-23b3f50cb92d.png" 
+                  alt="Небус - микрозайм" 
+                  className="w-12 h-12 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Небус</h3>
+              <p className="text-base md:text-lg font-medium text-cyan-700 mb-6">Микрозайм</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="bg-cyan-50 rounded-lg p-4">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Сумма:</span>
+                    <span className="font-bold text-base md:text-lg">7-100 тыс ₽</span>
+                  </div>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Ставка:</span>
+                    <span className="font-bold text-base md:text-lg text-cyan-600">0,48-0,8% в день</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm md:text-base text-gray-600">Минимум:</span>
+                    <span className="font-bold text-base md:text-lg">7 000 ₽</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                  <Icon name="TrendingUp" size={16} />
+                  <span>Крупные займы</span>
+                </div>
+              </div>
+              
+              <Button 
+                size="lg" 
+                className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
+              >
+                <a 
+                  href="https://trk.ppdu.ru/click/PdOUQvMM?erid=2SDnjck7R1e"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >Оформить займ</a>
+              </Button>
+              
+              <p className="text-xs text-gray-500 mt-3">
+                * Условия могут изменяться МФО
+              </p>
+            </div>
+          </Card>
+
+          {/* ДоброЗайм */}
+          <Card className="relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 border-emerald-200 bg-white">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div className="relative text-center p-6">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
+                <img 
+                  src="https://cdn.poehali.dev/files/e574ae63-8ff5-48a4-9743-8037a99e6035.png" 
+                  alt="ДоброЗайм - микрозайм" 
+                  className="w-12 h-12 object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">ДоброЗайм</h3>
+              <p className="text-base md:text-lg font-medium text-emerald-700 mb-6">Микрозайм</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="bg-emerald-50 rounded-lg p-4">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Сумма:</span>
+                    <span className="font-bold text-base md:text-lg">1-200 тыс ₽</span>
+                  </div>
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm md:text-base text-gray-600">Ставка:</span>
+                    <span className="font-bold text-base md:text-lg text-emerald-600">0-0,8% в день</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm md:text-base text-gray-600">Срок:</span>
+                    <span className="font-bold text-base md:text-lg">3-378 дней</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                  <Icon name="Heart" size={16} />
+                  <span>Максимальные суммы</span>
+                </div>
+              </div>
+              
+              <Button 
+                size="lg" 
+                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                asChild
+              >
+                <a 
+                  href="https://trk.ppdu.ru/click/8ec0Cird?erid=LjN8JvgqW"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >Оформить займ</a>
+              </Button>
+              
+              <p className="text-xs text-gray-500 mt-3">
+                * Условия могут изменяться МФО
+              </p>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
