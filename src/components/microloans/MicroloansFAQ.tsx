@@ -78,7 +78,30 @@ const MicroloansFAQ = () => {
           ))}
         </div>
 
-
+        {/* Quick Answer Box */}
+        <Card className="p-6 sm:p-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200 mt-8">
+          <div className="text-center">
+            <Icon name="Zap" size={32} className="text-blue-600 mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Нужны деньги прямо сейчас?</h3>
+            <p className="text-gray-700 mb-6">
+              Получите микрозайм за 15 минут в надежной МФО с лицензией ЦБ РФ
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4 text-center">
+              <div>
+                <div className="text-2xl font-bold text-blue-600">15 мин</div>
+                <div className="text-sm text-gray-600">Время одобрения</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-green-600">0%</div>
+                <div className="text-sm text-gray-600">Первый займ</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-orange-600">100%</div>
+                <div className="text-sm text-gray-600">Онлайн процесс</div>
+              </div>
+            </div>
+          </div>
+        </Card>
       </div>
     </section>
   );

@@ -33,6 +33,15 @@ const LoanTypes = () => {
       color: 'bg-purple-600'
     },
     {
+      title: 'Микрозаймы',
+      rate: 'от 0%',
+      amount: 'до 100 000 ₽',
+      term: 'до 30 дней',
+      icon: 'Zap',
+      description: 'Деньги за 15 минут без справок',
+      color: 'bg-red-600'
+    },
+    {
       title: 'Дебетовые карты',
       rate: 'до 7%',
       amount: 'кэшбэк до 33%',
@@ -51,13 +60,14 @@ const LoanTypes = () => {
           <p className="text-lg md:text-xl text-gray-600 px-4">Выберите подходящий для вас тип кредитования</p>
         </header>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 md:gap-8">
           {loanTypes.map((loan, index) => {
             const getCardId = (index: number) => {
               switch(index) {
                 case 1: return 'mortgage';
                 case 2: return 'auto';
-                case 3: return 'debit-cards';
+                case 3: return 'microloans';
+                case 4: return 'debit-cards';
                 default: return '';
               }
             };
@@ -89,7 +99,7 @@ const LoanTypes = () => {
                 </div>
                 <Button 
                   className="w-full bg-gray-900 hover:bg-gray-800"
-                  asChild={index === 0 || index === 1 || index === 2 || index === 3}
+                  asChild={index === 0 || index === 1 || index === 2 || index === 3 || index === 4}
                 >
                   {index === 0 ? (
                     <a href="/consumer-loan">
@@ -104,6 +114,10 @@ const LoanTypes = () => {
                       Подробнее
                     </a>
                   ) : index === 3 ? (
+                    <a href="/microloans">
+                      Подробнее
+                    </a>
+                  ) : index === 4 ? (
                     <a href="/debit-cards">
                       Подробнее
                     </a>
