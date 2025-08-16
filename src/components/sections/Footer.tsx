@@ -26,6 +26,7 @@ const Footer = () => {
               <li><a href="/mortgage" className="hover:text-blue-600 transition-colors">Ипотечное кредитование</a></li>
               <li><a href="/auto-loan" className="hover:text-blue-600 transition-colors">Автокредитование</a></li>
               <li><a href="/microloans" className="hover:text-blue-600 transition-colors">Микрозаймы</a></li>
+              <li><a href="/credit-cards" className="hover:text-blue-600 transition-colors">Кредитные карты</a></li>
               <li><a href="/debit-cards" className="hover:text-blue-600 transition-colors">Дебетовые карты</a></li>
             </ul>
           </div>
