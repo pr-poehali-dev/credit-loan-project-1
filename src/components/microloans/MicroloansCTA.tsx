@@ -27,9 +27,7 @@ const MicroloansCTA = () => {
             Готовы получить микрозайм?
           </h2>
           
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Подберем лучшие предложения от надежных МФО с высокой вероятностью одобрения
-          </p>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">Выбирайте лучшие предложения от надежных МФО с высокой вероятностью одобрения</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
             <div className="flex items-center gap-2 text-green-600">
