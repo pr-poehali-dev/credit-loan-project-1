@@ -13,6 +13,7 @@ import MicroloansSafety from '@/components/microloans/MicroloansSafety';
 import MicroloansConclusion from '@/components/microloans/MicroloansConclusion';
 import MicroloansFAQ from '@/components/microloans/MicroloansFAQ';
 import MicroloansInternalLinks from '@/components/microloans/MicroloansInternalLinks';
+import MicroloansCTA from '@/components/microloans/MicroloansCTA';
 
 const MicroloansPage = () => {
   return (
@@ -41,6 +42,7 @@ const MicroloansPage = () => {
       
       <MicroloansFAQ />
       <MicroloansInternalLinks />
+      <MicroloansCTA />
       <MicroloansConclusion />
       <Footer />
     </>
