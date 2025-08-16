@@ -313,9 +313,16 @@ const ImproveCreditHistory = () => {
                   <p className="text-sm sm:text-lg mb-4 sm:mb-6 opacity-90">
                     Получите персональные рекомендации и подберите оптимальный кредитный продукт
                   </p>
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 touch-manipulation w-full sm:w-auto" aria-label="Проверить кредитную историю">
-                    <Icon name="TrendingUp" size={16} className="sm:size-5 mr-2" />
-                    Проверить кредитную историю
+                  <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 touch-manipulation w-full sm:w-auto" asChild>
+                    <a 
+                      href="https://www.sravni.ru/kredity/scoring/istorija/" 
+                      target="_blank" 
+                      rel="noopener noreferrer nofollow noindex"
+                      aria-label="Проверить кредитную историю на сайте Сравни.ру"
+                    >
+                      <Icon name="TrendingUp" size={16} className="sm:size-5 mr-2" />
+                      Проверить кредитную историю
+                    </a>
                   </Button>
                 </div>
               </section>
