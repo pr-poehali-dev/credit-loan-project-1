@@ -5,6 +5,7 @@ import Footer from '@/components/sections/Footer';
 import MicroloansHero from '@/components/microloans/MicroloansHero';
 import MicroloansIntro from '@/components/microloans/MicroloansIntro';
 import MicroloansHowTo from '@/components/microloans/MicroloansHowTo';
+import MicroloansPartners from '@/components/microloans/MicroloansPartners';
 import MicroloansZeroPercent from '@/components/microloans/MicroloansZeroPercent';
 import MicroloansBadCredit from '@/components/microloans/MicroloansBadCredit';
 import MicroloansSteps from '@/components/microloans/MicroloansSteps';
@@ -31,6 +32,7 @@ const MicroloansPage = () => {
         <MicroloansHero />
         <MicroloansIntro />
         <MicroloansHowTo />
+        <MicroloansPartners />
         <MicroloansZeroPercent />
         <MicroloansBadCredit />
         <MicroloansSteps />
