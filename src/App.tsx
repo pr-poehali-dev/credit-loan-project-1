@@ -12,6 +12,7 @@ import AutoLoan from "./pages/AutoLoan";
 import MicroloansPage from "./pages/MicroloansPage";
 import DebitCardsPage from "./pages/DebitCardsPage";
 import BlogPage from "./pages/BlogPage";
+import FastLoanRepaymentPage from "./pages/FastLoanRepaymentPage";
 import HowBanksApproveLoans from "./pages/blog/HowBanksApproveLoans";
 import ImproveCreditHistory from "./pages/blog/ImproveCreditHistory";
 import WhyBankRefusedLoan from "./pages/blog/WhyBankRefusedLoan";
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/microloans" element={<MicroloansPage />} />
             <Route path="/debit-cards" element={<DebitCardsPage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/fast-loan-repayment" element={<FastLoanRepaymentPage />} />
             <Route path="/blog/how-banks-approve-loans" element={<HowBanksApproveLoans />} />
             <Route path="/blog/improve-credit-history" element={<ImproveCreditHistory />} />
             <Route path="/blog/why-bank-refused-loan" element={<WhyBankRefusedLoan />} />
