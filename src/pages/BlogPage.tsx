@@ -11,6 +11,16 @@ const BlogPage = () => {
   const articles = [
     {
       id: 1,
+      title: "Пошаговый план получения ипотеки — от заявки до договора",
+      description: "Подробная инструкция по получению ипотеки: заявка в банк, проверка, документы, выбор квартиры, оценка и подписание договора.",
+      slug: "mortgage-step-by-step",
+      date: "16 августа 2025",
+      readTime: "8 мин",
+      category: "Ипотека",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop"
+    },
+    {
+      id: 2,
       title: "Как банки принимают решение о выдаче кредита",
       description: "Узнайте, что влияет на одобрение кредита: ключевые факторы, роль кредитной истории, кредитного скоринга и ПДН.",
       slug: "how-banks-approve-loans",
@@ -20,7 +30,7 @@ const BlogPage = () => {
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop"
     },
     {
-      id: 2,
+      id: 3,
       title: "Как улучшить кредитную историю — 7 шагов",
       description: "Пошаговое руководство, как улучшить кредитную историю, повысить кредитный рейтинг и увеличить шансы на одобрение займа.",
       slug: "improve-credit-history",
@@ -30,7 +40,7 @@ const BlogPage = () => {
       image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=400&fit=crop"
     },
     {
-      id: 3,
+      id: 4,
       title: "Почему банк отказал в кредите — причины и решения",
       description: "Разбираем, почему банк может отказать в кредите: ключевые причины, роль кредитной истории, ПДН и скоринга.",
       slug: "why-bank-refused-loan",
@@ -38,16 +48,6 @@ const BlogPage = () => {
       readTime: "6 мин",
       category: "Советы",
       image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&h=400&fit=crop"
-    },
-    {
-      id: 4,
-      title: "Пошаговый план получения ипотеки — от заявки до договора",
-      description: "Подробная инструкция по получению ипотеки: заявка в банк, проверка, документы, выбор квартиры, оценка и подписание договора.",
-      slug: "mortgage-step-by-step",
-      date: "16 августа 2025",
-      readTime: "8 мин",
-      category: "Ипотека",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop"
     }
   ];
 
@@ -77,6 +77,22 @@ const BlogPage = () => {
               "url": "https://odobrilicredit.ru"
             },
             "blogPost": [
+              {
+                "@type": "BlogPosting",
+                "headline": "Пошаговый план получения ипотеки — от заявки до договора",
+                "description": "Подробная инструкция по получению ипотеки: заявка в банк, проверка, документы, выбор квартиры, оценка и подписание договора.",
+                "url": "https://odobrilicredit.ru/blog/mortgage-step-by-step",
+                "datePublished": "2025-08-16T00:00:00.000Z",
+                "dateModified": "2025-08-16T00:00:00.000Z",
+                "author": {
+                  "@type": "Person",
+                  "name": "Эксперт по ипотеке"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Одобрили Кредит"
+                }
+              },
               {
                 "@type": "BlogPosting",
                 "headline": "Как банки принимают решение о выдаче кредита",
@@ -119,22 +135,6 @@ const BlogPage = () => {
                 "author": {
                   "@type": "Person",
                   "name": "Эксперт по кредитам"
-                },
-                "publisher": {
-                  "@type": "Organization",
-                  "name": "Одобрили Кредит"
-                }
-              },
-              {
-                "@type": "BlogPosting",
-                "headline": "Пошаговый план получения ипотеки — от заявки до договора",
-                "description": "Подробная инструкция по получению ипотеки: заявка в банк, проверка, документы, выбор квартиры, оценка и подписание договора.",
-                "url": "https://odobrilicredit.ru/blog/mortgage-step-by-step",
-                "datePublished": "2025-08-16T00:00:00.000Z",
-                "dateModified": "2025-08-16T00:00:00.000Z",
-                "author": {
-                  "@type": "Person",
-                  "name": "Эксперт по ипотеке"
                 },
                 "publisher": {
                   "@type": "Organization",
