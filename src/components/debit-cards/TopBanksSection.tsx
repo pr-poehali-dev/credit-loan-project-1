@@ -52,8 +52,17 @@ const TopBanksSection = () => {
                 Процент на остаток до 7%
               </div>
             </div>
-            <Button className="w-full bg-red-500 hover:bg-red-600">
-              Оформить карту
+            <Button 
+              className="w-full bg-red-500 hover:bg-red-600"
+              asChild
+            >
+              <a 
+                href="https://trk.ppdu.ru/click/eL7cQDik?erid=2SDnjcyvkUv"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Оформить карту
+              </a>
             </Button>
           </div>
 
