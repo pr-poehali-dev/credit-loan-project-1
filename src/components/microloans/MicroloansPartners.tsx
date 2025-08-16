@@ -297,7 +297,12 @@ const MicroloansPartners = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full -translate-y-16 translate-x-16 opacity-10 group-hover:opacity-20 transition-opacity"></div>
             <div className="relative text-center p-6">
               <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg border-2 border-gray-100">
-                <span className="text-purple-600 font-bold text-2xl">495</span>
+                <img 
+                  src="https://cdn.poehali.dev/files/30e7548b-ceaa-48bf-9af0-09112e00e06a.png" 
+                  alt="495 Кредит - микрозайм" 
+                  className="w-12 h-12 object-contain"
+                  loading="lazy"
+                />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">495 Кредит</h3>
               <p className="text-base md:text-lg font-medium text-purple-700 mb-6">Микрозайм</p>
