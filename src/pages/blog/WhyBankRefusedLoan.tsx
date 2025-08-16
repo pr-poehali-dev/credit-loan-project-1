@@ -319,9 +319,11 @@ const WhyBankRefusedLoan = () => {
                   <p className="text-sm sm:text-lg mb-4 sm:mb-6 opacity-90">
                     Поможем найти банк, который одобрит кредит именно вам
                   </p>
-                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 touch-manipulation w-full sm:w-auto" aria-label="Подобрать банк">
-                    <Icon name="Search" size={16} className="sm:size-5 mr-2" />
-                    Подобрать банк
+                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 touch-manipulation w-full sm:w-auto" asChild>
+                    <a href="/microloans" aria-label="Перейти к микрозаймам для получения альтернативного финансирования">
+                      <Icon name="Search" size={16} className="sm:size-5 mr-2" />
+                      Подобрать банк
+                    </a>
                   </Button>
                 </div>
               </section>
