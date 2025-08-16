@@ -119,14 +119,14 @@ const TopBanksSection = () => {
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
                 <img 
                   src="https://cdn.poehali.dev/files/84ed8de6-276a-4766-8272-b3ffe9b8dd2d.jpg" 
-                  alt="Тинькофф логотип" 
+                  alt="Т-Банк логотип" 
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Тинькофф</h3>
+              <h3 className="text-xl font-bold text-gray-900">Т-Банк</h3>
             </div>
             <p className="text-gray-600 mb-4">
-              Дебетовая карта Тинькофф известна инновационными решениями и удобным мобильным приложением.
+              Дебетовая карта Т-Банка известна инновационными решениями и удобным мобильным приложением.
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center text-sm text-gray-600">
@@ -146,8 +146,17 @@ const TopBanksSection = () => {
                 Развитая программа лояльности
               </div>
             </div>
-            <Button className="w-full bg-yellow-500 hover:bg-yellow-600">
-              Оформить карту
+            <Button 
+              className="w-full bg-yellow-500 hover:bg-yellow-600"
+              asChild
+            >
+              <a 
+                href="https://trk.ppdu.ru/click/mtU4XYwQ?erid=Kra23xCCG"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Оформить карту
+              </a>
             </Button>
           </div>
 
