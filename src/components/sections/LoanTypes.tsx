@@ -42,6 +42,15 @@ const LoanTypes = () => {
       color: 'bg-red-600'
     },
     {
+      title: 'Кредитные карты',
+      rate: 'от 11.9%',
+      amount: 'до 3 млн ₽',
+      term: 'до 365 дней',
+      icon: 'CreditCard',
+      description: 'Льготный период без процентов',
+      color: 'bg-purple-600'
+    },
+    {
       title: 'Дебетовые карты',
       rate: 'до 7%',
       amount: 'кэшбэк до 33%',
@@ -99,7 +108,7 @@ const LoanTypes = () => {
                 </div>
                 <Button 
                   className="w-full bg-gray-900 hover:bg-gray-800"
-                  asChild={index === 0 || index === 1 || index === 2 || index === 3 || index === 4}
+                  asChild={index === 0 || index === 1 || index === 2 || index === 3 || index === 4 || index === 5}
                 >
                   {index === 0 ? (
                     <a href="/consumer-loan">
@@ -118,6 +127,10 @@ const LoanTypes = () => {
                       Подробнее
                     </a>
                   ) : index === 4 ? (
+                    <a href="/credit-cards">
+                      Подробнее
+                    </a>
+                  ) : index === 5 ? (
                     <a href="/debit-cards">
                       Подробнее
                     </a>
