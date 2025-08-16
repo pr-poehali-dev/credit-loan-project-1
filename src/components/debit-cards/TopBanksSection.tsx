@@ -291,6 +291,44 @@ const TopBanksSection = () => {
               </a>
             </Button>
           </div>
+
+          {/* Газпромбанк */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center mr-4 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/1010a91b-9317-4397-8dba-53ec69d3b936.png" 
+                  alt="Газпромбанк логотип" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">Газпромбанк</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              Дебетовая карта Газпромбанка предлагает стабильные условия и надежность одного из крупнейших банков России.
+            </p>
+            <div className="space-y-2 mb-6">
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Бесплатное обслуживание карты
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Выгодный кэшбэк по категориям
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Процент на остаток по счету
+              </div>
+              <div className="flex items-center text-sm text-gray-600">
+                <Icon name="Check" size={16} className="text-green-500 mr-2" />
+                Широкая сеть банкоматов
+              </div>
+            </div>
+            <Button className="w-full bg-blue-700 hover:bg-blue-800">
+              Оформить карту
+            </Button>
+          </div>
         </div>
       </div>
     </section>
