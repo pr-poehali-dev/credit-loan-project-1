@@ -6,13 +6,13 @@ import Icon from '@/components/ui/icon';
 
 const PartnerBanks = () => {
   return (
-    <section id="banks" className="py-12 md:py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
+    <section id="banks-partners" className="py-12 md:py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12 md:mb-16">
           <Badge className="mb-4 bg-green-100 text-green-800 px-4 py-2">
             Банки-партнёры
           </Badge>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 px-4">Быстрые кредиты от ведущих банков</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 px-4">Потребительские кредиты от ведущих банков</h2>
           <p className="text-lg md:text-xl text-gray-600 px-4">Мгновенное одобрение и выдача средств</p>
         </header>
         

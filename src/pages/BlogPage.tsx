@@ -226,7 +226,7 @@ const BlogPage = () => {
             Подберем лучшие предложения от проверенных банков
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 touch-manipulation" asChild>
-            <a href="/" aria-label="Перейти к подбору кредита">
+            <a href="/consumer-loan#banks-partners" aria-label="Перейти к банкам-партнёрам для подбора потребительского кредита">
               <Icon name="CreditCard" size={20} className="mr-2" />
               Подобрать кредит
             </a>
