@@ -1,5 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import Icon from '@/components/ui/icon';
+import Header from '@/components/sections/Header';
+import Footer from '@/components/sections/Footer';
 
 const CreditCards = () => {
   return (
@@ -9,6 +11,8 @@ const CreditCards = () => {
         <meta name="description" content="Кредитные карты банков 2025 ★ Оформить онлайн без отказа ★ С плохой кредитной историей ★ Без процентов до 365 дней ★ Сравнение условий Сбербанк, Альфа-Банк, Т - Банк ★ Займы на карту срочно" />
       </Helmet>
 
+      <Header />
+      
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto px-4 py-12">
           {/* Hero Section */}
@@ -295,6 +299,8 @@ const CreditCards = () => {
           </section>
         </div>
       </div>
+      
+      <Footer />
     </>
   );
 };
