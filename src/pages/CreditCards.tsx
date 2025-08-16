@@ -23,6 +23,15 @@ const CreditCards = () => {
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Кредитные карты стали неотъемлемой частью финансовой жизни россиян. В 2025 году банки предлагают улучшенные условия получения кредитных карт, включая программы для клиентов с плохой кредитной историей и возможность оформления без отказа.
             </p>
+            
+            {/* Hero Image */}
+            <div className="mt-12 rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/img/baf5d501-73ca-481c-9dcc-1a3a3254f4f9.jpg" 
+                alt="Кредитные карты 2025"
+                className="w-full h-64 md:h-80 object-cover"
+              />
+            </div>
           </div>
 
           {/* Top Banks Section */}
