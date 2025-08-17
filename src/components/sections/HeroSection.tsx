@@ -34,7 +34,7 @@ const HeroSection = () => {
               className="bg-white hover:bg-blue-50 text-blue-900 text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto max-w-sm shadow-xl hover:shadow-2xl transition-all duration-300 font-semibold"
               asChild
             >
-              <a href="#banks">
+              <a href="#loans">
                 <Icon name="FileText" className="mr-2" size={18} />
                 Подать заявку
               </a>
