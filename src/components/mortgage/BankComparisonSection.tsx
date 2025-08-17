@@ -31,7 +31,7 @@ const BankComparisonSection = () => {
           <p className="text-gray-600">Выгодные условия и быстрое одобрение</p>
         </div>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {/* Альфа-Банк */}
           <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-red-200 bg-white p-6">
             <div className="absolute top-0 right-0 w-20 h-20 bg-red-500 rounded-full -translate-y-10 translate-x-10 opacity-10 group-hover:opacity-20 transition-opacity"></div>
@@ -81,6 +81,64 @@ const BankComparisonSection = () => {
                 >
                   <Icon name="ExternalLink" className="mr-1" size={16} />
                   Оформить ипотеку
+                </a>
+              </Button>
+              
+              <p className="text-xs text-gray-500 mt-2">
+                * Условия могут изменяться банком
+              </p>
+            </div>
+          </Card>
+
+          {/* Альфа-Банк - Коммерческая недвижимость */}
+          <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-blue-200 bg-white p-6">
+            <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500 rounded-full -translate-y-10 translate-x-10 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div className="relative text-center">
+              <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md border border-gray-200">
+                <span className="text-blue-600 font-bold text-xl">А</span>
+              </div>
+              <h4 className="text-lg font-bold text-gray-900 mb-1">Альфа-Банк</h4>
+              <p className="text-sm font-medium text-blue-700 mb-4">Ипотека на коммерческую недвижимость</p>
+              
+              <div className="space-y-3 mb-6">
+                <div className="bg-blue-50 rounded-lg p-3">
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="text-gray-600">Сумма:</span>
+                    <span className="font-bold">до 500 млн ₽</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm mt-1">
+                    <span className="text-gray-600">Ставка:</span>
+                    <span className="font-bold text-blue-600">от 18%</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm mt-1">
+                    <span className="text-gray-600">Срок:</span>
+                    <span className="font-bold">до 20 лет</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-1 text-xs text-gray-600">
+                  <Icon name="Building" size={14} />
+                  <span>Коммерческая недвижимость</span>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-1 text-xs text-gray-600">
+                  <Icon name="TrendingUp" size={14} />
+                  <span>Инвестиционные возможности</span>
+                </div>
+              </div>
+              
+              <Button 
+                size="sm" 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300"
+                asChild
+              >
+                <a 
+                  href="https://trk.ppdu.ru/click/nHq5KdJA?erid=2SDnjc2uE1a"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <Icon name="ExternalLink" className="mr-1" size={16} />
+                  Оформить кредит
                 </a>
               </Button>
               
