@@ -37,7 +37,11 @@ const BankComparisonSection = () => {
             <div className="absolute top-0 right-0 w-20 h-20 bg-red-500 rounded-full -translate-y-10 translate-x-10 opacity-10 group-hover:opacity-20 transition-opacity"></div>
             <div className="relative text-center">
               <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md border border-gray-200">
-                <span className="text-red-600 font-bold text-xl">А</span>
+                <img 
+                  src="https://cdn.poehali.dev/files/33d07652-3c0b-4fc8-b3c9-ab5496a171fd.png" 
+                  alt="Альфа-Банк логотип" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <h4 className="text-lg font-bold text-gray-900 mb-1">Альфа-Банк</h4>
               <p className="text-sm font-medium text-red-700 mb-4">Ипотека</p>
@@ -95,7 +99,11 @@ const BankComparisonSection = () => {
             <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500 rounded-full -translate-y-10 translate-x-10 opacity-10 group-hover:opacity-20 transition-opacity"></div>
             <div className="relative text-center">
               <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md border border-gray-200">
-                <span className="text-blue-600 font-bold text-xl">А</span>
+                <img 
+                  src="https://cdn.poehali.dev/files/33d07652-3c0b-4fc8-b3c9-ab5496a171fd.png" 
+                  alt="Альфа-Банк логотип" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <h4 className="text-lg font-bold text-gray-900 mb-1">Альфа-Банк</h4>
               <p className="text-sm font-medium text-blue-700 mb-4">Ипотека на коммерческую недвижимость</p>
