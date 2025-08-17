@@ -50,7 +50,7 @@ const BankComparisonSection = () => {
                   </div>
                   <div className="flex justify-between items-center text-sm mt-1">
                     <span className="text-gray-600">Ставка:</span>
-                    <span className="font-bold text-red-600">от 16%</span>
+                    <span className="font-bold text-red-600">от 6%</span>
                   </div>
                   <div className="flex justify-between items-center text-sm mt-1">
                     <span className="text-gray-600">Срок:</span>
