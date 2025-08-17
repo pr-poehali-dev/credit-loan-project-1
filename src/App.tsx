@@ -20,6 +20,7 @@ import ImproveCreditHistory from "./pages/blog/ImproveCreditHistory";
 import WhyBankRefusedLoan from "./pages/blog/WhyBankRefusedLoan";
 import MortgageStepByStep from "./pages/blog/MortgageStepByStep";
 import AutoLoanGuide from "./pages/blog/AutoLoanGuide";
+import MortgageVsRent2025 from "./pages/blog/MortgageVsRent2025";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ const App = () => (
             <Route path="/blog/why-bank-refused-loan" element={<WhyBankRefusedLoan />} />
             <Route path="/blog/mortgage-step-by-step" element={<MortgageStepByStep />} />
             <Route path="/blog/auto-loan-guide" element={<AutoLoanGuide />} />
+            <Route path="/blog/mortgage-vs-rent-2025" element={<MortgageVsRent2025 />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
