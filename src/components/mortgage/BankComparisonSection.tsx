@@ -112,7 +112,7 @@ const BankComparisonSection = () => {
                   </div>
                   <div className="flex justify-between items-center text-sm mt-1">
                     <span className="text-gray-600">Срок:</span>
-                    <span className="font-bold">до 20 лет</span>
+                    <span className="font-bold">до 30 лет</span>
                   </div>
                 </div>
                 
