@@ -261,7 +261,7 @@ const AutoLoanGuide = () => {
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
                   asChild
                 >
-                  <a href="/">
+                  <a href="/auto-loan">
                     <Icon name="Car" className="mr-2" size={20} />
                     Выбрать автокредит
                   </a>
