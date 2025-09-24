@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/sections/Header';
+import Footer from '@/components/sections/Footer';
 
 const NotFoundPage = () => {
   useEffect(() => {
@@ -38,9 +38,9 @@ const NotFoundPage = () => {
             
             <div className="grid grid-cols-1 gap-3">
               <Button variant="outline" asChild>
-                <Link to="/services">
+                <Link to="/consumer-loan">
                   <Icon name="CreditCard" size={16} className="mr-2" />
-                  Наши услуги
+                  Потребительский кредит
                 </Link>
               </Button>
               
@@ -52,9 +52,9 @@ const NotFoundPage = () => {
               </Button>
               
               <Button variant="outline" asChild>
-                <Link to="/contacts">
-                  <Icon name="Phone" size={16} className="mr-2" />
-                  Связаться с нами
+                <Link to="/mortgage">
+                  <Icon name="Home" size={16} className="mr-2" />
+                  Ипотека
                 </Link>
               </Button>
             </div>
@@ -63,8 +63,8 @@ const NotFoundPage = () => {
           <div className="mt-8 pt-6 border-t text-sm text-muted-foreground">
             <p>
               Если вы считаете, что это ошибка, пожалуйста, 
-              <Link to="/contacts" className="text-primary hover:underline ml-1">
-                свяжитесь с нами
+              <Link to="/blog" className="text-primary hover:underline ml-1">
+                посетите наш блог
               </Link>
             </p>
           </div>
