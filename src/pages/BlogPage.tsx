@@ -6,6 +6,7 @@ import Icon from '@/components/ui/icon';
 import Header from '@/components/sections/Header';
 import Footer from '@/components/sections/Footer';
 import SEOHead from '@/components/SEOHead';
+import Breadcrumbs from '@/components/ui/breadcrumbs';
 
 const BlogPage = () => {
   const articles = [
@@ -232,11 +233,13 @@ const BlogPage = () => {
       {/* Breadcrumbs */}
       <div className="bg-gray-50 py-3 sm:py-4 px-4 border-b">
         <div className="max-w-6xl mx-auto px-2">
-          <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm text-gray-600 flex-wrap" aria-label="Хлебные крошки">
-            <a href="/" className="hover:text-blue-600 touch-manipulation" aria-label="Перейти на главную страницу">Главная</a>
-            <Icon name="ChevronRight" size={12} className="sm:size-4" />
-            <span className="text-gray-900">Блог</span>
-          </nav>
+          <Breadcrumbs 
+            items={[
+              { label: "Главная", href: "/" },
+              { label: "Блог" }
+            ]}
+            className="text-xs sm:text-sm"
+          />
         </div>
       </div>
       

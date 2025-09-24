@@ -10,6 +10,7 @@ import FamilyMortgageSection from '@/components/mortgage/FamilyMortgageSection';
 import BankComparisonSection from '@/components/mortgage/BankComparisonSection';
 import StepByStepSection from '@/components/mortgage/StepByStepSection';
 import ConclusionSection from '@/components/mortgage/ConclusionSection';
+import Breadcrumbs from '@/components/ui/breadcrumbs';
 
 const Mortgage = () => {
   useEffect(() => {
@@ -108,16 +109,12 @@ const Mortgage = () => {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="py-8">
           <div className="max-w-4xl mx-auto px-4">
-            <Button 
-              variant="ghost" 
-              className="mb-6 hover:bg-blue-50"
-              asChild
-            >
-              <a href="/">
-                <Icon name="ArrowLeft" className="mr-2" size={16} />
-                Назад к списку кредитов
-              </a>
-            </Button>
+            <Breadcrumbs 
+              items={[
+                { label: "Главная", href: "/" },
+                { label: "Ипотека" }
+              ]}
+            />
           </div>
         </div>
 

@@ -6,6 +6,7 @@ import Icon from '@/components/ui/icon';
 import SEOHead from '@/components/SEOHead';
 import Header from '@/components/sections/Header';
 import Footer from '@/components/sections/Footer';
+import Breadcrumbs from '@/components/ui/breadcrumbs';
 
 const LoanInsuranceGuide = () => {
   return (
@@ -93,13 +94,14 @@ const LoanInsuranceGuide = () => {
         {/* Breadcrumbs */}
         <div className="bg-gray-50 py-3 sm:py-4 px-4 border-b">
           <div className="max-w-4xl mx-auto px-2">
-            <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm text-gray-600 flex-wrap">
-              <a href="/" className="hover:text-blue-600 touch-manipulation" aria-label="Перейти на главную страницу">Главная</a>
-              <Icon name="ChevronRight" size={12} className="sm:size-4" />
-              <a href="/blog" className="hover:text-blue-600 touch-manipulation" aria-label="Перейти к блогу">Блог</a>
-              <Icon name="ChevronRight" size={12} className="sm:size-4" />
-              <span className="text-gray-900">Страховки при ипотеке и автокредите</span>
-            </nav>
+            <Breadcrumbs 
+              items={[
+                { label: "Главная", href: "/" },
+                { label: "Блог", href: "/blog" },
+                { label: "Страховки при ипотеке и автокредите" }
+              ]}
+              className="text-xs sm:text-sm"
+            />
           </div>
         </div>
 

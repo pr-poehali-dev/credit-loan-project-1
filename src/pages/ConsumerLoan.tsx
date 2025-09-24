@@ -13,6 +13,7 @@ import CashLoanSection from '@/components/consumer-loan/CashLoanSection';
 import BankComparisonSection from '@/components/consumer-loan/BankComparisonSection';
 import FAQSection from '@/components/consumer-loan/FAQSection';
 import ConclusionSection from '@/components/consumer-loan/ConclusionSection';
+import Breadcrumbs from '@/components/ui/breadcrumbs';
 
 const ConsumerLoan = () => {
   useEffect(() => {
@@ -111,16 +112,12 @@ const ConsumerLoan = () => {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="py-8">
           <div className="max-w-4xl mx-auto px-4">
-            <Button 
-              variant="ghost" 
-              className="mb-6 hover:bg-blue-50"
-              asChild
-            >
-              <a href="/">
-                <Icon name="ArrowLeft" className="mr-2" size={16} />
-                Назад к списку кредитов
-              </a>
-            </Button>
+            <Breadcrumbs 
+              items={[
+                { label: "Главная", href: "/" },
+                { label: "Потребительский кредит" }
+              ]}
+            />
           </div>
         </div>
 
