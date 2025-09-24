@@ -22,7 +22,7 @@ import MortgageStepByStep from "./pages/blog/MortgageStepByStep";
 import AutoLoanGuide from "./pages/blog/AutoLoanGuide";
 import MortgageVsRent2025 from "./pages/blog/MortgageVsRent2025";
 import LoanInsuranceGuide from "./pages/blog/LoanInsuranceGuide";
-import NotFound from "./pages/NotFound";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const queryClient = new QueryClient();
 
@@ -52,7 +52,7 @@ const App = () => (
             <Route path="/blog/mortgage-vs-rent-2025" element={<MortgageVsRent2025 />} />
             <Route path="/blog/loan-insurance-guide" element={<LoanInsuranceGuide />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
